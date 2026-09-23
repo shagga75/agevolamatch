@@ -1,0 +1,132 @@
+{
+  "$defs": {
+    "OpportunitySourceName": {
+      "enum": [
+        "incentivi_gov_it",
+        "invitalia"
+      ],
+      "title": "OpportunitySourceName",
+      "type": "string"
+    },
+    "OpportunityStatus": {
+      "description": "Computed from open/close dates at ingest time; the source has no status field.",
+      "enum": [
+        "open",
+        "upcoming",
+        "closed",
+        "unknown"
+      ],
+      "title": "OpportunityStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Fields shared by every kind of funding/procurement opportunity.",
+  "properties": {
+    "source": {
+      "$ref": "#/$defs/OpportunitySourceName"
+    },
+    "source_id": {
+      "description": "Identifier assigned by the origin system, e.g. the Drupal nid",
+      "title": "Source Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "description": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Description"
+    },
+    "url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Url"
+    },
+    "open_date": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Open Date"
+    },
+    "close_date": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Close Date"
+    },
+    "status": {
+      "$ref": "#/$defs/OpportunityStatus",
+      "default": "unknown"
+    },
+    "content_hash": {
+      "description": "sha256 of the normalized payload, used to detect changes",
+      "title": "Content Hash",
+      "type": "string"
+    },
+    "first_seen": {
+      "format": "date-time",
+      "title": "First Seen",
+      "type": "string"
+    },
+    "last_seen_at": {
+      "format": "date-time",
+      "title": "Last Seen At",
+      "type": "string"
+    },
+    "source_last_updated": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Origin system's own last-modified timestamp, when available",
+      "title": "Source Last Updated"
+    }
+  },
+  "required": [
+    "source",
+    "source_id",
+    "title",
+    "content_hash",
+    "first_seen",
+    "last_seen_at"
+  ],
+  "title": "Opportunity",
+  "type": "object"
+}

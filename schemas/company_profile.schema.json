@@ -1,0 +1,199 @@
+{
+  "$defs": {
+    "AtecoCode": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "description": "e.g. '62.01' or '62.01.00'",
+          "title": "Code",
+          "type": "string"
+        },
+        "version": {
+          "$ref": "#/$defs/AtecoVersion",
+          "default": "2025"
+        }
+      },
+      "required": [
+        "code"
+      ],
+      "title": "AtecoCode",
+      "type": "object"
+    },
+    "AtecoVersion": {
+      "enum": [
+        "2007",
+        "2025"
+      ],
+      "title": "AtecoVersion",
+      "type": "string"
+    },
+    "CompanySize": {
+      "description": "Dimensioni - 5 distinct values observed, 0% null.",
+      "enum": [
+        "Microimpresa",
+        "Piccola Impresa",
+        "Media Impresa",
+        "Grande Impresa",
+        "Non classificabile/classificato"
+      ],
+      "title": "CompanySize",
+      "type": "string"
+    },
+    "LegalForm": {
+      "description": "Legal form of a company profile - not sourced from incentivi.gov.it\n(that dataset has no company registry data); used only for CompanyProfile.",
+      "enum": [
+        "srl",
+        "srls",
+        "spa",
+        "snc",
+        "sas",
+        "ditta_individuale",
+        "cooperativa",
+        "altro"
+      ],
+      "title": "LegalForm",
+      "type": "string"
+    },
+    "Region": {
+      "description": "Regioni - 21 distinct values observed (20 Italian regions + 'Estero'), 0.1% null.",
+      "enum": [
+        "Abruzzo",
+        "Basilicata",
+        "Calabria",
+        "Campania",
+        "Emilia-Romagna",
+        "Friuli-Venezia Giulia",
+        "Lazio",
+        "Liguria",
+        "Lombardia",
+        "Marche",
+        "Molise",
+        "Piemonte",
+        "Puglia",
+        "Sardegna",
+        "Sicilia",
+        "Toscana",
+        "Trentino-Alto Adige/Südtirol",
+        "Umbria",
+        "Valle d'Aosta/Vallée d'Aoste",
+        "Veneto",
+        "Estero"
+      ],
+      "title": "Region",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "ateco_codes": {
+      "items": {
+        "$ref": "#/$defs/AtecoCode"
+      },
+      "title": "Ateco Codes",
+      "type": "array"
+    },
+    "region": {
+      "$ref": "#/$defs/Region"
+    },
+    "province": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Sigla provincia, e.g. 'RM', or full name",
+      "title": "Province"
+    },
+    "size": {
+      "$ref": "#/$defs/CompanySize"
+    },
+    "founded_on": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Founded On"
+    },
+    "legal_form": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/LegalForm"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "is_startup_innovativa": {
+      "default": false,
+      "title": "Is Startup Innovativa",
+      "type": "boolean"
+    },
+    "is_pmi_innovativa": {
+      "default": false,
+      "title": "Is Pmi Innovativa",
+      "type": "boolean"
+    },
+    "is_impresa_femminile": {
+      "default": false,
+      "title": "Is Impresa Femminile",
+      "type": "boolean"
+    },
+    "is_under_35": {
+      "default": false,
+      "title": "Is Under 35",
+      "type": "boolean"
+    },
+    "planned_expense_types": {
+      "description": "Values matching EligibleCost, expenses the company plans to incur",
+      "items": {
+        "type": "string"
+      },
+      "title": "Planned Expense Types",
+      "type": "array"
+    },
+    "planned_investment_amount": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Amount in EUR the company plans to invest/spend",
+      "title": "Planned Investment Amount"
+    },
+    "preferred_support_forms": {
+      "description": "Values matching SupportForm, ranked by preference for scoring",
+      "items": {
+        "type": "string"
+      },
+      "title": "Preferred Support Forms",
+      "type": "array"
+    }
+  },
+  "required": [
+    "name",
+    "region",
+    "size"
+  ],
+  "title": "CompanyProfile",
+  "type": "object"
+}

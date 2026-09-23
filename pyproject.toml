@@ -1,0 +1,54 @@
+[project]
+name = "agevolamatch"
+version = "0.1.0"
+description = "Open-source matching engine between Italian public incentives (finanza agevolata) and company profiles"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "shagga75", email = "fdpergolini@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.9",
+    "httpx>=0.27",
+    "typer>=0.15",
+    "fastapi>=0.115",
+    "uvicorn>=0.32",
+    "sqlmodel>=0.0.22",
+    "pyyaml>=6.0",
+    "rich>=13.9",
+]
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.40"]
+llm = ["ollama>=0.4"]
+
+[project.scripts]
+agevolamatch = "agevolamatch.cli.main:app"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-cov>=6.0",
+    "ruff>=0.7",
+    "respx>=0.22",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "N"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["agevolamatch"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

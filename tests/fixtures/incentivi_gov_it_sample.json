@@ -1,0 +1,2342 @@
+{
+  "response": {
+    "numFound": 37,
+    "docs": [
+      {
+        "ID_Incentivo": "1170",
+        "Titolo": "Interreg VI-A Italia - Austria 2021-2027 - Secondo avviso per la presentazione di proposte progettuali",
+        "Descrizione": "Cos'è Avviso per proposte progettuali nell'ambito del PC Interreg VI-A Italia-Austria 2021-2027. A chi si rivolge L'avviso è rivolto a enti pubblici, imprese, PMI, enti di ricerca, start-up, ecc. Cosa prevede Sono finanziati interventi nelle seguenti 3 priorità del programma, che sono:- cambiamento climatico e biodiversità- turismo sostenibile e culturale;- riduzione degli ostacoli transfrontalieri ",
+        "Obiettivo_Finalita": [
+          "Innovazione e ricerca",
+          "Internazionalizzazione",
+          "Sostegno investimenti",
+          "Start up/Sviluppo d'impresa"
+        ],
+        "Data_apertura": "2024-02-23T00:00:00",
+        "Data_chiusura": "2024-05-23T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Non classificabile/classificato",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Consorzio",
+          "Cooperative/Associazioni Non Profit",
+          "Ente Pubblico",
+          "Impresa",
+          "Impresa - SU/PMI innovativa",
+          "Università/Ente di Ricerca"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Fabbricati e terreni",
+          "Formazione Professionale",
+          "Impianti/Macchinari/Attrezzature",
+          "Materie prime, di consumo e merci",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "1000000",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "1000000",
+        "Settore_Attivita": [
+          "Alberghiero",
+          "Altri servizi",
+          "Cultura",
+          "ICT",
+          "Ristorazione",
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Friuli-Venezia Giulia",
+          "Trentino-Alto Adige/Südtirol",
+          "Veneto",
+          "Estero"
+        ],
+        "Soggetto_Concedente": "Provincia autonoma di Bolzano - Ripartizione Europa",
+        "Base_normativa_primaria": "Decreto della Direttrice della Ripartizione Europa riguardante Interreg VI-A Italia -Austria 2021-2027 - Secondo avviso per la presentazione di proposte progettuali",
+        "Provvedimento_attuativo": "Decreto della Direttrice della Ripartizione Europa riguardante Interreg VI-A Italia -Austria 2021-2027 - Secondo avviso per la presentazione di proposte progettuali",
+        "Stanziamento_incentivo": "18000000",
+        "Link_istituzionale": "https://www.interreg.net/it/2014-2020/news.asp?news_action=4&news_article_id=681567",
+        "Data_ultimo_aggiornamento": "2024-02-27T15:19:24Z"
+      },
+      {
+        "ID_Incentivo": "790",
+        "Titolo": "Interreg VI-A Italia-Austria: primo avviso",
+        "Descrizione": "Cos'èavviso per proposte progettuali nell'ambito del PC Interreg VI- A Italia-Austria 2021-2027A chi si rivolgeenti pubblici, imprese, PMI, enti di ricerca, start-up, ecc. Cosa prevedeinterventi nelle seguenti 4 priorità del programma, che sono:- innovazione e imprese;- cambiamento climatico e biodiversità;- turismo sostenibile e culturale;- riduzione degli ostacoli transfrontalieri",
+        "Obiettivo_Finalita": [
+          "Innovazione e ricerca",
+          "Internazionalizzazione",
+          "Sostegno investimenti",
+          "Start up/Sviluppo d'impresa"
+        ],
+        "Data_apertura": "2023-01-19T00:00:00",
+        "Data_chiusura": "2023-03-30T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Non classificabile/classificato",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Consorzio",
+          "Cooperative/Associazioni Non Profit",
+          "Ente Pubblico",
+          "Impresa",
+          "Impresa - SU/PMI innovativa",
+          "Università/Ente di Ricerca"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Fabbricati e terreni",
+          "Formazione Professionale",
+          "Impianti/Macchinari/Attrezzature",
+          "Materie prime, di consumo e merci",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Friuli-Venezia Giulia",
+          "Trentino-Alto Adige/Südtirol",
+          "Veneto",
+          "Estero"
+        ],
+        "Soggetto_Concedente": "Provincia autonoma di Bolzano - Ripartizione Europa",
+        "Base_normativa_primaria": "39.00/Interreg VI-A Italia-Austria 2021-2027- Primo avviso per la presentazione di proposte progettuali",
+        "Provvedimento_attuativo": "39.00/Interreg VI-A Italia-Austria 2021-2027- Primo avviso per la presentazione di proposte progettuali",
+        "Stanziamento_incentivo": "23500000",
+        "Link_istituzionale": "https://europa.provincia.bz.it/it/interreg-italia-austria",
+        "Data_ultimo_aggiornamento": "2024-01-08T08:40:02Z"
+      },
+      {
+        "ID_Incentivo": "1426",
+        "Titolo": "Promozione dell’ecoefficienza e riduzione dei consumi energetici nelle sale teatrali e nei cinema, pubblici e privati - PNRR M1C3I1.3 - Obiettivi 2 e 3",
+        "Descrizione": "Cos'è Avviso pubblico finalizzato alla presentazione di proposte di intervento per la promozione dell’ecoefficienza e riduzione dei consumi energetici nelle sale teatrali e nei cinema, pubblici e privati, da finanziare nell’ambito del PNRR, Missione 1 - Digitalizzazione, innovazione, competitività, cultura e turismo - Componente 3 - Turismo e Cultura 4.0 (M1C3), Misura 1 “Patrimonio culturale per la prossima generazione”, Investimento 1.3: Migliorare l’efficienza energetica di cinema, teatri e musei. A chi si rivolge Possono presentare domanda di contributo i soggetti pubblici e privati proprietari e/o gestori di sale teatrali e/o sale cinematografiche. Possono presentare domanda anche ATI e RTI costituite tra più soggetti. Cosa prevede La promozione dell’ecoefficienza e riduzione dei consumi energetici, nelle sale teatrali pubbliche e private attive (obiettivo 2) e nei cinema pubblici e privati attivi (obiettivo 3) a valere sull’Investimento 1.3 “Migliorare l’efficienza energetica di cinema, teatri e musei”, anche in relazione ad interventi collegati alla climatizzazione, illuminazione, comunicazione e sicurezza.",
+        "Obiettivo_Finalita": [
+          "Digitalizzazione"
+        ],
+        "Data_apertura": "2021-12-22T00:00:00",
+        "Data_chiusura": "2026-12-31T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Impianti/Macchinari/Attrezzature",
+          "Servizi, brevetti e licenze"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "650000",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "650000",
+        "Settore_Attivita": [
+          "Cultura"
+        ],
+        "Codici_ATECO": "90.00; 90.01; 90.02; 90.03; 90.04;",
+        "Regioni": [
+          "Abruzzo",
+          "Basilicata",
+          "Calabria",
+          "Campania",
+          "Emilia-Romagna",
+          "Friuli-Venezia Giulia",
+          "Lazio",
+          "Liguria",
+          "Lombardia",
+          "Marche",
+          "Molise",
+          "Piemonte",
+          "Puglia",
+          "Sardegna",
+          "Sicilia",
+          "Toscana",
+          "Trentino-Alto Adige/Südtirol",
+          "Umbria",
+          "Valle d'Aosta/Vallée d'Aoste",
+          "Veneto"
+        ],
+        "Soggetto_Concedente": "Ministero della Cultura - Direzione Generale Spettacolo",
+        "Base_normativa_primaria": "Governance del Piano nazionale di ripresa e resilienza e prime misure di rafforzamento delle strutture amministrative e di accelerazione e snellimento delle procedure.",
+        "Provvedimento_attuativo": "Governance del Piano nazionale di ripresa e resilienza e prime misure di rafforzamento delle strutture amministrative e di accelerazione e snellimento delle procedure.",
+        "Stanziamento_incentivo": "200000000",
+        "Link_istituzionale": "https://spettacolo.cultura.gov.it/wp-content/uploads/2024/02/Avviso-pubblico_Proposte-di-intervento-per-la-promozione-della-ecoefficienza-e-riduzione-dei-consumi-energetici-nelle-sale-teatrali-e-cinema.pdf",
+        "Data_ultimo_aggiornamento": "2024-03-28T15:51:32Z"
+      },
+      {
+        "ID_Incentivo": "1433",
+        "Titolo": "Concessione di contributi a fondo perduto per esercizi ricettivi - Provincia Autonoma Bolzano",
+        "Descrizione": "Cos'è Il bando, a valere sul DGP 1186/2023 di modifica dei criteri applicativi di cui alla DGP n. 375 del 24 aprile 2018 \"Criteri applicativi per il fondo di rotazione nel settore turismo nonchè per i contributi a fondo perduto per il settore turismo\", prevede un contributo a fondo perduto per gli esercizi ricettivi. A chi si rivolge Il bando si rivolge ad imprese iscritte nella Camera di Commercio dell'Alto Adige. Cosa prevede L'agevolazione consiste in un contributo a fondo perduto.",
+        "Obiettivo_Finalita": [
+          "Sostegno investimenti"
+        ],
+        "Data_apertura": "2024-01-01T00:00:00",
+        "Data_chiusura": "2026-12-31T00:00:00",
+        "Dimensioni": [
+          "Microimpresa",
+          "Media Impresa",
+          "Grande Impresa",
+          "Non classificabile/classificato",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa da costituire - Altro",
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Formazione Professionale",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri",
+          "Fabbricati e terreni",
+          "Impianti/Macchinari/Attrezzature",
+          "Servizi, brevetti e licenze",
+          "Servizi, brevetti e licenze"
+        ],
+        "Spesa_Ammessa_min": "15000",
+        "Spesa_Ammessa_max": "500000",
+        "Agevolazione_Concedibile_min": "1950",
+        "Agevolazione_Concedibile_max": "100000",
+        "Settore_Attivita": [
+          "Alberghiero"
+        ],
+        "Codici_ATECO": "56.29; 55.90; 55.30; 56.10; 56.21; 56.00; 55.00; 55.10; 56.30; 55.20; 56.20",
+        "Regioni": [
+          "Trentino-Alto Adige/Südtirol"
+        ],
+        "Ambito_territoriale": [
+          "Aree interne"
+        ],
+        "Soggetto_Concedente": "Provincia Autonoma di Bolzano",
+        "Base_normativa_primaria": "Interventi della Provincia autonoma di Bolzano-Alto Adige per il sostegno dell'economia",
+        "Base_normativa_secondaria": "Costitiuzione di fondi di rotazione per l'incentivazione delle attività economiche",
+        "Provvedimento_attuativo": "Interventi della Provincia autonoma di Bolzano-Alto Adige per il sostegno dell'economia",
+        "Gazzetta_ufficiale": "1 del 04/01/2024",
+        "Stanziamento_incentivo": "10000000",
+        "Link_istituzionale": "https://www.provincia.bz.it/turismo-mobilita/turismo/default.asp",
+        "Data_ultimo_aggiornamento": "2024-11-25T10:45:38Z"
+      },
+      {
+        "ID_Incentivo": "1434",
+        "Titolo": "Concessione di contributi a fondo perduto per esercizi di somministrazione di paste e bevande - Provincia Autonoma Bolzano",
+        "Descrizione": "Cos'è Il bando, a valere sul DGP 1186/2023 di modifica dei criteri applicativi di cui alla DGP n. 375 del 24 aprile 2018 \"Criteri applicativi per il fondo di rotazione nel settore turismo nonchè per i contributi a fondo perduto per il settore turismo\", prevede un contributo a fondo perduto per l'ammodernamento della struttura dell'esercizio di somministrazione di pasti e bevande. A chi si rivolgel bando è rivolto ad imprese iscritte nella Camera di Commercio dell'Alto Adige. Cosa prevede L'agevolazione consiste in un contributo a fondo perduto.",
+        "Obiettivo_Finalita": [
+          "Sostegno investimenti"
+        ],
+        "Data_apertura": "2024-01-01T00:00:00",
+        "Data_chiusura": "2026-12-31T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Non classificabile/classificato",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Fabbricati e terreni",
+          "Formazione Professionale",
+          "Impianti/Macchinari/Attrezzature",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "15000",
+        "Spesa_Ammessa_max": "500000",
+        "Agevolazione_Concedibile_min": "1950",
+        "Agevolazione_Concedibile_max": "100000",
+        "Settore_Attivita": [
+          "Alberghiero"
+        ],
+        "Codici_ATECO": "55.00; 55.10; 55.20; 55.30; 55.90; 56.00; 56.10; 56.20; 56.21; 56.29; 56.30;",
+        "Regioni": [
+          "Trentino-Alto Adige/Südtirol"
+        ],
+        "Ambito_territoriale": [
+          "Aree interne"
+        ],
+        "Soggetto_Concedente": "Provincia Autonoma di Bolzano - Dipartimento Agricoltura, Foreste, Turismo e Protezione Civile - Area Funzionale Turismo",
+        "Base_normativa_primaria": "Interventi della Provincia autonoma di Bolzano-Alto Adige per il sostegno dell'economia",
+        "Base_normativa_secondaria": "Costitiuzione di fondi di rotazione per l'incentivazione delle attività economiche",
+        "Provvedimento_attuativo": "Interventi della Provincia autonoma di Bolzano-Alto Adige per il sostegno dell'economia",
+        "Gazzetta_ufficiale": "1 del 04/01/2024",
+        "Stanziamento_incentivo": "1000000",
+        "Link_istituzionale": "https://www.provincia.bz.it/turismo-mobilita/turismo/default.asp",
+        "Data_ultimo_aggiornamento": "2024-04-02T12:10:20Z"
+      },
+      {
+        "ID_Incentivo": "1423",
+        "Titolo": "Partecipazione alla Fiera Internazionale del Libro- Buchmesse Francoforte 2023 - Regione Lazio",
+        "Descrizione": "Cos'è La Regione Lazio, in collaborazione con ICE Agenzia e AIE – Associazione Italiana Editori, nel quadro delle iniziative di internazionalizzazione a sostegno dell’Industria dell’Editoria, intende partecipare con una propria rappresentanza, alla collettiva italiana presente alla Frankfurter Buchmesse 2023. La partecipazione alla fiera è sostenuta con il contributo dell’UE nell’ambito del PR FESR Lazio 2021-2027. A chi si rivolge L'agevolazione è rivolta alle seguenti tipologie di impresa:- Media Impresa; - Piccola Impresa; - Microimpresa. Cosa prevede L'agevolazione consiste in Sovvenzione/Contributo in conto interessi - Premio, per le seguenti spese:- Materiali - Progettazione/studi/consulenze; - Servizi - Servizi professionali; - Servizi - Altri servizi",
+        "Obiettivo_Finalita": [
+          "Internazionalizzazione"
+        ],
+        "Data_apertura": "2023-09-08T00:00:00",
+        "Data_chiusura": "2023-12-23T00:00:00",
+        "Dimensioni": [
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa - SU/PMI innovativa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Materie prime, di consumo e merci",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "1000",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "1000",
+        "Settore_Attivita": [
+          "Altri servizi"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Lazio"
+        ],
+        "Soggetto_Concedente": "Lazio Innova S.p.a.",
+        "Base_normativa_primaria": "Presa d'atto della Decisione C (2022) 7883 del 26 ottobre 2022 della Commissione Europea di approvazione del Programma Regionale PR Lazio FESR 2021-2027",
+        "Provvedimento_attuativo": "Presa d'atto della Decisione C (2022) 7883 del 26 ottobre 2022 della Commissione Europea di approvazione del Programma Regionale PR Lazio FESR 2021-2027",
+        "Stanziamento_incentivo": "36664",
+        "Link_istituzionale": "https://www.regione.lazio.it/notizia/fiera-internazionale-libro-francoforte",
+        "Data_ultimo_aggiornamento": "2024-03-28T12:05:28Z"
+      },
+      {
+        "ID_Incentivo": "1424",
+        "Titolo": "Manifestazione di interesse per “Italian Women in Silicon Valley” – INNOVIT - Regione Lazio",
+        "Descrizione": "Cos'è Sovvenzione/Contributo in conto interessi - Premio. La Regione Lazio, attraverso il soggetto attuatore Lazio Innova, intende partecipare con una rappresentanza qualificata di quattro imprese female founders, all’iniziativa “Italian Women in Silicon Valley” che si svolgerà presso INNOVIT – The Italian Innovation and Culture Hub di San Francisco – USA, dal 7 al 9 novembre 2023. Il progetto, promosso da ICE-Agenzia, vede anche il coinvolgimento di US Market Access Center e Prospera Women, partner autorevoli in Silicon Valley sul tema “Diversity and Inclusion”, che da anni sviluppano programmi rivolti a imprenditrici female founders. Riferimenti normativi: Det. n. G13794/2023 \"ITALIAN WOMEN IN SILICON VALLEY\" San Francisco dal 7 al 9 novembre 2023A chi si rivolge L'iniziativa si rivolge alle imprese del Lazio. Tutti i settori economici sono ammissibili a ricevere aiuti. Media Impresa; Piccola Impresa (escluse Microimprese); Microimpresa Cosa prevede Le imprese del Lazio selezionate potranno partecipare ai lavori che si svilupperanno in tre giornate tecnologiche con la finalità di espandere la comunità globale per le startup guidate da donne. Si prevede supporto per: Materiali - Progettazione/studi/consulenze; Servizi - Servizi professionali; Servizi - Altri servizi.",
+        "Obiettivo_Finalita": [
+          "Internazionalizzazione"
+        ],
+        "Data_apertura": "2023-10-03T00:00:00",
+        "Data_chiusura": "2023-12-31T00:00:00",
+        "Note_di_apertura_chiusura": "Le aziende interessate a partecipare all’iniziativa dovranno effettuare i seguenti adempimenti, entro e non oltre domenica 8 ottobre 2023 ore 19.00, pena la non ammissibilità della domanda. Iscrizioni chiuse.",
+        "Dimensioni": [
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa - SU/PMI innovativa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Materie prime, di consumo e merci",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "7560",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "7560",
+        "Settore_Attivita": [
+          "Altri servizi"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Lazio"
+        ],
+        "Soggetto_Concedente": "Lazio Innova S.p.a.",
+        "Base_normativa_primaria": "Presa d'atto della Decisione C (2022) 7883 del 26 ottobre 2022 della Commissione Europea di approvazione del Programma Regionale PR Lazio FESR 2021-2027",
+        "Provvedimento_attuativo": "Presa d'atto della Decisione C (2022) 7883 del 26 ottobre 2022 della Commissione Europea di approvazione del Programma Regionale PR Lazio FESR 2021-2027",
+        "Stanziamento_incentivo": "41056",
+        "Link_istituzionale": "https://www.lazioinnova.it/laziointernational/2023/10/03/manifestazione-di-interesse-per-la-partecipazione-a-italian-women-in-silicon-valley-innovit/",
+        "Data_ultimo_aggiornamento": "2024-05-13T16:16:36Z"
+      },
+      {
+        "ID_Incentivo": "175",
+        "Titolo": "Programma di supporto alle Case delle tecnologie emergenti",
+        "Descrizione": "Cos'è Il Programma di supporto alle Case delle tecnologie emergenti ha lo scopo di supportare progetti di ricerca, sperimentazioni e trasferimento tecnologico finalizzato allo sviluppo di prodotti, processi, servizi e modelli di business e organizzativi relativi alle tecnologie emergenti applicate in particolare all’industria dell’audiovisivo, alle infrastrutture, alla mobilità, alle industrie creative, alla robotica industriale, basati sull’uso e sullo sviluppo delle reti mobili ultra veloci (5G) e di nuova generazione (6G)A chi si rivolge Possono presentare proposte progettuali i Comuni, quali soggetti beneficiari, nei quali è presente una rete a banda ultralarga in tecnologia mobile 5G, in qualità di capofila di un partenariato composto da Università e/o Centri di ricerca italiani e imprese, PMI e/o startup costituite italiane o con una sede operativa sul territorio italiano. Cosa prevede Il Programma finanzia progetti di ricerca, sperimentazione e trasferimento tecnologico, promossi dal partenariato, all’interno delle Case delle tecnologie emergenti, finalizzati a coniugare le competenze scientifiche dell’Università e dei Centri di ricerca con le esigenze del tessuto imprenditoriale e dei settori che si ritengono strategici al fine di aumentare la competitività dei territori. Le Case delle tecnologie, intese come centri di trasferimento tecnologico, hanno in particolare i seguenti obiettivi:supportare progetti di ricerca e sperimentazione;sostenere la creazione di startup;favorire il trasferimento tecnologico verso le piccole e medie imprese. I temi interessati sono:Blockchain e Crypto Asset;Internet of Things (Io T);Intelligenza Artificiale;6G;Tecnologie quantistiche. Le proposte progettuali dovranno avere un importo minimo pari a 8 milioni di euro e un massimo pari a 15 milioni di euro",
+        "Obiettivo_Finalita": [
+          "Innovazione e ricerca",
+          "Start up/Sviluppo d'impresa"
+        ],
+        "Data_apertura": "2022-10-16T22:00:00",
+        "Data_chiusura": "2022-11-25T11:00:00",
+        "Note_di_apertura_chiusura": "La data di chiusura, inizialmente fissata al 18 novembre 2022, è prorogata alle ore 12 del 25 novembre 2022.",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa - SU/PMI innovativa",
+          "Impresa",
+          "Università/Ente di Ricerca"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Impianti/Macchinari/Attrezzature",
+          "Costo del personale",
+          "Materie prime, di consumo e merci"
+        ],
+        "Settore_Attivita": [
+          "ICT"
+        ],
+        "Regioni": [
+          "Abruzzo",
+          "Basilicata",
+          "Calabria",
+          "Campania",
+          "Emilia-Romagna",
+          "Friuli-Venezia Giulia",
+          "Lazio",
+          "Liguria",
+          "Lombardia",
+          "Marche",
+          "Molise",
+          "Piemonte",
+          "Sardegna",
+          "Trentino-Alto Adige/Südtirol",
+          "Valle d'Aosta/Vallée d'Aoste",
+          "Veneto",
+          "Toscana",
+          "Puglia",
+          "Umbria"
+        ],
+        "Comuni": "Tutti i comuni",
+        "Ambito_territoriale": [
+          "Non applicabile"
+        ],
+        "Soggetto_Concedente": "Ministero dello sviluppo economico",
+        "Base_normativa_primaria": "Decreto ministeriale 12 agosto 2022",
+        "Provvedimento_attuativo": "Avviso pubblico 17/10/2022",
+        "Gazzetta_ufficiale": "G.U. n. 229 del 30/09/2022",
+        "Stanziamento_incentivo": "80000000",
+        "Link_istituzionale": "https://www.mise.gov.it/it/incentivi/casa-delle-tecnologie-emergenti-nuovo-bando",
+        "Altre_caratteristiche": "Tecnologie emergenti, trasferimento tecnologico, 5g, 6g, IoT; banda ultralarga, Università, Centri di ricerca e imprese, programmi di ricerca, sperimentazione e trasferimento tecnologico; Startup e PMI, Blockchain, Intelligenza Artificiale, Internet of things, Crypto Asset, tecnologie quantistiche."
+      },
+      {
+        "ID_Incentivo": "1427",
+        "Titolo": "Bando per la transizione sostenibile delle imprese turistiche Anno 2024 - CCIAA Maremma e Tirreno",
+        "Descrizione": "Cos'è Bando promosso dalla Camera di Commercio della Maremma e del Tirreno per sostenere le imprese turistiche che adottano soluzioni per aumentare la sostenibilità ambientale delle strutture stesse e dei servizi offerti e diffondendo la cultura e la consapevolezza di operare nell’ecosistema delle destinazioni turistiche.  A chi si rivolge Il bando è rivolto alle micro, piccole e medie imprese, loro cooperative e consorzi, rientranti nella definizione di PMI di cui all’Allegato 1 del Regolamento n. 651/2014/UE della Commissione europea, del turismo e del commercio, con sede legale e/o un’unità operativa nella provincia di Livorno o Grosseto. Cosa prevede Il contributo è pari al 50% delle spese sostenute e ritenute ammissibili (al netto di IVA), per un importo unitario massimo pari ad euro 2.500,00, oltre l’eventuale premialità per il possesso del rating di legalità e l’eventuale incremento premiante del 10% del contributo (fino ad un massimo di € 250) in caso di:- Impresa con bilancio di sostenibilità,- Impresa in possesso della certificazione di genere,- Impresa femminile.",
+        "Obiettivo_Finalita": [
+          "Transizione ecologica"
+        ],
+        "Data_apertura": "2024-03-19T00:00:00",
+        "Data_chiusura": "2024-11-29T00:00:00",
+        "Note_di_apertura_chiusura": "Le domande di contributo devono essere presentate esclusivamente tramite invio TELEMATICO dal sito web www.registroimprese.it a partire dalle ore 11.00 del 19 marzo 2024 sino alle ore 23.59 del 29 novembre 2024, salvo chiusura anticipata per esaurimento delle risorse.",
+        "Dimensioni": [
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Servizi, brevetti e licenze"
+        ],
+        "Spesa_Ammessa_min": "1000",
+        "Spesa_Ammessa_max": "5000",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "3000",
+        "Settore_Attivita": [
+          "Commercio",
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Toscana"
+        ],
+        "Comuni": "Arcidosso; Bibbona; Campagnatico; Campiglia Marittima; Campo nell'Elba; Capalbio; Capoliveri; Capraia Isola; Castagneto Carducci; Castel del Piano; Castell'Azzara; Castiglione della Pescaia; Cecina; Cinigiano; Civitella Paganico; Collesalvetti; Follonica; Gavorrano; Grosseto; Isola del Giglio; Livorno; Magliano in Toscana; Manciano; Marciana; Marciana Marina; Massa Marittima; Monte Argentario; Monterotondo Marittimo; Montieri; Orbetello; Piombino; Pitigliano; Porto Azzurro; Portoferraio; Rio; Rio Marina; Rio nell'Elba; Roccalbegna; Roccastrada; Rosignano Marittimo; San Vincenzo; Santa Fiora; Sassetta; Scansano; Scarlino; Seggiano; Semproniano; Sorano; Suvereto",
+        "Soggetto_Concedente": "Camera di Commercio della Maremma e del Tirreno",
+        "Base_normativa_primaria": "Riordinamento delle camere di commercio, industria, artigianato e agricoltura.",
+        "Provvedimento_attuativo": "CCIAA Maremma e Tirreno. Delibera di Giunta camerale",
+        "Stanziamento_incentivo": "30000",
+        "Link_istituzionale": "https://www.lg.camcom.it/bandi/bando-transizione-sostenibile-delle-imprese-turistiche-anno-2024",
+        "Data_ultimo_aggiornamento": "2024-03-28T16:38:31Z"
+      },
+      {
+        "ID_Incentivo": "1428",
+        "Titolo": "Contributi per la realizzazione di percorsi di accompagnamento delle imprese alla sostenibilità Anno 2024 - CCIAA Cuneo",
+        "Descrizione": "Cos'è La Camera di commercio di Cuneo intende sostenere le Associazioni di categoria o loro società di servizi nella realizzazione di percorsi di assessment delle imprese in tema di sostenibilità ambientale, sociale e di governance, accompagnandole a:- conoscere il livello di sostenibilità dei processi produttivi;- acquisire piena consapevolezza dei punti di forza e di debolezza;- avere un maggiore controllo dei rischi aziendali; - individuare le priorità di intervento e le possibili soluzioni operative per un progressivo miglioramento delle performance in termini ESG;- comunicare all’esterno l’impegno aziendale.  A chi si rivolge Sono ammesse a presentare domanda per le agevolazioni di cui al presente bando le Associazioni di categoria od organismi/società di servizi ad esse collegate aventi sede in provincia di Cuneo che risultano:- attive al momento della liquidazione del contributo e, se soggetto all’obbligo, in regola con l’iscrizione al Registro delle Imprese e con il pagamento del diritto annuale. - in regola con gli obblighi contributivi ed con le normative sulla salute e sicurezza sul lavoro di cui al D.lgs. 9 aprile 2008, n. 81 e successive modificazioni e integrazioni – DURC regolare.- non essere sottoposte a procedure concorsuali, in stato di liquidazione volontaria o che rientrino nella categoria delle “imprese in difficoltà” secondo la definizione comunitaria (G. U. C. E. C 249 del 31/07/2014 - Orientamenti).  Cosa prevede L’agevolazione prevede il riconoscimento di un contributo a fondo perduto a favore delle Associazioni di categoria od organismi/società di servizi a esse collegate di € 500,00 per ogni impresa accompagnata. Il contributo massimo erogabile ad ogni Associazioni di categoria od organismi/società di servizi a esse collegate non può superare l’importo di € 20.000,00, salvo riparto proporzionale in caso di insufficienza dei fondi. Il contributo, proporzionato al numero di imprese accompagnate, sarà erogato a fronte di:- affiancamento delle imprese nella compilazione dell’assessment nei tre ambiti ESG, e relativo inserimento nel portale SUSTAINability realizzato dal sistema camerale al seguente link https://esg.dintec.it/sustainability.aspx;- accompagnamento delle imprese al fine di individuare le priorità di intervento e le possibili soluzioni operative per un progressivo miglioramento delle performance di sostenibilità (ambientale, sociale e di governance), i cui risultati dovranno essere evidenziati nella compilazione di un’apposita relazione illustrativa riferita ad ogni singola impresa. ",
+        "Obiettivo_Finalita": [
+          "Transizione ecologica"
+        ],
+        "Data_apertura": "2024-04-03T00:00:00",
+        "Data_chiusura": "2024-10-30T00:00:00",
+        "Note_di_apertura_chiusura": "La data di chiusura si riferisce al termine per l'invio delle richieste di contributo",
+        "Dimensioni": [
+          "Microimpresa",
+          "Media Impresa",
+          "Grande Impresa",
+          "Non classificabile/classificato",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Cooperative/Associazioni Non Profit"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Servizi, brevetti e licenze"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "20000",
+        "Agevolazione_Concedibile_min": "500",
+        "Agevolazione_Concedibile_max": "20000",
+        "Settore_Attivita": [
+          "Mobili, Legno e Carta",
+          "Ristorazione",
+          "Chimica e Farmaceutica",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Artigianato",
+          "Altri servizi",
+          "Alberghiero",
+          "Agroalimentare",
+          "Agricoltura, silvicoltura e pesca",
+          "Turismo",
+          "Servizi di trasporto",
+          "Salute",
+          "Commercio",
+          "Moda e Tessile",
+          "Cultura",
+          "Edilizia",
+          "Elettronica",
+          "Fornitura Energia, Acqua e gestione Rifiuti",
+          "ICT",
+          "Meccanica",
+          "Metallurgia"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti",
+        "Regioni": [
+          "Piemonte"
+        ],
+        "Comuni": "Acceglio; Aisone; Alba; Albaretto della Torre; Alto; Argentera; Arguello; Bagnasco; Bagnolo Piemonte; Baldissero d'Alba; Barbaresco; Barge; Barolo; Bastia Mondovì; Battifollo; Beinette; Bellino; Belvedere Langhe; Bene Vagienna; Benevello; Bergolo; Bernezzo; Bonvicino; Borgomale; Borgo San Dalmazzo; Bosia; Bossolasco; Boves; Bra; Briaglia; Briga Alta; Brondello; Brossasco; Busca; Camerana; Camo; Canale; Canosio; Caprauna; Caraglio; Caramagna Piemonte; Cardè; Carrù; Cartignano; Casalgrasso; Castagnito; Casteldelfino; Castellar; Castelletto Stura; Castelletto Uzzone; Castellinaldo d'Alba; Castellino Tanaro; Castelmagno; Castelnuovo di Ceva; Castiglione Falletto; Castiglione Tinella; Castino; Cavallerleone; Cavallermaggiore; Celle di Macra; Centallo; Ceresole Alba; Cerretto Langhe; Cervasca; Cervere; Ceva; Cherasco; Chiusa di Pesio; Cigliè; Cissone; Clavesana; Corneliano d'Alba; Cortemilia; Cossano Belbo; Costigliole Saluzzo; Cravanzana; Crissolo; Cuneo; Demonte; Diano d'Alba; Dogliani; Dronero; Elva; Entracque; Envie; Farigliano; Faule; Feisoglio; Fossano; Frabosa Soprana; Frabosa Sottana; Frassino; Gaiola; Gambasca; Garessio; Genola; Gorzegno; Gottasecca; Govone; Grinzane Cavour; Guarene; Igliano; Isasca; Lagnasco; La Morra; Lequio Berria; Lequio Tanaro; Lesegno; Levice; Limone Piemonte; Lisio; Macra; Magliano Alfieri; Magliano Alpi; Mango; Manta; Marene; Margarita; Marmora; Marsaglia; Martiniana Po; Melle; Moiola; Mombarcaro; Mombasiglio; Monastero di Vasco; Monasterolo Casotto; Monasterolo di Savigliano; Monchiero; Mondovì; Monesiglio; Monforte d'Alba; Montà; Montaldo di Mondovì; Montaldo Roero; Montanera; Montelupo Albese; Montemale di Cuneo; Monterosso Grana; Monteu Roero; Montezemolo; Monticello d'Alba; Moretta; Morozzo; Murazzano; Murello; Narzole; Neive; Neviglie; Niella Belbo; Niella Tanaro; Novello; Nucetto; Oncino; Ormea; Ostana; Paesana; Pagno; Pamparato; Paroldo; Perletto; Perlo; Peveragno; Pezzolo Valle Uzzone; Pianfei; Piasco; Pietraporzio; Piobesi d'Alba; Piozzo; Pocapaglia; Polonghera; Pontechianale; Pradleves; Prazzo; Priero; Priocca; Priola; Prunetto; Racconigi; Revello; Rifreddo; Rittana; Roaschia; Roascio; Robilante; Roburent; Roccabruna; Rocca Cigliè; Rocca de' Baldi; Roccaforte Mondovì; Roccasparvera; Roccavione; Rocchetta Belbo; Roddi; Roddino; Rodello; Rossana; Ruffia; Sale delle Langhe; Sale San Giovanni; Saliceto; Salmour; Saluzzo; Sambuco; Sampeyre; San Benedetto Belbo; San Damiano Macra; Sanfrè; Sanfront; San Michele Mondovì; Sant'Albano Stura; Santa Vittoria d'Alba; Santo Stefano Belbo; Santo Stefano Roero; Savigliano; Scagnello; Scarnafigi; Serralunga d'Alba; Serravalle Langhe; Sinio; Somano; Sommariva del Bosco; Sommariva Perno; Stroppo; Tarantasca; Torre Bormida; Torre Mondovì; Torre San Giorgio; Torresina; Treiso; Trezzo Tinella; Trinità; Valdieri; Valgrana; Valloriate; Valmala; Venasca; Verduno; Vernante; Verzuolo; Vezza d'Alba; Vicoforte; Vignolo; Villafalletto; Villanova Mondovì; Villanova Solaro; Villar San Costanzo; Vinadio; Viola; Vottignasco",
+        "Soggetto_Concedente": "Camera di Commercio, Industria, Artigianato e Agricoltura di Cuneo",
+        "Base_normativa_primaria": "BANDO PER LA CORRESPONSIONE DI CONTRIBUTI PER LA REALIZZAZIONE DI PERCORSI DI ACCOMPAGNAMENTO DELLE IMPRESE ALLA SOSTENIBILITA’ - ANNO 2024",
+        "Provvedimento_attuativo": "BANDO PER LA CORRESPONSIONE DI CONTRIBUTI PER LA REALIZZAZIONE DI PERCORSI DI ACCOMPAGNAMENTO DELLE IMPRESE ALLA SOSTENIBILITA’ - ANNO 2024",
+        "Stanziamento_incentivo": "100000",
+        "Link_istituzionale": "https://www.cn.camcom.it/bandiconsorzi",
+        "Data_ultimo_aggiornamento": "2024-09-17T11:25:30Z"
+      },
+      {
+        "ID_Incentivo": "1429",
+        "Titolo": "CTEMT: Selezione di soggetti interessati a partecipare alla Call4Ideas della Casa delle Tecnologie Emergenti di Matera",
+        "Descrizione": "Cos'è La Call4Ideas prevede la definizione e la promozione di una call per invitare individui, potenzialmente interessati a proporre idee imprenditoriali, anche embrionali, al fine di accedere al percorso di accompagnamento, e aziende interessate a percorsi di transizione digitale. Il perimetro dei contributi dovrà essere inerente alle attività svolte dai laboratori della Casa delle Tecnologie Emergenti di Matera. Il Comune di Matera intende raccogliere idee imprenditoriali, anche embrionali (Call4Ideas) che abbiano come elemento innovativo almeno uno degli ambiti di applicazione dei laboratori di sperimentazione della Casa delle Tecnologie Emergenti di Matera di seguito elencati: 1. GIARDINO DELLE TECNOLOGIE & AGRICOLTURA 4.0;2. BLOCKCHAIN & QUANTUM KEY DISTRIBUTION (QKD);3. AR, VR, XR, METAVERSE & GAMING;4. ROBOTICS, 3D PRINTING & ADDITIVE MANIFACTURING;5. 5G & 6G, DIGITAL TWIN DELLA CITTÀ DI MATERA;6. AEROSPACE & SPACE ECONOMY;7. EDUCATION 4.0 & ENGAGEMENT DEL TERRITORIO. Le idee imprenditoriali dovranno presentare un livello minimo di maturità tecnologica pari a 1 fino ad un livello massimo di 4. Di seguito si descrivono i relativi livelli: - TRL 1: Osservati i principi fondamentali; - TRL 2: Formulato il concetto della tecnologia; - TRL 3: Prova di concetto sperimentale; - TRL 4: Tecnologia convalidata in laboratorio. A chi si rivolge L'avviso è rivolto a qualsiasi soggetto (persona fisica o giuridica), a team informali, ovunque localizzati sul territorio italiano ed ha l’obiettivo di promuovere le tecnologie emergenti con applicazione ai settori del progetto Casa delle Tecnologie Emergenti. A titolo esemplificativo e non esaustivo possono presentare domanda: a) Centri di ricerca; b) Fondazioni o Associazioni; c) Imprese e loro consorzi; d) Società cooperative; e) Startup, anche se non ancora costituiti; f) PMI innovative; g) Persone fisiche in forma singola o aggregata.  Possono partecipare all’iniziativa persone giuridiche con sede legale o operativa in Italia o persone fisiche residenti in Italia, aventi età superiore ai 18 anni, anche riunite in team di progetto che hanno interesse ad avviare un’iniziativa imprenditoriale.  Il soggetto proponente, al momento della presentazione della domanda, dovrà allegare il DGUE firmato. Cosa prevede Lo stanziamento di risorse complessive a disposizione per l'avviso (Call4Ideas) ammonta ad un totale pari a € 100.000,00 iva e oneri compresi. È previsto un sostegno finanziario alle proposte selezionate, attraverso l’erogazione di un contributo a titolo di rimborso delle spese incorse per le attività dimostrative in campo.  Il contributo è concesso sulla base di procedura valutativa a graduatoria per un numero massimo di 10 proposte.  Un singolo beneficiario potrà ricevere un contributo pari, al massimo, al 100% delle spese ammissibili di testing, per un valore massimo di contributo di € 10.000. Eventuali costi ulteriori che superano il valore massimo ammissibile su cui è calcolato il contributo risulteranno a carico del beneficiario a titolo di maggiore co-finanziamento.  I contributi saranno erogati ai sensi del regime “de minimis” di cui al Regolamento UE 1407/2013. Il contributo di cui al presente Avviso è compatibile con altri aiuti di stato secondo i limiti previsti ai sensi dell’art. 5 del Regolamento (UE) n. 1407/2013. Il proponente dovrà indicare l’eventuale presenza di altre richieste di finanziamento ad Enti pubblici, istituti di credito, fondazioni o imprese private. Si specifica che vige il principio di non cumulabilità dei finanziamenti sulle medesime spese/attività.  L’Amministrazione si riserva di non finanziare alcun progetto qualora quanto presentato non sia ritenuto rispondente alle disposizioni contenute nell'avviso.",
+        "Obiettivo_Finalita": [
+          "Start up/Sviluppo d'impresa"
+        ],
+        "Data_apertura": "2023-04-06T00:00:00",
+        "Data_chiusura": "2023-06-04T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Consorzio",
+          "Cooperative/Associazioni Non Profit",
+          "Impresa",
+          "Impresa - SU/PMI innovativa",
+          "Impresa da costituire - Altro"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Impianti/Macchinari/Attrezzature",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "10000",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "10000",
+        "Settore_Attivita": [
+          "Agricoltura, silvicoltura e pesca",
+          "Agroalimentare",
+          "Alberghiero",
+          "Altri servizi",
+          "Artigianato",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Chimica e Farmaceutica",
+          "Commercio",
+          "Cultura",
+          "Edilizia",
+          "Elettronica",
+          "Fornitura Energia, Acqua e gestione Rifiuti",
+          "ICT",
+          "Meccanica",
+          "Metallurgia",
+          "Mobili, Legno e Carta",
+          "Moda e Tessile",
+          "Ristorazione",
+          "Salute",
+          "Servizi di trasporto",
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Abruzzo",
+          "Basilicata",
+          "Calabria",
+          "Campania",
+          "Emilia-Romagna",
+          "Friuli-Venezia Giulia",
+          "Lazio",
+          "Liguria",
+          "Lombardia",
+          "Marche",
+          "Molise",
+          "Piemonte",
+          "Puglia",
+          "Sardegna",
+          "Sicilia",
+          "Toscana",
+          "Trentino-Alto Adige/Südtirol",
+          "Umbria",
+          "Valle d'Aosta/Vallée d'Aoste",
+          "Veneto"
+        ],
+        "Soggetto_Concedente": "Comune di Matera",
+        "Base_normativa_primaria": "APPROVAZIONE DEI SEGUENTI AVVISI PUBBLICI DI MANIFESTAZIONE DI INTERESSE PER LA SELEZIONE DI SOGGETTI INTERESSATI A PARTECIPARE:• ALLA CALL4IDEAS DELLA CTEMT;• ALLA CALL4NEEDS DELLA CTEMT;• ALLA CALL4SOLUTIONS CTEMT",
+        "Provvedimento_attuativo": "APPROVAZIONE DEI SEGUENTI AVVISI PUBBLICI DI MANIFESTAZIONE DI INTERESSE PER LA SELEZIONE DI SOGGETTI INTERESSATI A PARTECIPARE:• ALLA CALL4IDEAS DELLA CTEMT;• ALLA CALL4NEEDS DELLA CTEMT;• ALLA CALL4SOLUTIONS CTEMT",
+        "Stanziamento_incentivo": "100000",
+        "Link_istituzionale": "https://www.comune.matera.it/avvisi/item/5642-ctemt-avviso-pubblico-per-la-selezione-di-soggetti-interessati-a-partecipare-alla-call4ideas-della-casa-delle-tecnologie-emergenti-di-matera-cup-i14e20000020001",
+        "Data_ultimo_aggiornamento": "2024-03-29T09:38:08Z"
+      },
+      {
+        "ID_Incentivo": "1430",
+        "Titolo": "CTEMT – Selezione di soggetti interessati a partecipare alla Call4Solutions della Casa delle Tecnologie Emergenti di Matera",
+        "Descrizione": "Cos'è La Call4Solutions prevede la definizione e la promozione di una call per invitare startup e PMI innovative, potenzialmente interessati a proporre soluzioni imprenditoriali, al fine di accedere al percorso di accompagnamento, per poter realizzare progetti di innovazione collaborativa. Il perimetro dei contributi dovrà essere inerente alle attività svolte dai laboratori della Casa delle Tecnologie Emergenti di Matera, negli ambiti di applicazione di seguito elencati: 1. GIARDINO DELLE TECNOLOGIE & AGRICOLTURA 4.0;2. BLOCKCHAIN & QUANTUM KEY DISTRIBUTION (QKD);3. AR, VR, XR, METAVERSE & GAMING;4. ROBOTICS, 3D PRINTING & ADDITIVE MANIFACTURING;5. 5G & 6G, DIGITAL TWIN DELLA CITTÀ DI MATERA;6. AEROSPACE & SPACE ECONOMY;7. EDUCATION 4.0 & ENGAGEMENT DEL TERRITORIO. Le soluzioni imprenditoriali dovranno presentare un livello minimo di maturità tecnologica pari a 5. Di seguito si descrivono i relativi livelli richiesti: - TRL 5: Tecnologia convalidata in ambiente (industrialmente) rilevante; - TRL 6: Tecnologia dimostrata in ambiente (industrialmente) rilevante; - TRL 7: Dimostrazione di un prototipo di sistema in ambiente operativo; - TRL 8: Sistema completo e qualificato; - TRL 9: Sistema reale provato in ambiente operativo (produzione competitiva, commercializzazione). A chi si rivolge L'avviso è rivolto a startup, PMI e centri di ricerca, ovunque localizzati sul territorio italiano ed ha l’obiettivo di promuovere le tecnologie emergenti con applicazione ai settori del progetto Casa delle Tecnologie Emergenti. A titolo esemplificativo e non esaustivo possono presentare domanda: a) Centri di ricerca; b) Fondazioni o Associazioni; c) Imprese e loro consorzi; d) Società cooperative; e) Startup costituite; f) PMI innovative.  Il soggetto proponente, al momento della presentazione della domanda, dovrà allegare il DGUE firmato. Cosa prevede Lo stanziamento di risorse complessive a disposizione per il presente Avviso (Call4Solutions) ammonta ad un totale pari a € 455.000,00 iva e oneri inclusi. È previsto un sostegno finanziario alle proposte selezionate, attraverso l’erogazione di un contributo a titolo di rimborso delle spese incorse per le attività dimostrative in campo.  Il contributo di cui al presente Avviso è concesso sulla base di procedura valutativa a graduatoria, per un numero massimo di 10 proposte.  Un singolo beneficiario potrà ricevere un contributo pari, al massimo, al 100% delle spese ammissibili di testing, per un valore massimo di contributo di € 35.000. Eventuali costi ulteriori che superano il valore massimo ammissibile su cui è calcolato il contributo risulteranno a carico del beneficiario a titolo di maggiore co-finanziamento.  I contributi saranno erogati ai sensi del regime “de minimis” di cui al Regolamento UE 1407/2013. Il contributo di cui al presente Avviso è compatibile con altri aiuti di stato secondo i limiti previsti ai sensi dell’art. 5 del Regolamento (UE) n. 1407/2013. Il proponente dovrà indicare l’eventuale presenza di altre richieste di finanziamento ad Enti pubblici, istituti di credito, fondazioni o imprese private. Si specifica che vige il principio di non cumulabilità dei finanziamenti sulle medesime spese/attività.  L’Amministrazione si riserva di non finanziare alcun progetto qualora quanto presentato non sia ritenuto rispondente alle disposizioni contenute nell'avviso.",
+        "Obiettivo_Finalita": [
+          "Sostegno investimenti",
+          "Start up/Sviluppo d'impresa"
+        ],
+        "Data_apertura": "2023-04-05T00:00:00",
+        "Data_chiusura": "2023-06-04T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Consorzio",
+          "Cooperative/Associazioni Non Profit",
+          "Impresa",
+          "Impresa - SU/PMI innovativa",
+          "Impresa da costituire - Altro"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Impianti/Macchinari/Attrezzature",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "35000",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "35000",
+        "Settore_Attivita": [
+          "Agricoltura, silvicoltura e pesca",
+          "Agroalimentare",
+          "Alberghiero",
+          "Altri servizi",
+          "Artigianato",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Chimica e Farmaceutica",
+          "Commercio",
+          "Cultura",
+          "Edilizia",
+          "Elettronica",
+          "Fornitura Energia, Acqua e gestione Rifiuti",
+          "ICT",
+          "Meccanica",
+          "Metallurgia",
+          "Mobili, Legno e Carta",
+          "Moda e Tessile",
+          "Ristorazione",
+          "Salute",
+          "Servizi di trasporto",
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Abruzzo",
+          "Basilicata",
+          "Calabria",
+          "Campania",
+          "Emilia-Romagna",
+          "Friuli-Venezia Giulia",
+          "Lazio",
+          "Liguria",
+          "Lombardia",
+          "Marche",
+          "Molise",
+          "Piemonte",
+          "Puglia",
+          "Sardegna",
+          "Sicilia",
+          "Toscana",
+          "Trentino-Alto Adige/Südtirol",
+          "Umbria",
+          "Valle d'Aosta/Vallée d'Aoste",
+          "Veneto"
+        ],
+        "Soggetto_Concedente": "Comune di Matera",
+        "Base_normativa_primaria": "APPROVAZIONE DEI SEGUENTI AVVISI PUBBLICI DI MANIFESTAZIONE DI INTERESSE PER LA SELEZIONE DI SOGGETTI INTERESSATI A PARTECIPARE:• ALLA CALL4IDEAS DELLA CTEMT;• ALLA CALL4NEEDS DELLA CTEMT;• ALLA CALL4SOLUTIONS CTEMT",
+        "Provvedimento_attuativo": "APPROVAZIONE DEI SEGUENTI AVVISI PUBBLICI DI MANIFESTAZIONE DI INTERESSE PER LA SELEZIONE DI SOGGETTI INTERESSATI A PARTECIPARE:• ALLA CALL4IDEAS DELLA CTEMT;• ALLA CALL4NEEDS DELLA CTEMT;• ALLA CALL4SOLUTIONS CTEMT",
+        "Stanziamento_incentivo": "455000",
+        "Link_istituzionale": "https://www.comune.matera.it/avvisi/item/5644-ctemt-avviso-pubblico-di-manifestazione-di-interesse-per-la-selezione-di-soggetti-interessati-a-partecipare-alla-call4solutions-della-casa-delle-tecnologie-emergenti-di-matera-cup-i14e20000020001",
+        "Data_ultimo_aggiornamento": "2024-03-29T09:39:07Z"
+      },
+      {
+        "ID_Incentivo": "1653",
+        "Titolo": "Contributi per l'avvio di nuove attività commerciali, artigianali o attività già esistenti che intraprendano nuove attività economiche - Comune di Rocca Santa Maria",
+        "Descrizione": "Cos'è Il Comune di Rocca Santa Maria intende agevolare l'insediamento di nuove attività commerciali, artigianali ed agricole all’interno del proprio territorio, concedendo un contributo economico, una tantum a fondo perduto, che possa incentivare l’economia del paese.  A chi si rivolge Possono presentare domanda e beneficiare del contributo le persone fisiche, giuridiche, imprese che intendono avviare delle attività commerciali, artigianali o agricole attraverso una unità operativa ubicata nel territorio del Comune di Rocca Santa Maria ovvero attività commerciali, artigianali o agricole già costituite e iscritte al Registro delle Imprese che intendono avviare una nuova unità operativa nel Comune stesso. I beneficiari, pertanto, sono le “Nuove Attività Economiche” che intraprendono attività commerciali, artigianali così come individuate dall’art. 6 della L. R. Abruzzo n. 23/2018 o di vendita diretta dei propri prodotti agricoli ai sensi dell’art. 4 del D.lgs. 228/2001 attraverso un’unità operativa in sede fissa e permanente ubicata nel territorio del Comune di Rocca Santa Maria.  Cosa prevede L’agevolazione consiste nella concessione di un contributo a fondo perduto, a fronte di un budget di spesa liberamente composto fra le spese ritenute ammissibili e sarà determinato in base al numero delle istanze ritenute ammissibili e ripesato in percentuale dell’investimento da realizzare. L’erogazione degli incentivi al soggetto richiedente è subordinata all’effettivo trasferimento della sede operativa o all’avviamento della nuova attività commerciale, artigianale o agricola, da perfezionarsi entro 30 giorni dalla pubblicazione della graduatoria. Ai fini del calcolo dell’importo dell’aiuto concedibile e della determinazione dei costi ritenuti ammissibili, riferiti alla tipologia d'aiuto di cui al presente Avviso, gli importi riconosciuti nei provvedimenti di concessione e di liquidazione sono al lordo di qualsiasi imposta o altro onere. Non è prevista una soglia minima di investimento per avere accesso al contributo. Eventuali economie in fase di rendicontazione potranno essere ripartite proporzionalmente agli aventi diritto garantendo il pieno utilizzo delle somme a disposizione.",
+        "Obiettivo_Finalita": [
+          "Imprenditoria femminile",
+          "Imprenditoria giovanile",
+          "Inclusione sociale",
+          "Innovazione e ricerca",
+          "Sostegno investimenti",
+          "Start up/Sviluppo d'impresa"
+        ],
+        "Data_apertura": "2024-01-16T00:00:00",
+        "Data_chiusura": "2024-06-30T00:00:00",
+        "Dimensioni": [
+          "Non classificabile/classificato"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Fabbricati e terreni",
+          "Impianti/Macchinari/Attrezzature",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "1",
+        "Spesa_Ammessa_max": "19920",
+        "Agevolazione_Concedibile_min": "1",
+        "Agevolazione_Concedibile_max": "19920",
+        "Settore_Attivita": [
+          "Agroalimentare",
+          "Alberghiero",
+          "Altri servizi",
+          "Artigianato",
+          "Commercio",
+          "Cultura",
+          "Edilizia",
+          "Elettronica",
+          "ICT",
+          "Meccanica",
+          "Ristorazione",
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Abruzzo"
+        ],
+        "Comuni": "Rocca Santa Maria",
+        "Ambito_territoriale": [
+          "Aree interne",
+          "ZES",
+          "Zone sismiche"
+        ],
+        "Soggetto_Concedente": "COMUNE DI ROCCA SANTA MARIA",
+        "Base_normativa_primaria": "Decreto del Presidente del Consiglio dei Ministri del 30 Settembre 2021 (G.U. n. 296 del 14/12/2021) - Direttive per utilizzo fondi annualità 2022 e Nomina del Responsabile del Procedimento.",
+        "Provvedimento_attuativo": "D.P.C.M. del 30 settembre 2021, rubricato \"Contributo per realizzare interventi di sostegno alle popolazioni residenti nei comuni svantaggiati per ciascuno degli anni dal 2021 al 2023\"",
+        "Stanziamento_incentivo": "39840.39",
+        "Link_istituzionale": "https://roccasm.accessocivico.it/amministrazione-trasparente",
+        "Data_ultimo_aggiornamento": "2024-05-02T09:40:34Z"
+      },
+      {
+        "ID_Incentivo": "1520",
+        "Titolo": "Fondo Comuni marginali - Annualità 2022, Comune di Celenza Valfortore",
+        "Descrizione": "Cos'è Contributi per l’avvio di nuove attività economiche commerciali, artigianali ed agricole attraverso un’unità operativa ubicata nel territorio del Comune di Celenza. Il Fondo di sostegno ai comuni marginali è stato definito dal Decreto del Presidente del Consiglio dei Ministri del 30 settembre 2021. L'iniziativa del Comune è riferita ai fondi relativi all'annualità 2022.   A chi si rivolge I beneficiari sono le “nuove attività economiche” che intraprendono attività commerciali, artigianali o agricole attraverso un’unità operativa ubicata nel territorio del Comune di Celenza Valfortore che intendano mantenerle in esercizio per almeno 5 anni dalla data di dichiarazione di inizio attività. Per “nuove attività economiche” si intendono:a) Le attività costituite dopo la pubblicazione dell'Avviso pubblico;b) Le imprese regolarmente costituite e iscritte al Registro delle imprese al momento della presentazione della domanda, che intraprendono una nuova attività economica dopo la pubblicazione dell’Avviso.c) L’attivazione di nuovi e ulteriori codici ATECO con apertura di un’apposita unità produttiva (sede, stabilimento, reparto autonomo, etc..).d) Attività già esistenti che avviino una nuova attività economica nel territorio comunale attraverso una nuova ed apposita unità produttiva.  Cosa prevede L’agevolazione consiste nella concessione di un contributo a fondo perduto, a fronte di un budget di spesa liberamente composto fra le spese ritenute ammissibili e sarà determinato in base al numero delle istanze ritenute ammissibili e ripesato in percentuale dell’investimento da realizzare.",
+        "Obiettivo_Finalita": [
+          "Start up/Sviluppo d'impresa"
+        ],
+        "Data_apertura": "2024-02-09T00:00:00",
+        "Data_chiusura": "2024-12-31T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa",
+          "Impresa da costituire - Altro"
+        ],
+        "Forma_agevolazione": [
+          "Capitale di rischio"
+        ],
+        "Costi_Ammessi": [
+          "Impianti/Macchinari/Attrezzature",
+          "Servizi, brevetti e licenze"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "55117",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "55116",
+        "Settore_Attivita": [
+          "Agricoltura, silvicoltura e pesca",
+          "Agroalimentare",
+          "Alberghiero",
+          "Artigianato",
+          "Commercio",
+          "Cultura",
+          "Edilizia",
+          "Mobili, Legno e Carta",
+          "Moda e Tessile",
+          "Ristorazione",
+          "Turismo"
+        ],
+        "Codici_ATECO": "01.00; 01.10; 01.11; 01.12; 01.13; 01.14; 01.15; 01.16; 01.19; 01.20; 01.21; 01.22; 01.23; 01.24; 01.25; 01.26; 01.27; 01.28; 01.29; 01.30; 01.40; 01.41; 01.42; 01.43; 01.44; 01.45; 01.46; 01.47; 01.49; 01.50; 01.60; 01.61; 01.62; 01.63; 01.64; 47.00; 47.10; 47.11; 47.19; 47.20; 47.21; 47.22; 47.23; 47.24; 47.25; 47.26; 47.29; 47.30; 47.40; 47.41; 47.42; 47.43; 47.50; 47.51; 47.52; 47.53; 47.54; 47.59; 47.60; 47.61; 47.62; 47.63; 47.64; 47.65; 47.70; 47.71; 47.72; 47.73; 47.74; 47.75; 47.76; 47.77; 47.78; 47.79; 47.80; 47.81; 47.82; 47.89; 47.90; 47.91; 47.99; 56.00; 56.10; 56.20; 56.21; 56.29; 56.30;",
+        "Regioni": [
+          "Puglia"
+        ],
+        "Comuni": "Celenza Valfortore",
+        "Ambito_territoriale": [
+          "Aree interne"
+        ],
+        "Soggetto_Concedente": "COMUNE DI CELENZA VALFORTORE",
+        "Base_normativa_primaria": "FONDO DI SOSTEGNO AI COMUNI MARGINALI - DPCM 30/09/2021 - ANNUALITA' 2022 - APPROPVAZIONE AVVISO PUBBLICO E RELATIVI ALLEGATI.",
+        "Provvedimento_attuativo": "FONDO DI SOSTEGNO AI COMUNI MARGINALI - DPCM 30/09/2021 - ANNUALITA' 2022 - APPROPVAZIONE AVVISO PUBBLICO E RELATIVI ALLEGATI.",
+        "Stanziamento_incentivo": "55116.97",
+        "Link_istituzionale": "https://comune.celenzavalfortore.fg.it/notizie/2544615/avviso-pubblico-fondo-sostegno-comuni-marginali",
+        "Data_ultimo_aggiornamento": "2024-04-12T17:44:35Z"
+      },
+      {
+        "ID_Incentivo": "1553",
+        "Titolo": "GAL Piceno - Sottomisura: 19.2.6.4 B V Pubblicazione – Sostegno a investimenti strutturali nella creazione e nello sviluppo di attività extra agricole - Azione 2 Servizi alla popolazione e alle imprese",
+        "Descrizione": "Cos'è L’obiettivo e finalità è favorire il rilancio socio economico del territorio, sostenendo e incrementando l'attrattività del territorio, sia a fini insediativi, sia a fini turistici, grazie alla attivazione di azioni di sistema in chiave innovativa, per la valorizzazione delle risorse locali, per l'organizzazione dell'offerta turistica e culturale e per la qualificazione dei servizi ai cittadini, alle imprese e ai turisti. Il bando sostiene gli investimenti, realizzati sul territorio del GAL Piceno, comuni di Acquasanta Terme, Acquaviva Picena, Appignano del Tronto, Arquata del Tronto, Carassai, Castignano, Castorano, Comunanza, Cossignano, Cupra Marittima, Force, Massignano, Montalto delle Marche, Montedinove, Montefiore dell'Aso, Montegallo, Montemonaco, Offida, Palmiano, Ripatransone, Roccafluvione, Rotella e Venarotta finalizzati alla creazione e allo sviluppo delle attività e dei servizi che possono consentire una implementazione efficace e duratura degli investimenti nell’ambito del territorio Leader Piceno. L’operazione prevede la concessione di un aiuto destinato al cofinanziamento di investimenti strutturali da parte di imprese, per lo sviluppo delle attività in grado di fornire i seguenti servizi, nel rispetto dei requisiti previsti dalle specifiche leggi:a) Servizi nel settore dell’accoglienza e del turismo finalizzati a migliorare la qualità delle strutture turistiche delle aree rurali, ad aumentarne le tipologie di offerta, a diversificare le forme di ospitalità sul territorio; Sono escluse le attività agrituristiche;b) Servizi di guida ed informazione finalizzati alla fruibilità di musei, beni culturali, artigianali e agroalimentari e spazi espositivi, tramite la presenza di personale specializzato in grado di garantire l’apertura dei beni e fornire le informazioni necessarie, compresa la possibilità di elaborare attività didattiche ed educative per adulti e bambini (sono escluse le attività di fattorie didattiche e di agrinido);c) Servizi di guida ed accompagnamento nella visita turistica di beni paesaggistici, riserve, parchi ed altri elementi naturali rilevati a livello nazionale o locale, compresa la possibilità di elaborare attività didattiche ed educative per adulti e bambini;d) Servizi di digitalizzazione e informatizzazione dedicati ai beni storici, culturali, naturali e paesaggistici per una migliore conoscenza del patrimonio dell’area di interesse e come supporto alle attività di guida ed informazione;e) Servizi per allestimenti di esposizioni e performance nelle arti teatrali, visive, musicali, ecc.;f) Servizi sociali e assistenziali come le attività di riabilitazione e integrazione sociale rivolte prevalentemente ad anziani e soggetti con disabilità, ma anche ad altri soggetti con situazione di svantaggio;g) Servizi educativi e didattici per attività ludiche e di aggregazione destinati a diverse fasce di età e di formazione;h) Servizi innovativi inerenti alle attività informatiche e le tecnologie di informazione e comunicazione a supporto della popolazione e delle imprese sul territorio. A chi si rivolge La domanda di sostegno, ai sensi del presente bando, può essere presentata da Micro imprese, definite secondo l’allegato I del Reg.to UE 702 del 25.06.2014 ABER, ai sensi della raccomandazione della Commissione 2003/361/CE del 06.05.2003, da costituire o già esistenti che si impegnano a svolgere un'attività nei settori di cui alla descrizione delle tipologie degli interventi ammissibili. Il richiedente non deve essere soggetto destinatario di misure di prevenzione personale ovvero condannato con sentenza definitiva o, ancorché non definitiva, confermata in grado di appello, per i delitti di criminalità organizzata elencati dall’art. 51, comma 3 bis del codice di procedura penale. L’impresa al momento della presentazione della domanda deve possedere i seguenti requisiti: 1. Non essere inclusa nelle imprese in difficoltà;2. Essere iscritta all’anagrafe SIAN con posizione debitamente validata (fascicolo aziendale); 3. Essere:- microimprese esistenti titolari di partita iva, iscritte alla Camera di Commercio, Industria e Artigianato ed Agricoltura, già attive per l’attività scelta o che svolgono altre attività e che si impegnano ad ottenere prima della presentazione della domanda di pagamento, l’autorizzazione all’esercizio dell’attività da avviare per gli interventi ammissibili;- microimprese di nuova costituzione titolari di partita iva, che attraverso la comunicazione unica di impresa, si iscrivono al registro della Camera di Commercio, Industria e Artigianato ed Agricoltura, con la formula “costituzione di nuova impresa senza immediato inizio di attività economica” che si impegnano ad ottenere, prima della presentazione della domanda di pagamento, l’autorizzazione e l’iscrizione all’esercizio dell’attività prescelta;4. Avere sede legale o operativa nel territorio dei seguenti Comuni: Acquasanta Terme, Acquaviva Picena, Appignano del Tronto, Arquata del Tronto, Carassai, Castignano, Castorano, Comunanza, Cossignano, Cupra Marittima, Force, Massignano, Montalto delle Marche, Montedinove, Montefiore dell'Aso, Montegallo, Montemonaco, Offida, Palmiano, Ripatransone, Roccafluvione, Rotella e Venarotta 5. Avere la disponibilità del fabbricato o dei fabbricati e o delle superfici sulle quali si intende realizzare l’intervento prima della presentazione della domanda fino a completo adempimento degli impegni assunti con l’adesione al presente bando (vincolo di inalienabilità di cinque anni e di destinazione d’uso di dieci anni). La disponibilità deve risultare da:- titolo di proprietà;- titolo di usufrutto;- contratto di affitto scritto e registrato prima della presentazione della domanda di sostegno;- nel caso di proprietà indivisa il titolo di possesso è provato da un contratto di affitto pro-quota. Cosa prevede Le spese sono ammissibili al sostegno se conformi alle norme stabilite dagli articoli n. 65 e 69 del Reg. (UE) n. 1303 del 17/12/2013 e dall’articolo n. 45 del Reg. (UE) n. 1305 del 17/12/2013. Sono ammissibili le seguenti spese strettamente necessarie alla realizzazione delle tipologie di intervento ammissibili: 1. Opere edili di ristrutturazione, recupero dei fabbricati da destinare alle attività sopra indicate, comprese la realizzazione e/o adeguamento degli impianti tecnologici (termico – idrosanitario – elettrico etc.);2. Sistemazione delle aree esterne, funzionale allo svolgimento dell'attività;3 Spese generali - sono ammissibili onorari di tecnici professionisti, nel limite del 10% da calcolarsi sugli interventi inerenti agli investimenti ed impianti fissi, cioè le dotazioni istallate in modo permanente e inamovibile. In nessun caso l’importo relativo alle spese generali può superare, per singolo investimento, i limiti previsti dal prezzario regionale (DGR 799 del 29/06/2020, DGR 1138 del 27/09/2021 e successive modificazioni ed integrazioni).4. Acquisto di dotazioni (arredi, attrezzature, strumenti) necessarie e strettamente funzionali allo svolgimento dell’attività;5. Autoveicoli/mezzi di trasporto ad uso esclusivo dell’attività, di cui all’intervento f) Servizi sociali ed assistenziali;Si considerano spese generali:a) onorari per la relazione tecnico economica; b) onorari per la progettazione degli interventi proposti (elaborati progettuali – CME – relazione tecnica sottoscritti e timbrati da professionista abilitato); c) onorari per la direzione dei lavori e la gestione del cantiere.  Il tasso d’aiuto è pari a:• 50% sul costo ammissibile delle opere edili, impianti, sistemazioni esterne e spese generali;• 40% del costo delle dotazioni (arredi, attrezzature, strumenti, ecc.). Maggiorazione per gli interventi nella zona del cratere ai sensi del Decreto Legge 17 ottobre 2016 n. 189, coordinato con la Legge di conversione 15 dicembre 2016 n. 229 – (Acquasanta Terme, Appignano del Tronto, Arquata del Tronto, Castignano, Castorano, Comunanza, Cossignano, Force, Montalto delle Marche, Montedinove, Montegallo, Montemonaco, Offida, Palmiano, Roccafluvione, Rotella e Venarotta) di 10% di cui risulta un tasso di aiuto di:• 60% sul costo ammissibile delle opere edili, compresi gli impianti e le spese generali;• 50% del costo delle dotazioni (arredi, attrezzature, strumenti, ecc.) necessarie. I contributi vengono erogati ai sensi del regime de minimis come da Regolamento 1407/2013 da inserire nel Registro Nazionale Aiuti (RNA).",
+        "Obiettivo_Finalita": [
+          "Sostegno investimenti"
+        ],
+        "Data_apertura": "2024-01-02T00:00:00",
+        "Data_chiusura": "2024-02-20T00:00:00",
+        "Dimensioni": [
+          "Microimpresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Consorzio",
+          "Cooperative/Associazioni Non Profit",
+          "Impresa",
+          "Impresa da costituire - Altro"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Fabbricati e terreni",
+          "Impianti/Macchinari/Attrezzature",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "2000",
+        "Spesa_Ammessa_max": "220000",
+        "Agevolazione_Concedibile_min": "2000",
+        "Agevolazione_Concedibile_max": "100000",
+        "Settore_Attivita": [
+          "Altri servizi",
+          "Artigianato",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Commercio",
+          "Cultura",
+          "ICT",
+          "Turismo"
+        ],
+        "Codici_ATECO": "55.00; 55.10; 55.20; 55.30; 55.90; 62.00; 62.01; 62.02; 62.03; 62.09; 63.00; 63.10; 63.11; 63.12; 63.90; 63.91; 63.99; 79.00; 79.10; 79.11; 79.12; 79.90; 87.00; 87.10; 87.20; 87.30; 87.90; 90.00; 90.01; 90.02; 90.03; 90.04; 93.00; 93.10; 93.11; 93.12; 93.13; 93.19; 93.20; 93.21; 93.29;",
+        "Regioni": [
+          "Marche"
+        ],
+        "Ambito_territoriale": [
+          "Zone sismiche"
+        ],
+        "Soggetto_Concedente": "Piceno scarl",
+        "Base_normativa_primaria": "Regione Marche - Servizio alla popolazione e alle imprese",
+        "Provvedimento_attuativo": "Regione Marche - Servizio alla popolazione e alle imprese",
+        "Stanziamento_incentivo": "158347",
+        "Link_istituzionale": "https://galpiceno.it/pubblicato-il-v-bando-sottomisura-19-2-6-4-2024/",
+        "Data_ultimo_aggiornamento": "2024-04-17T10:01:06Z"
+      },
+      {
+        "ID_Incentivo": "144",
+        "Titolo": "EuroHPC JU iniziativa tecnologica congiunta nel settore del calcolo ad alte prestazioni",
+        "Descrizione": "Cos'è Cofinanziamento delle iniziative di ricerca e sviluppo selezionate dall’impresa comune europea per il calcolo ad alte prestazioni –Euro HPC (European High Performance Computing). Euro HPC è il pilastro portante della strategia industriale dell'Unione europea nel campo del supercalcolo e dell’elaborazione dei dati. Attraverso il finanziamento di progetti innovativi si pone il duplice obiettivo di sviluppare un’infrastruttura di supercalcolo paneuropea e di sostenere la cooperazione nella ricerca scientifica avanzata al fine di aumentare la competitività industriale e di garantire l'autonomia tecnologica e digitale europea. A chi si rivolge Imprese di qualsiasi dimensione, con almeno due bilanci approvati, che esercitano attività industriali, agroindustriali, artigiane o di servizi all’industria, nonché attività di ricerca. Tali imprese sono già state selezionate nell’ambito di due call europee emanate nel corso del 2020. Cosa prevede Sono disponibili 17,7 milioni di euro per il cofinanziamento di iniziative di ricerca e sviluppo. ",
+        "Obiettivo_Finalita": [
+          "Innovazione e ricerca",
+          "Digitalizzazione"
+        ],
+        "Data_apertura": "2021-07-27T22:00:00",
+        "Data_chiusura": "2021-09-07T22:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa",
+          "Impresa - SU/PMI innovativa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Servizi, brevetti e licenze"
+        ],
+        "Settore_Attivita": [
+          "ICT",
+          "Artigianato"
+        ],
+        "Codici_ATECO": "Tutti i codici ammissibili a ricevere aiuti",
+        "Regioni": [
+          "Abruzzo",
+          "Basilicata",
+          "Calabria",
+          "Campania",
+          "Emilia-Romagna",
+          "Friuli-Venezia Giulia",
+          "Lazio",
+          "Molise",
+          "Liguria",
+          "Lombardia",
+          "Marche",
+          "Piemonte",
+          "Puglia",
+          "Sardegna",
+          "Sicilia",
+          "Toscana",
+          "Trentino-Alto Adige/Südtirol",
+          "Umbria",
+          "Valle d'Aosta/Vallée d'Aoste",
+          "Veneto"
+        ],
+        "Comuni": "Tutti i comuni",
+        "Ambito_territoriale": [
+          "Non applicabile"
+        ],
+        "Soggetto_Concedente": "Ministero dello sviluppo economico",
+        "Base_normativa_primaria": "D.M. 1 luglio 2020",
+        "Base_normativa_secondaria": "D.M. 6 maggio 2021 ",
+        "Provvedimento_attuativo": "D.D. 19 luglio 2021",
+        "Gazzetta_ufficiale": "G.U. n. 178 del 27 luglio 2021",
+        "Stanziamento_incentivo": "17700000",
+        "Link_istituzionale": "https://www.mise.gov.it/index.php/it/incentivi/impresa/eurohpc-ju-calcolo-alte-prestazioni",
+        "Altre_caratteristiche": "Incentivi alle imprese, Transizione digitale, Digital divide, Ricerca e Sviluppo, contributo, Fondo perduto, Brevetti, Digital, Technology, Information, ICT, Informatizzazione"
+      },
+      {
+        "ID_Incentivo": "1447",
+        "Titolo": "Bando Voucher digitali e transizione energetica - anno 2024 - Camera di Commercio di Chieti Pescara",
+        "Descrizione": "Cos'è La Camera di Commercio di Chieti Pescara, nell’ambito delle attività previste dal Piano Transizione 4.0, a seguito del decreto del Ministro dello Sviluppo Economico del 12 marzo 2020 che ha approvato il progetto “Punto Impresa Digitale” (PID), intende promuovere la diffusione della cultura e della pratica digitale nelle Micro, Piccole e Medie Imprese (da ora in avanti MPMI), di tutti i settori economici attraverso il sostegno economico alle iniziative di digitalizzazione, anche finalizzate ad approcci green oriented volti a sostenere la transizione energetica del tessuto produttivo.   A chi si rivolge Alle MPMI. Con il Bando si intendono finanziare, tramite l’utilizzo di contributi a fondo perduto (voucher), i Progetti presentati da singole imprese secondo quanto specificato nella parte generale del presente Bando con due misure:- Misura A: Voucher digitali I4.0, con un fondo di € 210.000,00 per gli ambiti tecnologici di impresa 4.0 (robotica, manifattura additiva, cloud, ecommerce, cyber security, ecc.), per investimenti, consulenza e formazione (come per gli anni precedenti);- Misura B: Transizione energetica, con un fondo di € 90.000,00, per l’acquisizione di servizi di consulenza e formazione, da parte di figure altamente qualificate e competenti, finalizzati a favorire:la razionalizzazione dell’uso di energia da parte delle imprese, attraverso la realizzazione di interventi di efficienza energetica, riducendo i consumi e le emissioni di gas clima-alteranti;sistemi di autoproduzione FER (Fonti Energetiche Rinnovabili), anche attraverso la partecipazione delle imprese alle CER. Ogni impresa può presentare una sola richiesta di contributo, che presenta domanda di contributo per una delle due misure. In caso di minore utilizzo delle risorse per una misura, al termine della scadenza di presentazione delle domande, si potranno spostare le risorse non utilizzate sull’altra misura. Sono escluse dal beneficio del presente bando, in relazione alla Misura A - Voucher digitali I4.0, le domande di contributo delle imprese cui sono stati già erogati contributi a valere sul “Bando voucher digitali I4.0 - annualità 2022” della Camera di Commercio Chieti Pescara. Cosa prevede Finanziamento a fondo perduto del 70 %:- Misura A: Voucher digitali I4.0- Misura B: Transizione energetica. I voucher avranno un importo unitario massimo di euro 5.000,00. L’entità massima dell’agevolazione non può superare il 70% delle spese ammissibili Tutte le spese, sia per la Misura A - Voucher digitali I4.0 sia Misura B – Transizione Energetica possono essere sostenute a partire dalla data di pubblicazione del bando fino al 120° giorno successivo alla data di comunicazione all’impresa del provvedimento di concessione che avverrà tramite pubblicazione dell’elenco degli ammessi sul sito www.chpe.camcom.it alla sezione “Amministrazione Trasparente”. Pre-informativa del bando: dal 25 marzo 2024 al 19 aprile 2024 ",
+        "Obiettivo_Finalita": [
+          "Digitalizzazione",
+          "Transizione ecologica"
+        ],
+        "Data_apertura": "2024-04-22T00:00:00",
+        "Data_chiusura": "2024-06-29T00:00:00",
+        "Note_di_apertura_chiusura": "Le domande potranno essere presentate dalle ore 09:00 del 22 aprile 2024 alle ore 12:00 del 29 giugno 2024. Presentazione delle domande esclusivamente in modalità telematica, con firma digitale, attraverso lo sportello on line “Contributi alle imprese”, all’interno del sistema Webtelemaco di Infocamere – Servizi e-gov",
+        "Dimensioni": [
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Consorzio",
+          "Impresa",
+          "Impresa - SU/PMI innovativa",
+          "Impresa - prevalenza femminile",
+          "Impresa - prevalenza giovanile",
+          "Rete d'impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Impianti/Macchinari/Attrezzature",
+          "Servizi, brevetti e licenze"
+        ],
+        "Spesa_Ammessa_min": "1500",
+        "Spesa_Ammessa_max": "7200",
+        "Agevolazione_Concedibile_min": "1950",
+        "Agevolazione_Concedibile_max": "5000",
+        "Settore_Attivita": [
+          "Agricoltura, silvicoltura e pesca",
+          "Agroalimentare",
+          "Alberghiero",
+          "Altri servizi",
+          "Artigianato",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Chimica e Farmaceutica",
+          "Commercio",
+          "Cultura",
+          "Edilizia",
+          "Elettronica",
+          "Fornitura Energia, Acqua e gestione Rifiuti",
+          "ICT",
+          "Meccanica",
+          "Metallurgia",
+          "Mobili, Legno e Carta",
+          "Moda e Tessile",
+          "Ristorazione",
+          "Salute",
+          "Servizi di trasporto",
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Abruzzo"
+        ],
+        "Soggetto_Concedente": "Camera di Commercio Industria Artigianato e Agricoltura Chieti Pescara",
+        "Base_normativa_primaria": "BANDO VOUCHER DIGITALI E TRANSIZIONE ENERGETICA - ANNO 2024.PROVVEDIMENTI",
+        "Provvedimento_attuativo": "BANDO VOUCHER DIGITALI E TRANSIZIONE ENERGETICA - ANNO 2024.PROVVEDIMENTI",
+        "Stanziamento_incentivo": "300000",
+        "Link_istituzionale": "https://www.chpe.camcom.it/pagina970_bando-voucher-digitale-i40-e-transizione-energetica-anno-2024.html",
+        "Data_ultimo_aggiornamento": "2024-04-03T14:28:43Z"
+      },
+      {
+        "ID_Incentivo": "1519",
+        "Titolo": "Fondo di sostegno ai comuni marginali Annualità 2022 - Comune di San Gregorio Matese",
+        "Descrizione": "Cos'è Bando in attuazione del Fondo di sostegno ai comuni marginali, ai sensi del comma 196, art. 1, della L. 178 del 30.12.2020 e del D. P. C. M. 30.09.2021, relativamente al Comune di San Gregorio Matese per l'annualità 2022. A chi si rivolge Il bando è rivolto alle nuove attività economiche del Comune di San Gregorio Matese. Cosa prevede L'agevolazione consiste in un sostegno per l'avvio delle attività commerciali, artigianali e agricole, per promuovere e incentivare l’insediamento e l’avvio di nuove attività economiche.",
+        "Obiettivo_Finalita": [
+          "Sostegno investimenti"
+        ],
+        "Data_apertura": "2024-01-20T00:00:00",
+        "Data_chiusura": "2024-06-30T00:00:00",
+        "Dimensioni": [
+          "Microimpresa",
+          "Non classificabile/classificato",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa",
+          "Impresa - SU/PMI innovativa",
+          "Impresa - prevalenza femminile",
+          "Impresa - prevalenza giovanile",
+          "Impresa da costituire - Altro",
+          "Impresa da costituire - Femminile",
+          "Impresa da costituire - Giovanile"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Impianti/Macchinari/Attrezzature",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "36440",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "36439",
+        "Settore_Attivita": [
+          "Agricoltura, silvicoltura e pesca",
+          "Agroalimentare",
+          "Alberghiero",
+          "Altri servizi",
+          "Artigianato",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Chimica e Farmaceutica",
+          "Commercio",
+          "Cultura",
+          "Edilizia",
+          "Elettronica",
+          "Fornitura Energia, Acqua e gestione Rifiuti",
+          "ICT",
+          "Meccanica",
+          "Metallurgia",
+          "Mobili, Legno e Carta",
+          "Moda e Tessile",
+          "Ristorazione",
+          "Salute",
+          "Servizi di trasporto",
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Campania"
+        ],
+        "Comuni": "San Gregorio Matese",
+        "Soggetto_Concedente": "Comune di San Gregorio Matese",
+        "Base_normativa_primaria": "FONDO di sostegno ai comuni marginali ai sensi del co. 196, art. 1, della L. 178 del 30.12.2020 e del D.P.C.M. 30.09.2021.",
+        "Provvedimento_attuativo": "FONDO di sostegno ai comuni marginali ai sensi del co. 196, art. 1, della L. 178 del 30.12.2020 e del D.P.C.M. 30.09.2021.",
+        "Stanziamento_incentivo": "36439.96",
+        "Link_istituzionale": "https://sangregoriomatese.halleyegov.it/amministrazione/trasparenza/trasparenza.html",
+        "Data_ultimo_aggiornamento": "2024-04-12T10:43:11Z"
+      },
+      {
+        "ID_Incentivo": "1560",
+        "Titolo": "Contributi per l’avvio delle attività commerciali, artigianali e agricole attraverso un’unità operativa o per l’avvio di nuove attività economiche nel Comune di Rutino - II Annualità",
+        "Descrizione": "Cos'è Incentivo, a valere sul DPCM 30 settembre 2021 \"Fondo di sostegno ai comuni marginali per gli anni 2021-2023\", per l'apertura di nuove attività in territori soggetti a spopolamento, relativamente al Comune di Rutino.  A chi si rivolge Il bando è rivolto alle PMI del Comune di Rutino.  Cosa prevede L'agevolazione consiste nella concessione di un contributo a fondo perduto. ",
+        "Obiettivo_Finalita": [
+          "Sostegno investimenti"
+        ],
+        "Data_apertura": "2024-02-09T00:00:00",
+        "Data_chiusura": "2024-03-11T00:00:00",
+        "Dimensioni": [
+          "Microimpresa",
+          "Media Impresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa - prevalenza giovanile",
+          "Impresa",
+          "Impresa - prevalenza femminile",
+          "Cooperative/Associazioni Non Profit",
+          "Consorzio"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Fabbricati e terreni",
+          "Costo del personale",
+          "Materie prime, di consumo e merci",
+          "Servizi, brevetti e licenze",
+          "Impianti/Macchinari/Attrezzature",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "34046",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "34046",
+        "Settore_Attivita": [
+          "Artigianato",
+          "Cultura",
+          "Agricoltura, silvicoltura e pesca",
+          "Alberghiero",
+          "Agroalimentare",
+          "Altri servizi",
+          "Ristorazione",
+          "Edilizia",
+          "Moda e Tessile",
+          "Servizi di trasporto",
+          "Turismo",
+          "Mobili, Legno e Carta",
+          "Commercio"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti",
+        "Regioni": [
+          "Campania"
+        ],
+        "Comuni": "Rutino",
+        "Soggetto_Concedente": "Comune di Rutino",
+        "Base_normativa_primaria": "DPCM 30 Settembre 2021 - Modalità di ripartizione, termini, accesso, rendicontazione dei Contributi a valere sul Fondo Comuni Marginali per ciascuno degli anni dal 2021 al 2023.",
+        "Provvedimento_attuativo": "DPCM 30 Settembre 2021 - Modalità di ripartizione, termini, accesso, rendicontazione dei Contributi a valere sul Fondo Comuni Marginali per ciascuno degli anni dal 2021 al 2023.",
+        "Stanziamento_incentivo": "34046",
+        "Link_istituzionale": "https://www.comune.rutino.sa.it/",
+        "Data_ultimo_aggiornamento": "2024-07-30T11:54:19Z"
+      },
+      {
+        "ID_Incentivo": "143",
+        "Titolo": "Credito d’imposta R&S, innovazione tecnologica, design e ideazione estetica",
+        "Descrizione": "Cos'è Credito d’imposta per sostenere la competitività delle imprese stimolando gli investimenti in Ricerca e Sviluppo, Innovazione tecnologica (anche nell’ambito del paradigma 4.0 e dell’economia circolare) Design e ideazione estetica.  A chi si rivolge Tutte le imprese residenti nel territorio dello Stato (incluse le stabili organizzazioni di soggetti non residenti), ad esclusione di quelle in stato di liquidazione volontaria, fallimento, liquidazione coatta amministrativa, concordato preventivo senza continuità aziendale, altra procedura concorsuale.   Sono inoltre escluse le imprese destinatarie di sanzioni interdittive per illeciti amministrativi dipendenti da reato.    Le imprese beneficiarie devono rispettare le normative sulla sicurezza nei luoghi di lavoro e gli obblighi di versamento dei contributi previdenziali e assistenziali a favore dei lavoratori. Cosa prevedeÈ riconosciuto un credito d’imposta in misura pari a un importo percentuale dei costi sostenuti nelle attività di ricerca sviluppo, innovazione tecnologica, design e ideazione estetica. Sono previste soglie massime di beneficio spettante.  Il credito può essere utilizzato in compensazione ai sensi dell’art. 17 del D. Lgs. 241/1997, in tre quote annuali di pari importo, dal periodo d’imposta successivo a quello in cui vengano poste in essere le attività. Il credito non concorre alla formazione della base imponibile ai fini delle Imposte sui redditi e dell’Irap.  Per i dettagli relativi ai costi agevolati e alla misura del credito, si veda:https://www.mise.gov.it/index.php/it/incentivi/impresa/credito-d-imposta-r-s",
+        "Obiettivo_Finalita": [
+          "Transizione ecologica",
+          "Innovazione e ricerca",
+          "Digitalizzazione"
+        ],
+        "Data_apertura": "2019-12-31T23:00:00",
+        "Dimensioni": [
+          "Media Impresa",
+          "Grande Impresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Agevolazione fiscale"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Materie prime, di consumo e merci",
+          "Servizi, brevetti e licenze"
+        ],
+        "Settore_Attivita": [
+          "Agroalimentare",
+          "Mobili, Legno e Carta",
+          "Moda e Tessile",
+          "Chimica e Farmaceutica",
+          "Metallurgia",
+          "Elettronica",
+          "Meccanica",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Edilizia",
+          "Fornitura Energia, Acqua e gestione Rifiuti",
+          "Commercio",
+          "Servizi di trasporto",
+          "Alberghiero",
+          "Ristorazione",
+          "ICT",
+          "Cultura",
+          "Turismo",
+          "Salute",
+          "Altri servizi",
+          "Artigianato"
+        ],
+        "Codici_ATECO": "Tutti i settori economici",
+        "Regioni": [
+          "Abruzzo",
+          "Basilicata",
+          "Calabria",
+          "Campania",
+          "Emilia-Romagna",
+          "Friuli-Venezia Giulia",
+          "Lazio",
+          "Liguria",
+          "Lombardia",
+          "Marche",
+          "Molise",
+          "Piemonte",
+          "Puglia",
+          "Trentino-Alto Adige/Südtirol",
+          "Toscana",
+          "Valle d'Aosta/Vallée d'Aoste",
+          "Veneto",
+          "Umbria",
+          "Sicilia",
+          "Sardegna"
+        ],
+        "Comuni": "Tutti i comuni",
+        "Ambito_territoriale": [
+          "Non applicabile"
+        ],
+        "Soggetto_Concedente": "Ministero dello sviluppo economico/Agenzia delle entrate",
+        "Base_normativa_primaria": "Articolo 1, commi 198-209, della legge 27 dicembre 2019 n. 160",
+        "Base_normativa_secondaria": "D.M. 26 maggio 2020",
+        "Gazzetta_ufficiale": "G.U. n. 304 del 30 dicembre 2019G.U. n. 182 del 21 luglio 2020",
+        "Link_istituzionale": "https://www.mise.gov.it/index.php/it/incentivi/credito-d-imposta-r-s",
+        "Altre_caratteristiche": "Digitalizzazione - Agevolazione fiscale - ICT - Ambiente - Green - Energia - Sostenibilità - Digitalizzazione - Credito d'imposta"
+      },
+      {
+        "ID_Incentivo": "1431",
+        "Titolo": "Bando fiere internazionali - CCIAA Toscana Nord Ovest",
+        "Descrizione": "Cos'è Nel quadro delle proprie iniziative istituzionali e per promuovere la competitività delle imprese, la Camera di Commercio Toscana Nord Ovest intende fornire assistenza finanziaria alle imprese per la preparazione ai mercati internazionali, tramite erogazione di voucher per la partecipazione a fiere e mostre svolte in autonomia in Italia e all’estero. Il presente sostegno economico è uno strumento che si integra ad altri servizi camerali finalizzati al sostegno all’internazionalizzazione (assistenza qualificata, accompagnamento, quesiti di particolare complessità etc.), sia per imprese neo esportatrici che per imprese che già esportano, ma che vogliono esplorare nuovi mercati. A chi si rivolge L'agevolazione è rivolto a imprese iscritte al Registro delle Imprese della Camera di Commercio della Toscana Nord Ovest ed aventi la sede o unità locale nelle Province di Lucca, Massa Carrara o Pisa. Cosa prevede L’importo del contributo concesso varia a seconda della localizzazione delle fiere:a) Manifestazioni fieristiche svolte in Italia e Unione Europea (compresi Svizzera, Principato di Monaco, Liechtenstein, Andorra, San Marino): i contributi sono concessi nella misura del 50% delle spese riconosciute come ammissibili e regolarmente documentate, fino ad un massimo di € 2.500,00 (al lordo della ritenuta d’acconto del 4%);b) Manifestazioni fieristiche svolte al di fuori dell'Unione Europea (compreso il Regno Unito): i contributi sono concessi nella misura del 50% delle spese riconosciute come ammissibili e regolarmente documentate, fino ad un massimo di € 3.000,00 (al lordo della ritenuta d’acconto del 4%).",
+        "Obiettivo_Finalita": [
+          "Internazionalizzazione"
+        ],
+        "Data_apertura": "2024-04-22T00:00:00",
+        "Data_chiusura": "2024-09-30T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Non classificabile/classificato",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Servizi, brevetti e licenze"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "6000",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "3000",
+        "Settore_Attivita": [
+          "Agricoltura, silvicoltura e pesca",
+          "Agroalimentare",
+          "Alberghiero",
+          "Altri servizi",
+          "Artigianato",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Chimica e Farmaceutica",
+          "Commercio",
+          "Cultura",
+          "Edilizia",
+          "Elettronica",
+          "Fornitura Energia, Acqua e gestione Rifiuti",
+          "ICT",
+          "Meccanica",
+          "Metallurgia",
+          "Mobili, Legno e Carta",
+          "Moda e Tessile",
+          "Ristorazione",
+          "Salute",
+          "Servizi di trasporto",
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Abruzzo",
+          "Basilicata",
+          "Calabria",
+          "Campania",
+          "Emilia-Romagna",
+          "Friuli-Venezia Giulia",
+          "Lazio",
+          "Liguria",
+          "Lombardia",
+          "Marche",
+          "Molise",
+          "Piemonte",
+          "Puglia",
+          "Sardegna",
+          "Sicilia",
+          "Toscana",
+          "Trentino-Alto Adige/Südtirol",
+          "Umbria",
+          "Valle d'Aosta/Vallée d'Aoste",
+          "Veneto"
+        ],
+        "Soggetto_Concedente": "Camera di commercio, industria, artigianato e agricoltura della Toscana Nord Ovest",
+        "Base_normativa_primaria": "BANDO PER LA CONCESSIONE DI VOUCHER ALLE IMPRESE DELLE PROVINCE DI LUCCA, PISA E MASSA CARRARA PER LA PARTECIPAZIONE A FIERE INTERNAZIONALI IN ITALIA E ALL'ESTERO – EDIZIONE 2024 -",
+        "Provvedimento_attuativo": "BANDO PER LA CONCESSIONE DI VOUCHER ALLE IMPRESE DELLE PROVINCE DI LUCCA, PISA E MASSA CARRARA PER LA PARTECIPAZIONE A FIERE INTERNAZIONALI IN ITALIA E ALL'ESTERO – EDIZIONE 2024 -",
+        "Stanziamento_incentivo": "300000",
+        "Link_istituzionale": "https://tno.camcom.it/bandi/bandi-aperti",
+        "Altre_caratteristiche": "contributi fiere",
+        "Data_ultimo_aggiornamento": "2024-04-10T08:55:58Z"
+      },
+      {
+        "ID_Incentivo": "1440",
+        "Titolo": "Agevolazione dell'imposta immobiliare a sostegno dell'economia del settore turistico in connessione all'emergenza epidemiologica da COVID-19 - Comune di Predoi",
+        "Descrizione": "Cos'è In attuazione dell'Art. 1 della Legge provinciale 16.11.2021 n. 12, l'incentivo prevede l'agevolazione dell'imposta immobiliare a sostegno dell'economia del settore turistico in connessione all'emergenza epidemiologica da COVID-19. A chi si rivolge L'agevolazione è rivolta alle imprese del Comune di Predoi. Cosa prevede L'incentivo consiste nell'agevolazione dell'imposta immobiliare (IMU).",
+        "Obiettivo_Finalita": [
+          "Sostegno liquidità"
+        ],
+        "Data_apertura": "2021-11-19T00:00:00",
+        "Data_chiusura": "2022-12-31T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Agevolazione fiscale",
+          "Agevolazione fiscale",
+          "Capitale di rischio",
+          "Contributo/Fondo perduto",
+          "Interventi a garanzia",
+          "Prestito/Anticipo rimborsabile",
+          "Riduzione dei contributi di previdenza sociale"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Fabbricati e terreni",
+          "Fabbricati e terreni",
+          "Fabbricati e terreni",
+          "Formazione Professionale",
+          "Impianti/Macchinari/Attrezzature",
+          "Impianti/Macchinari/Attrezzature",
+          "Materie prime, di consumo e merci",
+          "Servizi, brevetti e licenze",
+          "Servizi, brevetti e licenze",
+          "Servizi, brevetti e licenze",
+          "Servizi, brevetti e licenze",
+          "Servizi, brevetti e licenze",
+          "Servizi, brevetti e licenze",
+          "Servizi, brevetti e licenze",
+          "Servizi, brevetti e licenze",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri",
+          "Spese generali/altri oneri",
+          "Spese generali/altri oneri",
+          "Spese generali/altri oneri"
+        ],
+        "Settore_Attivita": [
+          "Agricoltura, silvicoltura e pesca",
+          "Artigianato",
+          "Commercio"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Trentino-Alto Adige/Südtirol"
+        ],
+        "Comuni": "Predoi",
+        "Soggetto_Concedente": "Comune di Predoi",
+        "Base_normativa_primaria": "Decreto legge n. 34 del 19 maggio 2020",
+        "Provvedimento_attuativo": "REGIME QUADRO NAZIONALE SUGLI AIUTI DI STATO - COVID-19 (ART. 54-61DEL D.L. RILANCIO COME MODIFICATO DALL'ART. 62 DEL D.L 104/2020)",
+        "Gazzetta_ufficiale": "46 del 18/11/2021",
+        "Stanziamento_incentivo": "8061.19",
+        "Link_istituzionale": "https://www.prettau.it/it/Comune/Amministrazione_Trasparente",
+        "Data_ultimo_aggiornamento": "2024-04-02T15:47:14Z"
+      },
+      {
+        "ID_Incentivo": "1441",
+        "Titolo": "Agevolazione dell'imposta municipale immobiliare a sostegno dell'economia in connessione all'emergenza epidemiologica da COVID-19 - Comune di Predoi",
+        "Descrizione": "Cos'è Il bando prevede la concessione di un'agevolazione dell'imposta municipale immobiliare a sostegno dell'economia in connessione all'emergenza epidemiologica da COVID-19. A chi si rivolge Possono beneficiare dei contributi le imprese del Comune di Predoi. Cosa prevede L'incentivo consiste nell'agevolazione dell'imposta municipale immobiliare.",
+        "Obiettivo_Finalita": [
+          "Sostegno liquidità"
+        ],
+        "Data_apertura": "2020-08-21T00:00:00",
+        "Data_chiusura": "2021-02-01T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Agevolazione fiscale",
+          "Capitale di rischio",
+          "Contributo/Fondo perduto",
+          "Interventi a garanzia",
+          "Prestito/Anticipo rimborsabile",
+          "Riduzione dei contributi di previdenza sociale"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Fabbricati e terreni",
+          "Formazione Professionale",
+          "Impianti/Macchinari/Attrezzature",
+          "Materie prime, di consumo e merci",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Settore_Attivita": [
+          "Agricoltura, silvicoltura e pesca",
+          "Artigianato",
+          "Commercio"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Trentino-Alto Adige/Südtirol"
+        ],
+        "Comuni": "Predoi",
+        "Soggetto_Concedente": "Comune di Predoi",
+        "Base_normativa_primaria": "Decreto legge n. 34 del 19 maggio 2020",
+        "Provvedimento_attuativo": "REGIME QUADRO NAZIONALE SUGLI AIUTI DI STATO - COVID-19 (ART. 54-61DEL D.L. RILANCIO COME MODIFICATO DALL'ART. 62 DEL D.L 104/2020)",
+        "Gazzetta_ufficiale": "34 del 20/08/2020",
+        "Stanziamento_incentivo": "10866.34",
+        "Link_istituzionale": "https://www.prettau.it/it/Comune/Amministrazione_Trasparente",
+        "Data_ultimo_aggiornamento": "2024-04-02T16:10:35Z"
+      },
+      {
+        "ID_Incentivo": "185",
+        "Titolo": "Legge 181/1989 - Riqualificazione dell’area di crisi di Marcianise",
+        "Descrizione": "Cos'è L’accordo di programma sottoscritto in data 21 dicembre 2017 tra il Ministero dello sviluppo economico (ora Ministero delle Imprese e del Made in Italy), la Regione Campania e l’Agenzia nazionale per l’attrazione degli investimenti e lo sviluppo d’impresa S.p.a. – Invitalia è finalizzato al rilancio delle attività imprenditoriali, alla salvaguardia dei livelli occupazionali, al sostegno dei programmi di investimento e sviluppo imprenditoriale fra l’altro nell’area di Marcianise. In data 6 ottobre 2021 è stato inoltre sottoscritto l’Atto integrativo al citato Accordo che ne proroga la validità sino al 21 dicembre 2024. A chi si rivolge Possono presentare domanda di agevolazione le imprese già costituite in forma di società di capitali; possono altresì presentare domanda di agevolazione le società cooperative di cui all’art. 2511 e seguenti del codice civile e le società consortili di cui all’art. 2615-ter del codice civile.  Sono altresì ammesse le reti di imprese, costituite da un minimo di 3 ed un massimo di 6 imprese, mediante il ricorso allo strumento del contratto di rete di cui all’articolo 3, comma 4-ter, del decreto-legge 10 febbraio 2009, n. 5, convertito, con modificazioni, dalla legge 9 aprile 2009, n. 33, e successive modifiche e integrazioni. Cosa prevede L’incentivo promuove la realizzazione di una o più iniziative imprenditoriali nel territorio dell’area di crisi industriale di Marcianise, finalizzate al rafforzamento del tessuto produttivo locale e all’attrazione di nuovi investimenti. In particolare, le iniziative imprenditoriali devono: a. prevedere la realizzazione di programmi di investimento produttivo e/o programmi di investimento per la tutela ambientale, eventualmente completati da progetti per l’innovazione dell’organizzazione e/o innovazione di processo, progetti di ricerca e/o di sviluppo sperimentale e da progetti per la formazione del personale; b. prevedere la realizzazione di programmi occupazionali finalizzati ad incrementare o a mantenere inalterato il numero degli addetti dell’unità produttiva oggetto del programma di investimento.  Le agevolazioni sono concesse nella forma del contributo in conto impianti, dell’eventuale contributo diretto alla spesa e del finanziamento agevolato, alle condizioni ed entro i limiti delle intensità massime di aiuto previste dal regolamento (UE) n. 651/2014 (“Regolamento GBER”).  Il finanziamento agevolato concedibile non può essere inferiore al 20% degli investimenti ammissibili. Il contributo in conto impianti e l’eventuale contributo diretto alla spesa sono determinati in relazione all’ammontare del finanziamento agevolato, nei limiti delle intensità massime di aiuto previste dal Regolamento GBER. La somma del finanziamento agevolato, del contributo in conto impianti e del contributo diretto alla spesa può arrivare a coprire fino al 75% delle spese complessivamente ammissibili.",
+        "Obiettivo_Finalita": [
+          "Sostegno investimenti",
+          "Crisi d'impresa"
+        ],
+        "Data_apertura": "2023-02-21T11:00:00",
+        "Data_chiusura": "2023-06-01T10:00:00",
+        "Note_di_apertura_chiusura": "Con avviso direttoriale del 29 maggio 2023 si dispone, a seguito dell’esaurimento delle risorse disponibili, la chiusura dello sportello dalle ore 12:00 del 1° giugno 2023.",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa",
+          "Cooperative/Associazioni Non Profit",
+          "Rete d'impresa",
+          "Consorzio"
+        ],
+        "Forma_agevolazione": [
+          "Capitale di rischio",
+          "Prestito/Anticipo rimborsabile",
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Formazione Professionale",
+          "Spese generali/altri oneri",
+          "Servizi, brevetti e licenze",
+          "Impianti/Macchinari/Attrezzature",
+          "Fabbricati e terreni"
+        ],
+        "Settore_Attivita": [
+          "Agroalimentare",
+          "Moda e Tessile",
+          "Chimica e Farmaceutica",
+          "Metallurgia",
+          "Elettronica",
+          "Meccanica",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Mobili, Legno e Carta"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti",
+        "Regioni": [
+          "Campania"
+        ],
+        "Comuni": "Marcianise",
+        "Ambito_territoriale": [
+          "Non applicabile"
+        ],
+        "Soggetto_Concedente": "Invitalia - Agenzia nazionale per l'attrazione degli investimenti e lo sviluppo d'impresa S.p.A.",
+        "Base_normativa_primaria": "Decreto ministeriale 24 marzo 2022 - Termini, modalità e procedure per la presentazione delle domande di accesso alle agevolazioni in favore di programmi di investimento finalizzati alla riqualificazione delle aree di crisi industriale di cui alla legge n. 181/89",
+        "Base_normativa_secondaria": "Circolare direttoriale n. 237343 del 16 giugno 2022",
+        "Provvedimento_attuativo": "Circolare n. 96 del 19 gennaio 2023",
+        "Stanziamento_incentivo": "15375383,50",
+        "Link_istituzionale": "https://www.mise.gov.it/it/incentivi/marcianise-area-di-crisi-industriale",
+        "Altre_caratteristiche": "Industria - Sostegno alle imprese - Occupazione - Crisi industriali"
+      },
+      {
+        "ID_Incentivo": "137",
+        "Titolo": "Credito di imposta per gli investimenti nel Mezzogiorno - Programma operativo nazionale “Imprese e competitività”",
+        "Descrizione": "Cos'è La legge di stabilità 2016 ha istituito un credito d’imposta (più volte prorogato negli anni successivi) per l’acquisto di beni strumentali nuovi destinati a strutture produttive ubicate nelle regioni del Mezzogiorno. Il PON “Imprese e competitività” 2014-2020 FESR contribuisce al credito di imposta stesso rendendo disponibili risorse aggiuntive.  A chi si rivolge PMI che sono state autorizzate a beneficiare del credito d’imposta dall’Agenzia delle entrate in relazione a progetti con un ammontare minimo dell’investimento di 500 mila euro.  Sono escluse le sole attività economiche del settore agricoltura, silvicoltura e pesca.  Gli investimenti devono essere riconducibili alla Strategia nazionale di specializzazione intelligente. Cosa prevede Maggiori risorse per il credito d’imposta a piccole e medie imprese delle regioni del Mezzogiorno ottenibile su progetti di investimento riguardanti l’acquisizione di beni strumentali nuovi.",
+        "Obiettivo_Finalita": [
+          "Sostegno investimenti",
+          "Imprenditoria giovanile"
+        ],
+        "Data_apertura": "2015-12-31T23:00:00",
+        "Data_chiusura": "2022-12-30T23:00:00",
+        "Dimensioni": [
+          "Piccola Impresa",
+          "Media Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Agevolazione fiscale"
+        ],
+        "Costi_Ammessi": [
+          "Impianti/Macchinari/Attrezzature"
+        ],
+        "Settore_Attivita": [
+          "Agroalimentare",
+          "Moda e Tessile",
+          "Chimica e Farmaceutica",
+          "Metallurgia",
+          "Elettronica",
+          "Meccanica",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Mobili, Legno e Carta",
+          "Edilizia",
+          "Fornitura Energia, Acqua e gestione Rifiuti",
+          "Commercio",
+          "Servizi di trasporto",
+          "Alberghiero",
+          "Ristorazione",
+          "ICT",
+          "Cultura",
+          "Turismo",
+          "Salute",
+          "Artigianato",
+          "Altri servizi"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti",
+        "Regioni": [
+          "Basilicata",
+          "Calabria",
+          "Campania",
+          "Puglia",
+          "Sicilia",
+          "Molise",
+          "Sardegna",
+          "Abruzzo"
+        ],
+        "Comuni": "Tutti i comuni (tranne per le regioni in transizione Abruzzo, Molise e Sardegna)",
+        "Ambito_territoriale": [
+          "Non applicabile"
+        ],
+        "Soggetto_Concedente": "Ministero dello sviluppo economico",
+        "Base_normativa_primaria": "Legge n. 208 del 28 dicembre 2015",
+        "Base_normativa_secondaria": "Decreto ministeriale 29 luglio 2016",
+        "Provvedimento_attuativo": "Decreto direttoriale 23 aprile 2018",
+        "Stanziamento_incentivo": "163000000 (con dm 29/7), 161800000 (con dm 09/08)",
+        "Link_istituzionale": "https://www.mise.gov.it/index.php/it/incentivi/impresa/credito-di-imposta-per-il-mezzogiorno-pon",
+        "Altre_caratteristiche": "Incentivi alle imprese - Credito d'imposta - PMI - Beni strumentali"
+      },
+      {
+        "ID_Incentivo": "1449",
+        "Titolo": "Creazione di itinerari di esperienza a tema-Bando 2023 -GAL Distretto Rurale Barbagia, Mandrolisai, Gennargentu- PSR Sardegna 2014-2022",
+        "Descrizione": "Cos'è L’intervento “Creazione di itinerari di esperienza a tema” Misura 19.2 Intervento 7.5.1.2.1 intende diversificare e arricchire l'offerta turistica delle diverse sub-aree del GAL L Distretto Rurale BMG (Barbagia, Mandrolisai, Gennargentu), proponendo \"itinerari di cornice\" e \"circuiti\" accessibili, fruibili ed eco-sostenibili sul territorio. Gli itinerari sono selezionati in ragione del livello di aggregazione territoriale, della loro contiguità o connessione a beni e/o ambienti caratteristici e caratterizzanti, del grado di coinvolgimento degli operatori locali, di associazioni e comunità e della loro coerenza con le motivazioni maggiormente ricercate dalla domanda turistica.  L’obiettivo specifico dell’intervento è favorire la realizzazione e/o il potenziamento di itinerari turistici di esperienza a tema (ambientali, culturali ed enogastronomici).   A chi si rivolge Sono beneficiari del presente bando i comuni singoli, aggregati o riuniti nelle forme associative previste dal TU e dalle leggi sugli EE. LL del territorio del GAL BMG, ovvero: Aritzo, Atzara, Austis, Belvì, Desulo, Gadoni, Gavoi, Lodine, Meana Sardo, Ollolai, Oniferi, Olzai, Ortueri, Ovodda, Sarule, Sorgono, Teti, Tiana, Tonara. Cosa prevede Sono sovvenzionabili i seguenti investimenti: - Realizzazione di itinerari turistici, aree attrezzate e percorsi segnalati e loro messa in rete- Realizzazione e miglioramento di percorsi escursionistici a piedi, a cavallo e in bicicletta.- Realizzazione di nuove tratte di accesso o di collegamento tra più itinerari tematici.- Acquisto/realizzazione e installazione di pannelli descrittivi, segnaletica direzionale e discontinuità.- Interventi mirati a garantire l’accessibilità e la fruibilità a utenti con esigenze complesse e differenziate (pedane e ponti in legno su sentieri scivolosi o su percorsi con gradini e terrazzamenti, zone di sosta e postazioni di osservazione adeguate a chi si muove su sedia a rotelle, indicazioni con scritte Braille o mappe tattili per coloro che hanno difficoltà visive, ecc.).- Realizzazione di strutture di riparo temporaneo dalle intemperie, aree per la sosta e il ristoro con tavoli e panche in legno.- Punti di avvistamento della fauna.- Punti di appoggio e di apprestamento di servizi igienici.- Georeferenziazione degli itinerari  Adeguamento di immobili e acquisto di arredi e attrezzature per la realizzazione di centri di informazione e accoglienza turistica. Investimenti immateriali: acquisizione di programmi informatici.",
+        "Obiettivo_Finalita": [
+          "Sostegno investimenti"
+        ],
+        "Data_apertura": "2023-01-19T00:00:00",
+        "Data_chiusura": "2023-06-30T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Ente Pubblico"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Formazione Professionale",
+          "Impianti/Macchinari/Attrezzature",
+          "Materie prime, di consumo e merci",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "200000",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "200000",
+        "Settore_Attivita": [
+          "Altri servizi",
+          "Cultura",
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Sardegna"
+        ],
+        "Comuni": "Aritzo; Atzara; Austis; Belvì; Desulo; Gadoni; Gavoi; Lodine; Meana Sardo; Ollolai; Olzai; Oniferi; Ortueri; Ovodda; Sarule; Sorgono; Telti; Tiana; Tonara",
+        "Soggetto_Concedente": "GAL Barbargia Mandrolisai Gennargentu",
+        "Base_normativa_primaria": "Sardegna - Programma di sviluppo rurale 2014/2020. Presa d'atto testo definitivo",
+        "Provvedimento_attuativo": "Sardegna - Programma di sviluppo rurale 2014/2020. Presa d'atto testo definitivo",
+        "Stanziamento_incentivo": "535101.67",
+        "Link_istituzionale": "https://www.galbmg.it/bandi-2023_creazione-di-itinerari-di-esperienza-a-tema/",
+        "Altre_caratteristiche": "Aritzo, Atzara, Austis, Belvì, Desulo, Gadoni, Gavoi, Lodine, Meana Sardo, Ollolai, Oniferi, Olzai, Ortueri, Ovodda, Sarule, Sorgono, Teti, Tiana, Tonara.",
+        "Data_ultimo_aggiornamento": "2024-04-03T15:45:44Z"
+      },
+      {
+        "ID_Incentivo": "1450",
+        "Titolo": "Strutture ricettive extra-agricole - GAL Distretto Rurale BMG - PSR Sardegna 2014-2022",
+        "Descrizione": "Cos'è L’intervento \"Strutture ricettive extra – agricole\" intende finanziare le seguenti tipologie extralberghiere di cui all’art. 16 della Legge regionale n. 16 del 28/07/2017 e agli artt. 4, 5 e 7 della Legge Regionale 12 agosto 1998, n. 27: • Affittacamere/Domo • Case e Appartamenti per le Vacanze (CAV) • Ostello della Gioventù  L’area geografica interessata corrisponde a tutta l’area dei comuni del GAL Distretto Rurale BMG (Barbagia, Mandrolisai, Gennargentu,) ovvero:Aritzo, Atzara, Austis, Belvì, Desulo, Gadoni, Gavoi, Lodine, Meana Sardo, Ollolai, Olzai, Oniferi, Ortueri, Ovodda, Sarule, Sorgono, Teti, Tiana, Tonara.  A chi si rivolge Sono beneficiari del presente bando: - micro e piccole imprese non agricole, singole o associate, che già svolgono servizi di ricettività ed hanno sede legale o operativa nel territorio del GAL BMG;- persone fisiche che intendono creare una micro-piccola impresa individuale o associata avente sede legale o operativa nel territorio del GAL BMG per svolgere servizi di ospitalità extra-alberghiera.  La costituzione e l’avvio dell’impresa dovranno avvenire entro tre mesi dalla data del Decreto di concessione. Cosa prevede Sono ammissibili a finanziamento i seguenti interventi necessari per la realizzazione dei seguenti investimenti: a) investimenti per la costruzione o il miglioramento di beni immobili;b) investimenti per l’acquisto di nuovi macchinari, attrezzature, arredi e segnaletica relativi all’attività di ricezione fino a copertura del valore di mercato del bene; c) investimenti immateriali: acquisizione o sviluppo di programmi informatici (compresi siti web e altre soluzioni informatiche) e acquisizione di brevetti, licenze, diritti d'autore, marchi commerciali; d) Spese generali nel limite del 10%.  Le spese generali, di cui all’art. 45, paragrafo 2, lettera c), del Reg. (UE) n. 1305/2013, possono essere effettuate nei 6 mesi antecedenti la presentazione della domanda di sostegno e connesse alla progettazione dell’intervento proposto nella stessa domanda, inclusi gli studi di fattibilità sono parimenti ammissibili.",
+        "Obiettivo_Finalita": [
+          "Sostegno investimenti"
+        ],
+        "Data_apertura": "2023-10-12T00:00:00",
+        "Data_chiusura": "2023-12-30T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Cittadino",
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Formazione Professionale",
+          "Impianti/Macchinari/Attrezzature",
+          "Materie prime, di consumo e merci",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "71429",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "50000",
+        "Settore_Attivita": [
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Sardegna"
+        ],
+        "Comuni": "Aritzo; Atzara; Austis; Belvì; Desulo; Gadoni; Gavoi; Lodine; Meana Sardo; Ollolai; Olzai; Oniferi; Ortueri; Ovodda; Sarule; Sorgono; Teti; Tiana; Tonara",
+        "Soggetto_Concedente": "GAL Barbargia Mandrolisai Gennargentu",
+        "Base_normativa_primaria": "Sardegna - Programma di sviluppo rurale 2014/2020. Presa d'atto testo definitivo",
+        "Provvedimento_attuativo": "Sardegna - Programma di sviluppo rurale 2014/2020. Presa d'atto testo definitivo",
+        "Stanziamento_incentivo": "223356",
+        "Link_istituzionale": "https://www.galbmg.it/2023_strutture-ricettive-extra-agricole/",
+        "Altre_caratteristiche": "Strutture ricettive extra-agricole GAL BMG - PSR Sardegna 2014-2022. Misura 19.2 Intervento 19.2.1 6.4.1.1.1 Strutture ricettive extra-agricole-Bando 2023",
+        "Data_ultimo_aggiornamento": "2024-04-05T16:11:08Z"
+      },
+      {
+        "ID_Incentivo": "1468",
+        "Titolo": "Rafforzamento delle filiere produttive e degli ecosistemi industriali - Regione Lombardia - PR FESR 2021-2027",
+        "Descrizione": "Cos'è La Misura intende agevolare e sostenere il rafforzamento delle filiere produttive e degli ecosistemi industriali regionali nelle catene globali del valore per accrescere, anche in coerenza con la strategia industriale UE, la capacità di innovazione, produzione e investimento delle imprese, in particolare PMI. Nello specifico, la Misura riguarda l’innovazione, il miglioramento tecnologico e il rafforzamento competitivo delle filiere e degli ecosistemi industriali, nonché il sostegno alla costituzione e allo sviluppo di nuove filiere attraverso la realizzazione di progetti di filiera, anche integrati con attività di sviluppo sperimentale svolta da una grande impresa facente parte del raggruppamento di imprese. A chi si rivolge Possono presentare domanda di partecipazione alla presente Misura, le Filiere rappresentate da raggruppamenti di imprese legate insieme da un Accordo di Filiera composti da almeno 5 imprese di qualsiasi dimensione, in maggioranza PMI ai sensi dell’Allegato 1 del Regolamento GBER, che abbiano i seguenti requisiti:a) siano regolarmente costituite, iscritte e attive nel Registro delle Imprese (come risultante da visura camerale) alla data di presentazione della domanda di partecipazione al Bando attuativo;b) abbiano una o più sedi operative, oggetto dell’intervento, in Lombardia (rilevabile nella visura camerale) alla data di presentazione della domanda di partecipazione al bando attuativo o che intendano costituire una sede operativa in Lombardia entro la stipula del contratto di agevolazione o nel caso della Grande impresa al momento della presentazione della rendicontazione per l’erogazione del contributo. Cosa prevede L’agevolazione per le PMI e le Mid Cap si compone di: - un finanziamento a tasso agevolato, a copertura fino al 60% dell’investimento;- un contributo a fondo perduto nel limite massimo del 10% dell’investimento a seconda del regime di aiuto applicato.  L’Agevolazione sotto forma di Contributo sarà, in ogni caso, concessa sino al concorrere dell’intensità di aiuto massima concedibile dal regime di aiuto applicato (intesa come sommatoria del Contributo e dell’ESL relativo al Finanziamento a tasso agevolato) senza che questo comporti un aumento della percentuale del Finanziamento. ",
+        "Obiettivo_Finalita": [
+          "Sostegno investimenti"
+        ],
+        "Data_apertura": "2024-03-28T00:00:00",
+        "Data_chiusura": "2027-12-31T00:00:00",
+        "Note_di_apertura_chiusura": "La chiusura può essere anticipata per esaurimento delle risorse disponibili",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa",
+          "Rete d'impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto",
+          "Prestito/Anticipo rimborsabile"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Impianti/Macchinari/Attrezzature",
+          "Materie prime, di consumo e merci",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "150000",
+        "Spesa_Ammessa_max": "5000000",
+        "Agevolazione_Concedibile_min": "1000",
+        "Agevolazione_Concedibile_max": "2750000",
+        "Settore_Attivita": [
+          "Agroalimentare",
+          "Alberghiero",
+          "Altri servizi",
+          "Artigianato",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Chimica e Farmaceutica",
+          "Commercio",
+          "Cultura",
+          "Edilizia",
+          "Elettronica",
+          "ICT",
+          "Meccanica",
+          "Metallurgia",
+          "Mobili, Legno e Carta",
+          "Moda e Tessile",
+          "Ristorazione",
+          "Salute",
+          "Servizi di trasporto",
+          "Turismo"
+        ],
+        "Codici_ATECO": "07.00; 07.10; 07.20; 07.21; 07.29; 08.00; 08.10; 08.11; 08.12; 08.90; 08.91; 08.92; 08.93; 08.99; 09.00; 09.10; 09.90; 10.00; 10.10; 10.11; 10.12; 10.13; 10.20; 10.30; 10.31; 10.32; 10.39; 10.40; 10.41; 10.42; 10.50; 10.51; 10.52; 10.60; 10.61; 10.62; 10.70; 10.71; 10.72; 10.73; 10.80; 10.81; 10.82; 10.83; 10.84; 10.85; 10.86; 10.89; 10.90; 10.91; 10.92; 11.00; 11.01; 11.02; 11.03; 11.04; 11.05; 11.06; 11.07; 13.00; 13.10; 13.20; 13.30; 13.90; 13.91; 13.92; 13.93; 13.94; 13.95; 13.96; 13.99; 14.00; 14.10; 14.11; 14.12; 14.13; 14.14; 14.19; 14.20; 14.30; 14.31; 14.39; 15.00; 15.10; 15.11; 15.12; 15.20; 16.00; 16.10; 16.20; 16.21; 16.22; 16.23; 16.24; 16.29; 17.00; 17.10; 17.11; 17.12; 17.20; 17.21; 17.22; 17.23; 17.24; 17.29; 18.00; 18.10; 18.11; 18.12; 18.13; 18.14; 18.20; 19.00; 19.10; 19.20; 20.00; 20.10; 20.11; 20.12; 20.13; 20.14; 20.15; 20.16; 20.17; 20.20; 20.30; 20.40; 20.41; 20.42; 20.50; 20.51; 20.52; 20.53; 20.59; 20.60; 21.00; 21.10; 21.20; 22.00; 22.10; 22.11; 22.19; 22.20; 22.21; 22.22; 22.23; 22.29; 23.00; 23.10; 23.11; 23.12; 23.13; 23.14; 23.19; 23.20; 23.30; 23.31; 23.32; 23.40; 23.41; 23.42; 23.43; 23.44; 23.49; 23.50; 23.51; 23.52; 23.60; 23.61; 23.62; 23.63; 23.64; 23.65; 23.69; 23.70; 23.90; 23.91; 23.99; 24.00; 24.10; 24.20; 24.30; 24.31; 24.32; 24.33; 24.34; 24.40; 24.41; 24.42; 24.43; 24.44; 24.45; 24.46; 24.50; 24.51; 24.52; 24.53; 24.54; 25.00; 25.10; 25.11; 25.12; 25.20; 25.21; 25.29; 25.30; 25.40; 25.50; 25.60; 25.61; 25.62; 25.70; 25.71; 25.72; 25.73; 25.90; 25.91; 25.92; 25.93; 25.94; 25.99; 26.00; 26.10; 26.11; 26.12; 26.20; 26.30; 26.40; 26.50; 26.51; 26.52; 26.60; 26.70; 26.80; 27.00; 27.10; 27.11; 27.12; 27.20; 27.30; 27.31; 27.32; 27.33; 27.40; 27.50; 27.51; 27.52; 27.90; 28.00; 28.10; 28.11; 28.12; 28.13; 28.14; 28.15; 28.20; 28.21; 28.22; 28.23; 28.24; 28.25; 28.29; 28.30; 28.40; 28.41; 28.49; 28.90; 28.91; 28.92; 28.93; 28.94; 28.95; 28.96; 28.99; 29.00; 29.10; 29.20; 29.30; 29.31; 29.32; 30.00; 30.10; 30.11; 30.12; 30.20; 30.30; 30.40; 30.90; 30.91; 30.92; 30.99; 31.00; 31.01; 31.02; 31.03; 31.09; 32.00; 32.10; 32.11; 32.12; 32.13; 32.20; 32.30; 32.40; 32.50; 32.90; 32.91; 32.99; 33.00; 33.10; 33.11; 33.12; 33.13; 33.14; 33.15; 33.16; 33.17; 33.19; 33.20; 35.00; 35.10; 35.11; 35.12; 35.13; 35.14; 35.20; 35.21; 35.22; 35.23; 35.30; 36.00; 37.00; 38.00; 38.10; 38.11; 38.12; 38.20; 38.21; 38.22; 38.30; 38.31; 38.32; 39.00; 41.00; 41.10; 41.20; 42.00; 42.10; 42.11; 42.12; 42.13; 42.20; 42.21; 42.22; 42.90; 42.91; 42.99; 43.00; 43.10; 43.11; 43.12; 43.13; 43.20; 43.21; 43.22; 43.29; 43.30; 43.31; 43.32; 43.33; 43.34; 43.39; 43.90; 43.91; 43.99; 45.00; 45.10; 45.11; 45.19; 45.20; 45.30; 45.31; 45.32; 45.40; 46.00; 46.10; 46.11; 46.12; 46.13; 46.14; 46.15; 46.16; 46.17; 46.18; 46.19; 46.20; 46.21; 46.22; 46.23; 46.24; 46.30; 46.31; 46.32; 46.33; 46.34; 46.36; 46.37; 46.38; 46.39; 46.40; 46.41; 46.42; 46.43; 46.44; 46.45; 46.46; 46.47; 46.48; 46.49; 46.50; 46.51; 46.52; 46.60; 46.61; 46.62; 46.63; 46.64; 46.65; 46.66; 46.69; 46.70; 46.71; 46.72; 46.73; 46.74; 46.75; 46.76; 46.77; 46.90; 47.00; 47.10; 47.11; 47.19; 47.20; 47.21; 47.22; 47.23; 47.24; 47.25; 47.29; 47.30; 47.40; 47.41; 47.42; 47.43; 47.50; 47.51; 47.52; 47.53; 47.54; 47.59; 47.60; 47.61; 47.62; 47.63; 47.64; 47.65; 47.70; 47.71; 47.72; 47.73; 47.74; 47.75; 47.76; 47.77; 47.78; 47.79; 47.80; 47.81; 47.82; 47.89; 47.90; 47.91; 47.99; 49.00; 49.10; 49.20; 49.30; 49.31; 49.32; 49.39; 49.40; 49.41; 49.42; 49.50; 50.00; 50.10; 50.20; 50.30; 50.40; 51.00; 51.10; 51.20; 51.21; 51.22; 52.00; 52.10; 52.20; 52.21; 52.22; 52.23; 52.24; 52.29; 53.00; 53.10; 53.20; 55.00; 55.10; 55.20; 55.30; 55.90; 56.00; 56.10; 56.20; 56.21; 56.29; 56.30; 58.00; 58.10; 58.11; 58.12; 58.13; 58.14; 58.19; 58.20; 58.21; 58.29; 59.00; 59.10; 59.11; 59.12; 59.13; 59.14; 59.20; 60.00; 60.10; 60.20; 61.00; 61.10; 61.20; 61.30; 61.90; 62.00; 62.01; 62.02; 62.03; 62.09; 63.00; 63.10; 63.11; 63.12; 63.90; 63.91; 63.99; 69.00; 69.10; 69.20; 70.00; 70.10; 70.20; 70.21; 70.22; 71.00; 71.10; 71.11; 71.12; 71.20; 72.00; 72.10; 72.11; 72.19; 72.20; 73.00; 73.10; 73.11; 73.12; 73.20; 74.00; 74.10; 74.20; 74.30; 74.90; 75.00; 77.00; 77.10; 77.11; 77.12; 77.20; 77.21; 77.22; 77.29; 77.30; 77.31; 77.32; 77.33; 77.34; 77.35; 77.39; 77.40; 78.00; 78.10; 78.20; 78.30; 79.00; 79.10; 79.11; 79.12; 79.90; 80.00; 80.10; 80.20; 80.30; 81.00; 81.10; 81.20; 81.21; 81.22; 81.29; 81.30; 82.00; 82.10; 82.11; 82.19; 82.20; 82.30; 82.90; 82.91; 82.92; 82.99; 84.00; 84.10; 84.11; 84.12; 84.13; 84.20; 84.21; 84.22; 84.23; 84.24; 84.25; 84.30; 85.00; 85.10; 85.20; 85.30; 85.31; 85.32; 85.40; 85.41; 85.42; 85.50; 85.51; 85.52; 85.53; 85.59; 85.60; 86.00; 86.10; 86.20; 86.21; 86.22; 86.23; 86.90; 87.00; 87.10; 87.20; 87.30; 87.90; 88.00; 88.10; 88.90; 88.91; 88.99; 90.00; 90.01; 90.02; 90.03; 90.04; 91.00; 91.01; 91.02; 91.03; 91.04; 92.00; 93.00; 93.10; 93.11; 93.12; 93.13; 93.19; 93.20; 93.21; 93.29; 94.00; 94.10; 94.11; 94.12; 94.20; 94.90; 94.91; 94.92; 94.99; 95.00; 95.10; 95.11; 95.12; 95.20; 95.21; 95.22; 95.23; 95.24; 95.25; 95.29; 96.00; 96.01; 96.02; 96.03; 96.04; 96.09; 97.00; 98.00; 98.10; 98.20; 99.00;",
+        "Regioni": [
+          "Lombardia"
+        ],
+        "Soggetto_Concedente": "Regione Lombardia - DG Sviluppo economico",
+        "Base_normativa_primaria": "2021IT16RFPR010 – ISTITUZIONE DELLA MISURA PER IL RAFFORZAMENTO DELLE FILIERE PRODUTTIVE E DEGLI ECOSISTEMI INDUSTRIALI A VALERE SULLE AZIONI 1.3.4. “SOSTEGNO AL RAFFORZAMENTO DELLE RETI E DELLE AGGREGAZIONI DI IMPRESE” E 1.1.1. “SOSTEGNO AGLI INVESTIMENTI IN RICERCA, SVILUPPO E INNOVAZIONE” DEL PR FESR LOMBARDIA 2021-2027 E APPROVAZIONE DEI CRITERI APPLICATIVI",
+        "Provvedimento_attuativo": "2021IT16RFPR010 – ISTITUZIONE DELLA MISURA PER IL RAFFORZAMENTO DELLE FILIERE PRODUTTIVE E DEGLI ECOSISTEMI INDUSTRIALI A VALERE SULLE AZIONI 1.3.4. “SOSTEGNO AL RAFFORZAMENTO DELLE RETI E DELLE AGGREGAZIONI DI IMPRESE” E 1.1.1. “SOSTEGNO AGLI INVESTIMENTI IN RICERCA, SVILUPPO E INNOVAZIONE” DEL PR FESR LOMBARDIA 2021-2027 E APPROVAZIONE DEI CRITERI APPLICATIVI",
+        "Stanziamento_incentivo": "34000000",
+        "Link_istituzionale": "https://www.bandi.regione.lombardia.it/servizi/servizio/catalogo/dettaglio/attivita-produttive-commercio/sostegno-attivita-imprenditoriali/misura-rafforzamento-filiere-produttive-ecosistemi-industriali-RLO12024036663",
+        "Data_ultimo_aggiornamento": "2024-04-08T11:40:24Z"
+      },
+      {
+        "ID_Incentivo": "1530",
+        "Titolo": "FVG - Anticipazione finanziaria alle imprese del valore commerciale dei prodotti agricoli",
+        "Descrizione": "Cos'è Si tratta dello strumento con cui si impartiscono gli indirizzi operativi al fondo di rotazione regionale per interventi nel settore agricolo, stabilendo i criteri e le modalità di concessione di finanziamenti agevolati, sotto forma di prestiti rimborsabili, per l'anticipazione finanziaria alle imprese del valore commerciale dei prodotti agricoli. A chi si rivolge Lo strumento è rivolto alle imprese agricole del Friuli Venezia Giulia. Cosa prevede Lo strumento in esame prevede la concessione di finanziamenti agevolati, in regime de mimimis, concessi da istituti bancari convenzionati con la Regione, fino al 70% del valore commerciale dei prodotti agìricoli determinato in base alla stima effettuata dalla banca prescelta. L'importo massimo del finanziamento accordato è pari a:- € 300.000,00 per per le imprese con fatturato annuo riferito a prodotti agricoli inferiore a € 1.000.000,00; - € 500.000,00, per le imprese con fatturato annuo riferito a prodotti agricoli compreso tra 1.000.000,00 e € 2.500.000,00;- € 800.000,00, per le imprese con fatturato annuo riferito a prodotti agricoli superiore a € 2.500.000,00",
+        "Obiettivo_Finalita": [
+          "Sostegno investimenti"
+        ],
+        "Data_apertura": "2024-03-07T00:00:00",
+        "Data_chiusura": "2030-12-31T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Prestito/Anticipo rimborsabile"
+        ],
+        "Costi_Ammessi": [
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "800000",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "560000",
+        "Settore_Attivita": [
+          "Agricoltura, silvicoltura e pesca"
+        ],
+        "Codici_ATECO": "01.00; 01.10; 01.11; 01.12; 01.13; 01.14; 01.15; 01.16; 01.19; 01.20; 01.21; 01.22; 01.23; 01.24; 01.25; 01.26; 01.27; 01.28; 01.29; 01.30; 01.40; 01.41; 01.42; 01.43; 01.44; 01.45; 01.46; 01.47; 01.49; 01.50; 01.60; 01.61; 01.62; 01.63; 01.64; 01.70;",
+        "Regioni": [
+          "Friuli-Venezia Giulia"
+        ],
+        "Soggetto_Concedente": "Regione Autonoma Friuli-Venezia Giulia - Direzione centrale risorse agroalimentari, forestali e ittiche - Servizio sviluppo rurale",
+        "Base_normativa_primaria": "FVG - L.R. 80/1982. Istituzione del fondo di rotazione regionale per interventi nel settore agricolo.",
+        "Provvedimento_attuativo": "FVG - L.R. 80/1982. Istituzione del fondo di rotazione regionale per interventi nel settore agricolo.",
+        "Stanziamento_incentivo": "5500000",
+        "Link_istituzionale": "https://www.regione.fvg.it/asp/delibere/layout2008_2.asp?pag=1&cerca=true&anno=2024&num=294&tx_dataDel=&key=&uf=",
+        "Data_ultimo_aggiornamento": "2024-04-15T15:46:28Z"
+      },
+      {
+        "ID_Incentivo": "1523",
+        "Titolo": "Contratti di sviluppo - Nuovo sportello semiconduttori",
+        "Descrizione": "Cos'è Il nuovo sportello per la presentazione di domande a valere sullo strumento agevolativo dei Contratti di sviluppo è dedicato allo sviluppo della filiera nazionale dei semiconduttori. Alla misura sono destinate le risorse del Fondo istituito dall’articolo 23, comma 1 del decreto-legge 1° marzo 2022, n. 17, che ha una dotazione di 3,292 miliardi di euro.  Il Fondo è finalizzato a promuovere la ricerca e lo sviluppo della tecnologia dei microprocessori e l’investimento in nuove applicazioni industriali di tecnologie innovative, anche tramite la riconversione di siti industriali esistenti e l’insediamento di nuovi stabilimenti nel territorio nazionale. Con il DPCM 27 ottobre 2023 sono stati definiti gli ambiti di applicazione e di intervento, i criteri e le modalità di riparto delle risorse del Fondo.  Lo stesso DPCM individua i Contratti di sviluppo quale strumento agevolativo da utilizzare per il perseguimento delle finalità del Fondo ed al quale, conseguentemente, assegnare le risorse disponibili (pari a complessivi € 3.292.000.000,00). I Contratti di sviluppo devono avere ad oggetto la realizzazione, su iniziativa di una o più imprese, di un programma di sviluppo industriale o per la tutela ambientale per la cui realizzazione sono necessari uno o più progetti di investimento e, eventualmente, progetti di ricerca, sviluppo e innovazione.  Tali programmi devono essere finalizzati, anche attraverso l’attrazione di nuovi investimenti, anche esteri:a) al rafforzamento e allo sviluppo della capacità e dell’industria nazionale di produzione di semiconduttori, attraverso la realizzazione di investimenti concernenti le singole fasi che ne compongono il processo di produzione ovvero più fasi del processo in maniera integrata, e/ob) alla crescita e allo sviluppo tecnologico delle imprese appartenenti alla catena di approvvigionamento dei semiconduttori. I programmi di sviluppo devono risultare conformi con quanto disposto dal decreto ministeriale 9 dicembre 2014 e ss.mm.ii. e le relative agevolazioni possono essere richieste con l’applicazione dei regimi di aiuto previsti dal medesimo decreto, ivi compreso, qualora ne ricorrano i presupposti, il regime di cui al Titolo III del decreto ministeriale 14 settembre 2023 concernente l’applicazione allo strumento agevolativo dei Contratti di sviluppo della sezione 2.8 del “Quadro temporaneo di crisi e transizione per misure di aiuto di Stato a sostegno dell’economia a seguito dell’aggressione della Russia contro l’Ucraina” relativa agli aiuti per accelerare gli investimenti in settori strategici per la transizione verso un’economia a zero emissioni nette. Con il decreto direttoriale 28 ottobre 2025 è stata prevista, a far data dal 4 novembre 2025, la chiusura dei termini per la presentazione delle domande di agevolazione a valere sullo strumento agevolativo dei Contratti di sviluppo che richiedono l’applicazione delle disposizioni di cui alla richiamata sezione 2.8 del Quadro temporaneo (SA.112546 (2023/N). Le agevolazioni possono essere riconosciute, previa notifica individuale del programma di sviluppo alla Commissione europea, sulla base degli articoli 107 e 108 del Trattato sul funzionamento dell’Unione europea, anche nel quadro del Chips Act. Per i programmi di sviluppo che prevedono spese ammissibili di importo pari o superiore a 50 milioni di euro e quelli per i quali, indipendentemente dalla dimensione finanziaria dell’investimento, è stata richiesta dall’impresa l’applicazione delle disposizioni recate dal Chips Act, la concessione delle agevolazioni da parte dell'Agenzia nazionale per l’attrazione degli investimenti e lo sviluppo di impresa S.p.a. - Invitalia è subordinata alla sottoscrizione di uno specifico accordo tra il Ministero, l’Agenzia e l’impresa proponente.  A chi si rivolge Possono beneficiare delle agevolazioni le imprese di qualsiasi dimensione che intendono realizzare i programmi di sviluppo industriale o per la tutela ambientale per la cui realizzazione sono necessari uno o più progetti di investimento e, eventualmente, progetti di ricerca, sviluppo e innovazione. I programmi possono essere realizzati in forma congiunta anche mediante il ricorso allo strumento del contratto di rete. Le istanze per l’accesso alle risorse potranno essere presentate a partire dalle ore 12.00 del giorno 30 aprile 2024.  Cosa prevede Le agevolazioni finanziarie possono essere concesse nelle seguenti forme, anche in combinazione tra di loro:- finanziamento agevolato;- contributo in conto interessi;- contributo in conto impianti;- contributo diretto alla spesa. ",
+        "Obiettivo_Finalita": [
+          "Sostegno investimenti",
+          "Transizione ecologica",
+          "Innovazione e ricerca"
+        ],
+        "Data_apertura": "2024-04-30T00:00:00",
+        "Note_di_apertura_chiusura": "La chiusura avverrà ad esaurimento risorse.",
+        "Dimensioni": [
+          "Microimpresa",
+          "Media Impresa",
+          "Grande Impresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa",
+          "Università/Ente di Ricerca",
+          "Rete d'impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto",
+          "Prestito/Anticipo rimborsabile"
+        ],
+        "Costi_Ammessi": [
+          "Fabbricati e terreni",
+          "Costo del personale",
+          "Materie prime, di consumo e merci",
+          "Impianti/Macchinari/Attrezzature",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Settore_Attivita": [
+          "Agroalimentare",
+          "Artigianato",
+          "Chimica e Farmaceutica",
+          "Cultura",
+          "Elettronica",
+          "ICT",
+          "Metallurgia",
+          "Ristorazione",
+          "Servizi di trasporto",
+          "Edilizia",
+          "Fornitura Energia, Acqua e gestione Rifiuti",
+          "Meccanica",
+          "Mobili, Legno e Carta",
+          "Moda e Tessile",
+          "Salute",
+          "Turismo",
+          "Agricoltura, silvicoltura e pesca",
+          "Alberghiero",
+          "Altri servizi",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Commercio"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti",
+        "Regioni": [
+          "Piemonte",
+          "Lombardia",
+          "Valle d'Aosta/Vallée d'Aoste",
+          "Liguria",
+          "Abruzzo",
+          "Molise",
+          "Basilicata",
+          "Calabria",
+          "Campania",
+          "Puglia",
+          "Sicilia",
+          "Trentino-Alto Adige/Südtirol",
+          "Veneto",
+          "Sardegna",
+          "Toscana",
+          "Friuli-Venezia Giulia",
+          "Emilia-Romagna",
+          "Umbria",
+          "Marche",
+          "Lazio"
+        ],
+        "Soggetto_Concedente": "Ministero delle Imprese e del Made in Italy",
+        "Base_normativa_primaria": "Decreto del Ministro dello sviluppo economico 9 dicembre 2014",
+        "Base_normativa_secondaria": "Decreto ministeriale 14 settembre 2023 - Modifiche alla disciplina attuativa dei contratti di sviluppo.",
+        "Provvedimento_attuativo": "Decreto direttoriale 11 aprile 2024 - Contratti di sviluppo. Apertura sportello semiconduttori.",
+        "Gazzetta_ufficiale": "96 del 24/04/2024",
+        "Stanziamento_incentivo": "3292000000",
+        "Link_istituzionale": "https://www.mimit.gov.it/it/incentivi/semiconduttori",
+        "Altre_caratteristiche": "investimenti di grandi dimensioni;contratti di sviluppo;sostegno alle imprese;settore industriale;tutela ambientale;sviluppo tecnologico;filiera nazionale dei semiconduttori;chip. ",
+        "Data_ultimo_aggiornamento": "2025-10-31T11:11:21Z"
+      },
+      {
+        "ID_Incentivo": "1442",
+        "Titolo": "Bando Enviromental, Social e Governance - ESG e Transizione energetica - anno 2024 - Camera di Commercio di Cuneo",
+        "Descrizione": "Cos'è Il Bando è funzionale all'assegnazione di contributi per accompagnare le imprese con sede o unità locale in provincia di Cuneo verso la transizione ecologica, sociale e di governance e il riposizionamento competitivo sui mercati.  A chi si rivolge Si rivolge a imprese con sede o unità locale in provincia di Cuneo.  Cosa prevede Si prevede il finanziamento di spese di consulenza e formazione finalizzate a favorire l'adozione dei criteri ESG, l'acquisto di sistemi gestionali finalizzati all'operatività aziendale dei piani di governance, la razionalizzazione dell'uso di energia, la formazione finalizzata al conseguimento della qualifica di Energy manager, tecnologie digitali e 4.0. ",
+        "Obiettivo_Finalita": [
+          "Transizione ecologica"
+        ],
+        "Data_apertura": "2024-04-08T00:00:00",
+        "Data_chiusura": "2024-06-27T00:00:00",
+        "Note_di_apertura_chiusura": "Bando chiuso in via anticipata il 27/06/2024 per esaurimento risorse.",
+        "Dimensioni": [
+          "Microimpresa",
+          "Media Impresa",
+          "Grande Impresa",
+          "Non classificabile/classificato",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Servizi, brevetti e licenze"
+        ],
+        "Spesa_Ammessa_min": "3000",
+        "Spesa_Ammessa_max": "15000",
+        "Agevolazione_Concedibile_min": "1500",
+        "Agevolazione_Concedibile_max": "8250",
+        "Settore_Attivita": [
+          "Salute",
+          "Commercio",
+          "Metallurgia",
+          "ICT",
+          "Edilizia",
+          "Cultura",
+          "Chimica e Farmaceutica",
+          "Artigianato",
+          "Alberghiero",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Moda e Tessile",
+          "Elettronica",
+          "Altri servizi",
+          "Agroalimentare",
+          "Turismo",
+          "Servizi di trasporto",
+          "Ristorazione",
+          "Mobili, Legno e Carta",
+          "Meccanica"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti",
+        "Regioni": [
+          "Piemonte"
+        ],
+        "Soggetto_Concedente": "Camera di Commercio, Industria, Artigianato e Agricoltura di Cuneo",
+        "Base_normativa_primaria": "Bando ESG e transizione energetica – anno 2024 – Approvazione criteri",
+        "Provvedimento_attuativo": "Bando ESG e transizione energetica – anno 2024 – Approvazione criteri",
+        "Stanziamento_incentivo": "550000",
+        "Link_istituzionale": "https://www.cn.camcom.it/attivita/presentazione-dei-bandi-camerali-bando-esg-transizione-energetica-bando-innovazione",
+        "Data_ultimo_aggiornamento": "2024-08-19T23:31:37Z"
+      },
+      {
+        "ID_Incentivo": "1448",
+        "Titolo": "Contributi alle MPMI per fiere in Italia e all'estero: sviluppo economico locale - Anno 2024 - Camera di Commercio di Como - Lecco",
+        "Descrizione": "Cos'è Bando volto a concedere contributi a fondo perduto per la partecipazione delleimprese delle province di Como e di Lecco ad eventi fieristici internazionali all'estero, internazionalie nazionali in Italia organizzati nel periodo ricompreso tra il 01.01.2024 e il 31.12.2024.  A chi si rivolge Si rivolge a MPMI - Micro, Piccole e Medie imprese (MPMI) che, dal momento della presentazione della domanda e fino alla liquidazione del beneficio, abbiano sede legale o operativa nella circoscrizione territoriale della Camera di Commercio di Como-Lecco che non risultino assegnatarie di contributo a valere sul bando “Fiere internazionali all'estero, internazionali e nazionali in Italia, regionali in Lombardia - anno 2023”. Cosa prevede L’iniziativa è volta a sostenere e favorire lo sviluppo del sistema economico locale e in particolare massimizzare le opportunità di crescita internazionale delle MPMI e prevede la concessione di contributi a fondo perduto. Il contributo concedibile (erogato con la ritenuta d'acconto del 4%) non potrà superare il 50% delle spese ammesse (al netto di IVA) e sarà computato fino ad un massimo di: - euro 2.500,00 per partecipazioni a fiere internazionali e nazionali in Italia (con un investimento minimo euro 2.500,00); - euro 5.000,00 per partecipazioni a fiere internazionali all’estero, UE ed extra UE (con un investimento minimo euro 2.500,00).",
+        "Obiettivo_Finalita": [
+          "Internazionalizzazione"
+        ],
+        "Data_apertura": "2024-04-22T00:00:00",
+        "Data_chiusura": "2024-09-30T00:00:00",
+        "Note_di_apertura_chiusura": "Le domande di contributo devono essere trasmesse esclusivamente in modalità telematica, dalle ore 10.00 del 22.04.2024 alle ore 16.00 del 30.09.2024, salvo chiusura anticipata del bando per esaurimento dei fondi disponibili. Documentazione da trasmettere con firma digitale, lo sportello on line “Contributi alle imprese”, all’interno del sistema Webtelemaco di InfoCamere - Servizi e-gov (Agef) attraverso il sito http://webtelemaco.infocamere.it.",
+        "Dimensioni": [
+          "Media Impresa",
+          "Microimpresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "2500",
+        "Spesa_Ammessa_max": "50000",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "5000",
+        "Settore_Attivita": [
+          "Agroalimentare",
+          "Alberghiero",
+          "Altri servizi",
+          "Artigianato",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Chimica e Farmaceutica",
+          "Commercio",
+          "Cultura",
+          "Edilizia",
+          "Elettronica",
+          "Fornitura Energia, Acqua e gestione Rifiuti",
+          "ICT",
+          "Meccanica",
+          "Metallurgia",
+          "Mobili, Legno e Carta",
+          "Moda e Tessile",
+          "Ristorazione",
+          "Salute",
+          "Servizi di trasporto",
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Lombardia"
+        ],
+        "Soggetto_Concedente": "Camera di Commercio di Como-Lecco - Area Promozione Economica e Regolazione del Mercato",
+        "Base_normativa_primaria": "Bando “Fiere internazionali all'estero, internazionali e nazionali in Italia - Anno 2024” - Approvazione iniziativa e destinazione risorse.",
+        "Provvedimento_attuativo": "BANDO VOUCHER DIGITALI E TRANSIZIONE ENERGETICA - ANNO 2024.PROVVEDIMENTI",
+        "Stanziamento_incentivo": "250000",
+        "Link_istituzionale": "https://www.comolecco.camcom.it/archivio27_bandi-ed-opportunita_0_148.html",
+        "Data_ultimo_aggiornamento": "2024-04-03T15:28:13Z"
+      },
+      {
+        "ID_Incentivo": "156",
+        "Titolo": "Mobilità sostenibile - Sostegno alla filiera degli autobus elettrici - PNRR",
+        "Descrizione": "Cos'è Lo strumento agevolativo è volto a sostenere la realizzazione di piani d'investimento capaci di promuovere la trasformazione verde e digitale dell’industria degli autobus al fine di produrre veicoli elettrici (sono esclusi quelli a trazione ibrida) e connessi, in attuazione dell’Investimento 5.3 “Sviluppo di una leadership internazionale, industriale e di ricerca e sviluppo nel campo degli autobus elettrici” del PNRR.  A chi si rivolge Si rivolge a imprese di tutte le dimensioni ed operanti su tutto il territorio nazionale che intendono realizzare programmi d'investimento produttivi coerenti con le finalità del richiamato Investimento 5.3. del PNRR, eventualmente accompagnati da progetti di ricerca industriale e/o sviluppo sperimentale e da progetti di formazione del personale strettamente connessi e funzionali ai programmi d'investimento produttivi.  Cosa prevede Concessione di contributi a fondo perduto e finanziamenti agevolati, anche in combinazione tra loro, nei limiti delle intensità massime di aiuto previste dalla normativa applicabile.  Per effetto delle recenti modifiche al PNRR sono destinati all’attuazione 25 milioni di euro, nell’ambito della dotazione dell’Investimento M7-I12 del PNRR di complessivi 100 milioni. La dotazione sostituisce quella inizialmente stanziata per la misura, pari ad 80 milioni di complessivi 300, nell’ambito della misura 5.3 del PNRR M2C2 “Transizione energetica e mobilità sostenibile”. ",
+        "Obiettivo_Finalita": [
+          "Innovazione e ricerca",
+          "Transizione ecologica",
+          "Sostegno investimenti"
+        ],
+        "Data_apertura": "2022-07-25T00:00:00",
+        "Note_di_apertura_chiusura": "La chiusura avverrà ad esaurimento risorse.",
+        "Dimensioni": [
+          "Media Impresa",
+          "Grande Impresa",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto",
+          "Prestito/Anticipo rimborsabile"
+        ],
+        "Costi_Ammessi": [
+          "Fabbricati e terreni",
+          "Formazione Professionale",
+          "Costo del personale",
+          "Servizi, brevetti e licenze",
+          "Impianti/Macchinari/Attrezzature",
+          "Spese generali/altri oneri"
+        ],
+        "Spesa_Ammessa_min": "1000000",
+        "Spesa_Ammessa_max": "20000000",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "0",
+        "Settore_Attivita": [
+          "Meccanica",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Metallurgia",
+          "Elettronica"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti",
+        "Regioni": [
+          "Piemonte",
+          "Lombardia",
+          "Valle d'Aosta/Vallée d'Aoste",
+          "Liguria",
+          "Abruzzo",
+          "Molise",
+          "Basilicata",
+          "Calabria",
+          "Campania",
+          "Puglia",
+          "Sicilia",
+          "Trentino-Alto Adige/Südtirol",
+          "Veneto",
+          "Sardegna",
+          "Toscana",
+          "Friuli-Venezia Giulia",
+          "Emilia-Romagna",
+          "Umbria",
+          "Marche",
+          "Lazio"
+        ],
+        "Soggetto_Concedente": "Ministero delle Imprese e del Made in Italy",
+        "Base_normativa_primaria": "Decreto del Ministro dello sviluppo economico 29/04/2022 - PNRR - Investimento 5.3 “Sviluppo di una leadership internazionale, industriale e di ricerca e sviluppo nel campo degli autobus elettrici\"",
+        "Base_normativa_secondaria": "Circolare del Direttore Generale per gli incentivi alle imprese n. 0406893 del 29 novembre 2023, recante \"Proroga dei regimi di aiuto di competenza della Direzione attuati in esenzione dall’obbligo di notifica ai sensi del regolamento (UE) n. 651/2014\".",
+        "Provvedimento_attuativo": "Decreto Direttoriale del Ministero dello sviluppo economico del 6 luglio 2022 - Autobus elettrici",
+        "Gazzetta_ufficiale": "165 del 16/07/2022",
+        "Stanziamento_incentivo": "25000000",
+        "Link_istituzionale": "https://www.mimit.gov.it/index.php/it/incentivi/mobilita-sostenibile-filiera-degli-autobus-elettrici",
+        "Altre_caratteristiche": "trasformazione verde; trasformazione digitale; autobus; bus; bus elettrici; bus elettrico; trasporto sostenibile; aiuti green alle imprese; PNRR; veicoli elettrici, fondo perduto",
+        "Data_ultimo_aggiornamento": "2025-07-08T16:41:43Z"
+      },
+      {
+        "ID_Incentivo": "1671",
+        "Titolo": "Contributo per progetti di formazione aziendale - Provincia Autonoma di Trento",
+        "Descrizione": "Cos'è Contributo per progetti di formazione aziendale. Regolamento 651/2014 \"esenzione\". L'Agenzia del lavoro della Provincia Autonoma di Trento finanzia i datori di lavoro privati e imprenditori che organizzano percorsi formativi di sviluppo e aggiornamento professionale volti a sostenere particolari processi aziendali. I percorsi formativi di sviluppo e aggiornamento professionale devono perseguire le seguenti finalità:- lo sviluppo delle competenze professionali della forza lavoro coinvolta nei processi produttivi;- l’incremento dei profili qualitativi del capitale umano, sostenendo così l’aumento della produttività dei fattori e il rafforzamento della competitività delle imprese;- la diffusione della pratica delle attività di formazione continua nel sistema produttivo locale;- la complementarietà tra interventi di formazione continua finanziati dall’Ente pubblico e interventi sostenuti dai Fondi Interprofessionali; - la coerenza fra ambiti di competenza/investimento formativo per occupati e settori di specializzazione su cui si fonda la strategia di sviluppo locale;- il miglioramento della salute e della sicurezza dei lavoratori sul luogo di lavoro, con contenuti ulteriori rispetto agli obblighi previsti dalle direttive comunitarie, dalla normativa nazionale e provinciale in materia;- il rafforzamento delle competenze dei neo-assunti, al fine di facilitarne l’inserimento produttivo. Riferimenti: 5.1.4. B Contributo per progetti di formazione aziendale - Reg. Esenzione. A chi si rivolge L'incentivo si rivolge a:- dipendenti (anche cassaintegrati) e collaboratori dei datori di lavoro privati, esclusi i lavoratori a domicilio e i giovani in apprendistato professionalizzante, limitatamente agli argomenti contenuti nel PIF;- titolari, inclusi i rappresentanti legali, o soci lavoratori (anche in posizione dominante) di imprese artigiane e/o micro e piccole imprese; coniuge, convivente, parenti entro il II grado dei medesimi, se operano come dipendenti o collaboratori familiari;- soci lavoratori di società cooperativa, inclusi coloro che svolgono il ruolo di rappresentante legale;- imprenditori individuali, coniuge, convivente, parenti entro il II grado dei medesimi, se operano come dipendenti o collaboratori familiari. I dipendenti devono aver instaurato un contratto di lavoro di durata superiore ai 6 mesi. Cosa prevede Il contributo massimo previsto è di € 3.000,00 per partecipante ed è erogabile subordinatamente al raggiungimento della frequenza minima dell’80% del monte ore previsto per ciascun partecipante.analisi dei bisogni/progettazione formativa, gestione del corso. Sono riconosciute, esclusivamente per il personale esterno, le voci di costo relative alla docenza, l'analisi dei bisogni/progettazione formativa e gestione del corso secondo i limiti massimi, i parametri e le modalità di seguito specificate di cui alla diposizioni attuative dell'intervento 5.1.4B. Rispetto al contributo massimo previsto dall'intervento, l'intensità massima di aiuto ai sensi dell'art. 31 del Reg.to 651/2014 è per la grande Impresa pari al 50 %, per la media Impresa pari al 60 % e per la piccola Impresa pari al 70 %.",
+        "Obiettivo_Finalita": [
+          "Sostegno liquidità"
+        ],
+        "Data_apertura": "2020-02-01T00:00:00",
+        "Note_di_apertura_chiusura": "Attivo",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Non classificabile/classificato",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Consorzio",
+          "Cooperative/Associazioni Non Profit",
+          "Impresa",
+          "Professionista"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Formazione Professionale",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri",
+          "Spese generali/altri oneri",
+          "Spese generali/altri oneri"
+        ],
+        "Settore_Attivita": [
+          "Agricoltura, silvicoltura e pesca",
+          "Agroalimentare",
+          "Alberghiero",
+          "Altri servizi",
+          "Artigianato",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Chimica e Farmaceutica",
+          "Commercio",
+          "Cultura",
+          "Edilizia",
+          "Elettronica",
+          "Fornitura Energia, Acqua e gestione Rifiuti",
+          "ICT",
+          "Meccanica",
+          "Metallurgia",
+          "Mobili, Legno e Carta",
+          "Moda e Tessile",
+          "Ristorazione",
+          "Salute",
+          "Servizi di trasporto",
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Trentino-Alto Adige/Südtirol"
+        ],
+        "Ambito_territoriale": [
+          "Aree interne"
+        ],
+        "Soggetto_Concedente": "Provincia Autonoma di Trento",
+        "Base_normativa_primaria": "PAT-Approvazione del Documento degli interventi di politica del lavoro della XVI legislatura",
+        "Provvedimento_attuativo": "PAT-LP 19/1983 Organizzazione degli interventi di politica del lavoro",
+        "Stanziamento_incentivo": "165000",
+        "Link_istituzionale": "https://www.provincia.tn.it/Servizi/Contributo-per-progetti-di-formazione-aziendale-Int.-5.1.4B#",
+        "Altre_caratteristiche": "incentivi formazione contributo",
+        "Data_ultimo_aggiornamento": "2024-06-21T12:54:43Z"
+      },
+      {
+        "ID_Incentivo": "1673",
+        "Titolo": "Contributo per progetti di formazione aziendale - Provincia Autonoma di Trento",
+        "Descrizione": "Cos'è Contributo per progetti di formazione aziendale. L'Agenzia del lavoro della Provincia Autonoma di Trento finanzia i datori di lavoro privati e imprenditori che organizzano percorsi formativi di sviluppo e aggiornamento professionale volti a sostenere particolari processi aziendali. 5.1.4. BA chi si rivolge L'iniziativa si rivolge a:- dipendenti (anche cassaintegrati) e collaboratori dei datori di lavoro privati, esclusi i lavoratori a domicilio e i giovani in apprendistato professionalizzante, limitatamente agli argomenti contenuti nel PIF;- titolari, inclusi i rappresentanti legali, o soci lavoratori (anche in posizione dominante) di imprese artigiane e/o micro e piccole imprese; coniuge, convivente, parenti entro il II grado dei medesimi, se operano come dipendenti o collaboratori familiari;- soci lavoratori di società cooperativa, inclusi coloro che svolgono il ruolo di rappresentante legale;- imprenditori individuali, coniuge, convivente, parenti entro il II grado dei medesimi, se operano come dipendenti o collaboratori familiari.  I dipendenti devono aver instaurato un contratto di lavoro di durata superiore ai 6 mesi. Cosa prevede Il contributo massimo è di € 3.000,00 per partecipante ed è erogabile subordinatamente al raggiungimento della frequenza minima dell’80% del monte ore previsto per ciascun partecipante. analisi dei bisogni/progettazione formativa, gestione del corso. Sono riconosciute, esclusivamente per il personale esterno, le voci di costo relative alla docenza, l'analisi dei bisogni/progettazione formativa e gestione del corso secondo i limiti massimi, i parametri e le modalità di seguito specificate di cui alla diposizioni attuative dell'intervento 5.1.4B.",
+        "Obiettivo_Finalita": [
+          "Sostegno liquidità"
+        ],
+        "Data_apertura": "2020-02-01T00:00:00",
+        "Note_di_apertura_chiusura": "Attivo",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Non classificabile/classificato",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Consorzio",
+          "Cooperative/Associazioni Non Profit",
+          "Impresa",
+          "Professionista"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Formazione Professionale",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Settore_Attivita": [
+          "Agricoltura, silvicoltura e pesca",
+          "Agroalimentare",
+          "Alberghiero",
+          "Altri servizi",
+          "Artigianato",
+          "Autoveicoli e altri mezzi di trasporto",
+          "Chimica e Farmaceutica",
+          "Commercio",
+          "Cultura",
+          "Edilizia",
+          "Elettronica",
+          "Fornitura Energia, Acqua e gestione Rifiuti",
+          "ICT",
+          "Meccanica",
+          "Metallurgia",
+          "Mobili, Legno e Carta",
+          "Moda e Tessile",
+          "Ristorazione",
+          "Salute",
+          "Servizi di trasporto",
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Trentino-Alto Adige/Südtirol"
+        ],
+        "Ambito_territoriale": [
+          "Aree interne"
+        ],
+        "Soggetto_Concedente": "Provincia Autonoma di Trento",
+        "Base_normativa_primaria": "PAT-LP 19/1983 Organizzazione degli interventi di politica del lavoro",
+        "Provvedimento_attuativo": "PAT-LP 19/1983 Organizzazione degli interventi di politica del lavoro",
+        "Stanziamento_incentivo": "1000000",
+        "Link_istituzionale": "https://www.provincia.tn.it/Servizi/Contributo-per-progetti-di-formazione-aziendale-Int.-5.1.4B#accedere_al_servizio",
+        "Altre_caratteristiche": "incentivi formazione contributo",
+        "Data_ultimo_aggiornamento": "2024-06-20T16:09:11Z"
+      },
+      {
+        "ID_Incentivo": "1437",
+        "Titolo": "Bando per la concessione di contributi per attrarre flussi turistici 2024 - CCIAA Gran Sasso d'Italia",
+        "Descrizione": "Cos'è La Camera di Commercio del Gran Sasso d'Italia, con la finalità di incrementare i flussi turistici sul territorio, eroga contributi a gruppi di turisti che intendono soggiornare, per un periodo di almeno due pernottamenti, in una delle strutture ricettive nelle province di L’Aquila e Teramo. A chi si rivolge Il bando è rivolto a: tour operator, agenzie di viaggio, scuole pubbliche e private di ogni ordine e grado, associazioni Onlus, Cral aziendali, circoli ricreativi, circoli culturali, fondazioni, organizzazioni turistiche senza scopo di lucro, organizzazioni che promuovono il turismo accessibile, associazioni di pensionati, associazioni sportive dilettantistiche e le società sportive, gruppi di turismo sociale organizzati dai comuni o dalle organizzazioni professionali, parrocchie, DMC (Destination Management Company) PMC (Product Management Company). I gruppi di partecipanti devono essere formati da almeno 25 persone. Cosa prevede La durata minima del soggiorno è di 2 pernottamenti consecutivi in una o più strutture ricettive della provincia di L’Aquila e Teramo. Le agevolazioni previste sono riferite a periodi di bassa stagionalità per tutti i comuni, con esclusione dei comuni capoluogo di provincia di L’Aquila e Teramo, come segue:- dal 7 gennaio* al 15 giugno- dal 1 ottobre al 21 dicembre* per i comuni di montagna sedi di comprensori sciistici la data del 7 gennaio è posticipata al 15 aprile. Per i comuni capoluogo di L’Aquila e Teramo le istanze possono essere presentate per tutti i periodi dell’anno.",
+        "Obiettivo_Finalita": [
+          "Internazionalizzazione"
+        ],
+        "Data_apertura": "2024-01-07T00:00:00",
+        "Data_chiusura": "2024-12-21T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Non classificabile/classificato",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Consorzio",
+          "Cooperative/Associazioni Non Profit",
+          "Impresa",
+          "Rete d'impresa"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Servizi, brevetti e licenze"
+        ],
+        "Spesa_Ammessa_min": "0",
+        "Spesa_Ammessa_max": "750",
+        "Agevolazione_Concedibile_min": "0",
+        "Agevolazione_Concedibile_max": "750",
+        "Settore_Attivita": [
+          "Alberghiero",
+          "Altri servizi",
+          "Cultura",
+          "Ristorazione",
+          "Turismo"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Abruzzo"
+        ],
+        "Comuni": "Acciano; Aielli; Alba Adriatica; Alfedena; Ancarano; Anversa degli Abruzzi; Arsita; Ateleta; Atri; Avezzano; Balsorano; Barete; Barisciano; Barrea; Basciano; Bellante; Bisegna; Bisenti; Bugnara; Cagnano Amiterno; Calascio; Campli; Campo di Giove; Campotosto; Canistro; Cansano; Canzano; Capestrano; Capistrello; Capitignano; Caporciano; Cappadocia; Carapelle Calvisio; Carsoli; Castel Castagna; Castel del Monte; Castel di Ieri; Castel di Sangro; Castellafiume; Castellalto; Castelli; Castelvecchio Calvisio; Castelvecchio Subequo; Castiglione Messer Raimondo; Castilenti; Celano; Cellino Attanasio; Cerchio; Cermignano; Civita d'Antino; Civitella Alfedena; Civitella Roveto; Civitella del Tronto; Cocullo; Collarmele; Colledara; Collelongo; Collepietro; Colonnella; Controguerra; Corfinio; Corropoli; Cortino; Crognaleto; Fagnano Alto; Fano Adriano; Fontecchio; Fossa; Gagliano Aterno; Gioia dei Marsi; Giulianova; Goriano Sicoli; Introdacqua; Isola del Gran Sasso d'Italia; L'Aquila; Lecce nei Marsi; Luco dei Marsi; Lucoli; Magliano de' Marsi; Martinsicuro; Massa d'Albe; Molina Aterno; Montefino; Montereale; Montorio al Vomano; Morino; Morro d'Oro; Mosciano Sant'Angelo; Navelli; Nereto; Notaresco; Ocre; Ofena; Opi; Oricola; Ortona dei Marsi; Ortucchio; Ovindoli; Pacentro; Penna Sant'Andrea; Pereto; Pescasseroli; Pescina; Pescocostanzo; Pettorano sul Gizio; Pietracamela; Pineto; Pizzoli; Poggio Picenze; Prata d'Ansidonia; Pratola Peligna; Prezza; Raiano; Rivisondoli; Rocca Pia; Rocca Santa Maria; Rocca di Botte; Rocca di Cambio; Rocca di Mezzo; Roccacasale; Roccaraso; Roseto degli Abruzzi; San Benedetto dei Marsi; San Benedetto in Perillis; San Demetrio ne' Vestini; San Pio delle Camere; San Vincenzo Valle Roveto; Sant'Egidio alla Vibrata; Sant'Eusanio Forconese; Sant'Omero; Sante Marie; Santo Stefano di Sessanio; Scanno; Scontrone; Scoppito; Scurcola Marsicana; Secinaro; Silvi; Sulmona; Tagliacozzo; Teramo; Tione degli Abruzzi; Torano Nuovo; Tornimparte; Torricella Sicura; Tortoreto; Tossicia; Trasacco; Valle Castellana; Villa Sant'Angelo; Villa Santa Lucia degli Abruzzi; Villalago; Villavallelonga; Villetta Barrea; Vittorito",
+        "Soggetto_Concedente": "CAMERA DI COMMERCIO INDUSTRIA ARTIGIANATO E AGRICOLTURA DEL GRAN SASSO D'ITALIA",
+        "Base_normativa_primaria": "Iniziative di promozione economica. Approvazione bandi 2024",
+        "Provvedimento_attuativo": "Iniziative di promozione economica. Approvazione bandi 2024",
+        "Stanziamento_incentivo": "100000",
+        "Link_istituzionale": "https://www.cameragransasso.camcom.it/it/la-camera/promozione-economica/bandi/bando-per-la-concessione-di-contributi-per-attrarre-flussi-turistici/",
+        "Data_ultimo_aggiornamento": "2024-04-02T15:04:30Z"
+      },
+      {
+        "ID_Incentivo": "154",
+        "Titolo": "KDT JU Calls 2021",
+        "Descrizione": "Cos'è La KDT JU (Key Digital Technologies Joint Undertaking) è una partnership che supporta ricerca e innovazione nella progettazione di componenti elettronici, nonché la loro produzione e integrazione in sistemi intelligenti. A chi si rivolge Imprese di qualsiasi dimensione che esercitano attività industriale/commerciale/di trasporto o attività ausiliarie alle precedenti, le imprese artigiane, le imprese agro-industriali, le Università, i Centri di Ricerca e gli Organismi di Ricerca. Cosa prevede Per contribuire allo sviluppo di una industria forte e competitiva nel settore dei componenti e dei sistemi elettronici, sono destinati € 10.000.000,00 al cofinanziamento dei progetti delle imprese italiane selezionati nei bandi emanati nel corso del 2021 da KDT JU – Innovation Actions (IA) e Research Innovation Actions (RIA). Una quota del 40% dello stanziamento di 10 milioni di euro è riservata a imprese localizzate nelle regioni del Mezzogiorno.",
+        "Obiettivo_Finalita": [
+          "Innovazione e ricerca",
+          "Sostegno investimenti"
+        ],
+        "Data_apertura": "2022-04-28T00:00:00",
+        "Data_chiusura": "2022-05-16T00:00:00",
+        "Dimensioni": [
+          "Grande Impresa",
+          "Media Impresa",
+          "Microimpresa",
+          "Non classificabile/classificato",
+          "Piccola Impresa"
+        ],
+        "Tipologia_Soggetto": [
+          "Impresa",
+          "Rete d'impresa",
+          "Università/Ente di Ricerca"
+        ],
+        "Forma_agevolazione": [
+          "Contributo/Fondo perduto"
+        ],
+        "Costi_Ammessi": [
+          "Costo del personale",
+          "Fabbricati e terreni",
+          "Formazione Professionale",
+          "Impianti/Macchinari/Attrezzature",
+          "Materie prime, di consumo e merci",
+          "Servizi, brevetti e licenze",
+          "Spese generali/altri oneri"
+        ],
+        "Codici_ATECO": "Tutti i settori economici ammissibili a ricevere aiuti;",
+        "Regioni": [
+          "Abruzzo",
+          "Basilicata",
+          "Calabria",
+          "Campania",
+          "Emilia-Romagna",
+          "Friuli-Venezia Giulia",
+          "Lazio",
+          "Liguria",
+          "Lombardia",
+          "Marche",
+          "Molise",
+          "Piemonte",
+          "Puglia",
+          "Sardegna",
+          "Sicilia",
+          "Toscana",
+          "Trentino-Alto Adige/Südtirol",
+          "Umbria",
+          "Valle d'Aosta/Vallée d'Aoste",
+          "Veneto"
+        ],
+        "Soggetto_Concedente": "Ministero delle Imprese e del Made in Italy - Direzione generale per gli incentivi alle imprese",
+        "Base_normativa_primaria": "Decreto Ministeriale del 16 dicembre 2022 recante \"Sostegno ai progetti di ricerca industriale e sviluppo sperimentale delle imprese italiane, selezionati nei bandi emanati dalle istituzioni UE - Partenariati Horizon Europe\"",
+        "Provvedimento_attuativo": "Decreto direttoriale 28 aprile 2022 - Agevolazioni finanziarie calls 2021 KDT JU.",
+        "Stanziamento_incentivo": "10000000",
+        "Link_istituzionale": "https://www.mimit.gov.it/index.php/it/incentivi/elettronica",
+        "Data_ultimo_aggiornamento": "2023-11-13T14:29:59Z"
+      }
+    ]
+  }
+}

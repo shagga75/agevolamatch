@@ -1,0 +1,422 @@
+{
+  "$defs": {
+    "OpportunitySourceName": {
+      "enum": [
+        "incentivi_gov_it",
+        "invitalia"
+      ],
+      "title": "OpportunitySourceName",
+      "type": "string"
+    },
+    "OpportunityStatus": {
+      "description": "Computed from open/close dates at ingest time; the source has no status field.",
+      "enum": [
+        "open",
+        "upcoming",
+        "closed",
+        "unknown"
+      ],
+      "title": "OpportunityStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "An Italian public incentive (finanza agevolata) - subtype of Opportunity.",
+  "properties": {
+    "source": {
+      "$ref": "#/$defs/OpportunitySourceName"
+    },
+    "source_id": {
+      "description": "Identifier assigned by the origin system, e.g. the Drupal nid",
+      "title": "Source Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "description": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Description"
+    },
+    "url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Url"
+    },
+    "open_date": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Open Date"
+    },
+    "close_date": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Close Date"
+    },
+    "status": {
+      "$ref": "#/$defs/OpportunityStatus",
+      "default": "unknown"
+    },
+    "content_hash": {
+      "description": "sha256 of the normalized payload, used to detect changes",
+      "title": "Content Hash",
+      "type": "string"
+    },
+    "first_seen": {
+      "format": "date-time",
+      "title": "First Seen",
+      "type": "string"
+    },
+    "last_seen_at": {
+      "format": "date-time",
+      "title": "Last Seen At",
+      "type": "string"
+    },
+    "source_last_updated": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Origin system's own last-modified timestamp, when available",
+      "title": "Source Last Updated"
+    },
+    "granting_body": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Soggetto_Concedente",
+      "title": "Granting Body"
+    },
+    "scope": {
+      "description": "Obiettivo_Finalita",
+      "items": {
+        "type": "string"
+      },
+      "title": "Scope",
+      "type": "array"
+    },
+    "beneficiary_types": {
+      "description": "Tipologia_Soggetto",
+      "items": {
+        "type": "string"
+      },
+      "title": "Beneficiary Types",
+      "type": "array"
+    },
+    "startup_or_pmi_innovativa_ambiguous": {
+      "default": false,
+      "description": "True when beneficiary_types includes the source's combined 'SU/PMI innovativa' value, which cannot be split into startup innovativa vs PMI innovativa.",
+      "title": "Startup Or Pmi Innovativa Ambiguous",
+      "type": "boolean"
+    },
+    "company_sizes": {
+      "description": "Dimensioni",
+      "items": {
+        "type": "string"
+      },
+      "title": "Company Sizes",
+      "type": "array"
+    },
+    "support_forms": {
+      "description": "Forma_agevolazione",
+      "items": {
+        "type": "string"
+      },
+      "title": "Support Forms",
+      "type": "array"
+    },
+    "eligible_costs": {
+      "description": "Costi_Ammessi",
+      "items": {
+        "type": "string"
+      },
+      "title": "Eligible Costs",
+      "type": "array"
+    },
+    "activity_sectors": {
+      "description": "Settore_Attivita (informative, not authoritative for filtering)",
+      "items": {
+        "type": "string"
+      },
+      "title": "Activity Sectors",
+      "type": "array"
+    },
+    "ateco_codes": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Parsed codes when Codici_ATECO has any",
+      "title": "Ateco Codes"
+    },
+    "ateco_all_sectors": {
+      "default": false,
+      "description": "True when Codici_ATECO is the 'all sectors eligible' free-text pattern",
+      "title": "Ateco All Sectors",
+      "type": "boolean"
+    },
+    "ateco_raw": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Unparsed Codici_ATECO for auditing",
+      "title": "Ateco Raw"
+    },
+    "regions": {
+      "description": "Regioni",
+      "items": {
+        "type": "string"
+      },
+      "title": "Regions",
+      "type": "array"
+    },
+    "municipalities": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Comuni - free-text municipality names, no ISTAT codes in the source",
+      "title": "Municipalities"
+    },
+    "special_territory": {
+      "description": "Ambito_territoriale",
+      "items": {
+        "type": "string"
+      },
+      "title": "Special Territory",
+      "type": "array"
+    },
+    "cost_min": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Spesa_Ammessa_min",
+      "title": "Cost Min"
+    },
+    "cost_max": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Spesa_Ammessa_max",
+      "title": "Cost Max"
+    },
+    "grant_min": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Agevolazione_Concedibile_min",
+      "title": "Grant Min"
+    },
+    "grant_max": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Agevolazione_Concedibile_max",
+      "title": "Grant Max"
+    },
+    "budget_allocation_raw": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Stanziamento_incentivo, verbatim",
+      "title": "Budget Allocation Raw"
+    },
+    "budget_allocation_amount": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Best-effort numeric parse of budget_allocation_raw; never used for hard filters",
+      "title": "Budget Allocation Amount"
+    },
+    "primary_legal_basis": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Base_normativa_primaria",
+      "title": "Primary Legal Basis"
+    },
+    "secondary_legal_basis": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Base_normativa_secondaria",
+      "title": "Secondary Legal Basis"
+    },
+    "implementation_ruling": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Provvedimento_attuativo",
+      "title": "Implementation Ruling"
+    },
+    "official_gazette_ref": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Gazzetta_ufficiale",
+      "title": "Official Gazette Ref"
+    },
+    "other_characteristics": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Altre_caratteristiche",
+      "title": "Other Characteristics"
+    },
+    "close_date_note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Note_di_apertura_chiusura",
+      "title": "Close Date Note"
+    }
+  },
+  "required": [
+    "source",
+    "source_id",
+    "title",
+    "content_hash",
+    "first_seen",
+    "last_seen_at"
+  ],
+  "title": "Incentive",
+  "type": "object"
+}
