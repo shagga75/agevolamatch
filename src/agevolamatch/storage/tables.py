@@ -31,3 +31,22 @@ class OpportunityRecord(SQLModel, table=True):
     last_seen_at: datetime
     source_last_updated: datetime | None = None
     payload: dict = Field(sa_column=Column(JSON))
+
+
+class SentAlert(SQLModel, table=True):
+    """Dedup log for alerts/service.py: an alert for the same subscription and
+    the same exact content_hash of an incentive is never sent twice, even
+    across separate `alerts run` invocations."""
+
+    __tablename__ = "sent_alerts"
+    __table_args__ = (
+        UniqueConstraint("subscription_name", "source", "source_id", "content_hash", name="uq_alert_dedup"),
+    )
+
+    id: int | None = Field(default=None, primary_key=True)
+    subscription_name: str = Field(index=True)
+    source: str
+    source_id: str
+    content_hash: str
+    channels_sent: str
+    sent_at: datetime

@@ -24,6 +24,10 @@ uv run agevolamatch ingest       # fetch + store incentives from incentivi.gov.i
 uv run agevolamatch list --status open --region Lazio
 uv run agevolamatch match --profile examples/startup_profile.yaml --top 10
 uv run agevolamatch export --format csv --output out.csv --profile examples/startup_profile.yaml
+uv run agevolamatch alerts run --subscriptions examples/alert_subscriptions.yaml --dry-run
+uv run agevolamatch serve                # REST API on :8000
+
+docker compose up --build                # api + ingest/alerts loop services
 ```
 
 ## Architecture decisions
@@ -99,6 +103,31 @@ uv run agevolamatch export --format csv --output out.csv --profile examples/star
   provide data for. This is different from the hard-filter UNVERIFIABLE
   status (which never affects eligibility) - here it's a genuine scoring
   choice that does affect the ranking.
+- **The API is a thin HTTP wrapper over the same storage/matching code the
+  CLI uses** (`api/app.py` calls `storage.load_incentives` and
+  `matching.match_profile` directly) - there is no second implementation to
+  keep in sync. `AGEVOLAMATCH_DB_PATH` env var (also read from `.env` via
+  `python-dotenv`, loaded once in `agevolamatch/__init__.py`) selects the
+  database file; the engine is cached per path with `lru_cache` so repeated
+  requests don't reopen the SQLite file each time.
+- **Alert dedup reuses `content_hash`, the same mechanism ingestion uses for
+  change detection** (`storage/tables.py::SentAlert`, unique on
+  `(subscription_name, source, source_id, content_hash)`). This is what makes
+  "don't resend an alert already sent" and "do alert on a genuinely modified
+  incentive" both fall out of one rule, with no separate "is this new since
+  last run" bookkeeping needed - `alerts run` can be invoked at any cadence,
+  independent of when `ingest` last ran.
+- **Alert channels read their own config from the environment lazily, inside
+  `send()`, not at construction** (`alerts/email_channel.py`,
+  `alerts/telegram_channel.py`) - so `default_channels()` always succeeds
+  even if only one channel is actually configured, and `--dry-run` (the
+  default for `alerts run`) never touches channel config at all since it
+  never calls `send()`.
+- **Docker**: a single image (`Dockerfile`) serves both the `api` and
+  `ingest` compose services, differentiated only by command/entrypoint. `uv
+  sync` runs at build time; `ENV UV_NO_SYNC=1` stops `uv run` from re-syncing
+  (and pulling the dev dependency group) on every container start - this was
+  a real bug caught by actually running the built image, not just building it.
 
 ## Testing
 

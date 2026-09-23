@@ -13,16 +13,17 @@ find which incentives they actually qualify for.
 
 ## Status
 
-Fase 1-2 (core ingestion + matching) are implemented and validated against
-the live dataset. The REST API, alerts, and the dashboard are on the roadmap
-- see [Roadmap](#roadmap) below.
+Fase 1-3 (core ingestion + matching + API/alerts) are implemented and
+validated against the live dataset. The dashboard and Invitalia scraper are on
+the roadmap - see [Roadmap](#roadmap) below.
 
 - ✅ **Fase 1 - Core**: repo structure, Pydantic models + JSON Schema,
   incentivi.gov.it source, SQLite storage with new/modified detection.
 - ✅ **Fase 2 - Matching + CLI**: hard eligibility filters, configurable
   weighted score, explanations (reasons for/against/unverifiable), CSV/JSON
   export, example profile.
-- ⏳ Fase 3 - REST API + alerts (email/Telegram) + Docker
+- ✅ **Fase 3 - API + alerts**: FastAPI REST API, email (SMTP) and Telegram
+  alert channels with send-once dedup, Docker + docker-compose.
 - ⏳ Fase 4 - Dashboard, Invitalia scraper, optional LLM, MCP server
 - ⏳ Fase 5 - Public tenders (gare d'appalto): ANAC + TED, separate module
 
@@ -73,6 +74,61 @@ make more than "unverifiable" - see [`docs/sources.md`](docs/sources.md)),
 then ranks the eligible incentives with a configurable weighted score, and
 prints why each one scored the way it did. `examples/sample_match_output.json`
 is a real (dated) snapshot of this output against the live dataset.
+
+## REST API
+
+```bash
+uv run agevolamatch serve            # http://127.0.0.1:8000, docs at /docs
+```
+
+| Endpoint | Description |
+|---|---|
+| `GET /health` | Liveness check |
+| `GET /incentives?status=&region=&limit=` | List stored incentives |
+| `GET /incentives/{source_id}` | One incentive, 404 if unknown |
+| `POST /match?top=&min_score=` | Body: a `CompanyProfile` JSON object. Returns ranked `MatchResult`s |
+
+`AGEVOLAMATCH_DB_PATH` (also read from `.env`) selects which SQLite file the
+API reads from.
+
+## Alerts
+
+Copy `.env.example` to `.env` and fill in either the SMTP or Telegram section
+(or both). Then define one or more subscriptions - see
+[`examples/alert_subscriptions.yaml`](examples/alert_subscriptions.yaml):
+
+```yaml
+subscriptions:
+  - name: "startup-lazio"
+    profile: examples/startup_profile.yaml
+    min_score: 60
+    channels: ["telegram"]
+```
+
+```bash
+uv run agevolamatch alerts run --subscriptions examples/alert_subscriptions.yaml --dry-run
+uv run agevolamatch alerts run --subscriptions examples/alert_subscriptions.yaml --no-dry-run
+```
+
+An alert fires only for an incentive that (a) is eligible and scores at or
+above `min_score`, and (b) hasn't already been alerted at this exact content
+- re-running never resends the same alert twice, and a genuinely modified
+incentive (different `content_hash`) does trigger a new one. `--dry-run`
+(the default) previews without sending anything or touching the dedup log.
+
+## Docker
+
+```bash
+cp .env.example .env   # fill in SMTP/Telegram credentials as needed
+docker compose up --build
+```
+
+This starts the `api` service (port 8000) and an `ingest` service that loops
+`ingest` + `alerts run` on `INGEST_INTERVAL_SECONDS` (default: once a day).
+`ingest`'s alerts step is a dry-run by default (`ALERTS_DRY_RUN=true` in
+`docker-compose.yml`) - flip it to `false` once `.env` has real credentials
+you've tested. Mount your own subscriptions file over
+`examples/alert_subscriptions.yaml` in the `ingest` service's volumes.
 
 ## Data model
 

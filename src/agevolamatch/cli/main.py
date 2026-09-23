@@ -9,6 +9,7 @@ from rich.console import Console
 from rich.table import Table
 from sqlmodel import select
 
+from agevolamatch.alerts import default_channels, load_subscriptions, run_alerts
 from agevolamatch.export import incentive_records_to_rows, match_results_to_rows, write_rows
 from agevolamatch.matching import (
     DEFAULT_WEIGHTS,
@@ -16,27 +17,28 @@ from agevolamatch.matching import (
     load_company_profile,
     match_profile,
 )
-from agevolamatch.models.opportunity import Incentive
 from agevolamatch.sources.incentivi_gov_it import IncentiviGovItSource
 from agevolamatch.storage import (
     DEFAULT_DB_PATH,
     get_engine,
     get_session,
     init_db,
+    load_incentives,
     upsert_opportunities,
 )
 from agevolamatch.storage.tables import OpportunityRecord
 
 app = typer.Typer(help="AgevolaMatch: matching engine for Italian public incentives (finanza agevolata)")
+alerts_app = typer.Typer(help="Manage and run alert subscriptions")
+app.add_typer(alerts_app, name="alerts")
 console = Console()
 
 
-def _load_stored_incentives(db_path: Path) -> list[Incentive]:
+def _load_stored_incentives(db_path: Path):
     engine = get_engine(db_path)
     init_db(engine)
     with get_session(engine) as session:
-        records = session.exec(select(OpportunityRecord)).all()
-    return [Incentive.model_validate(r.payload) for r in records]
+        return load_incentives(session)
 
 
 @app.command()
@@ -176,6 +178,49 @@ def export(
 
     write_rows(rows, output, format)
     console.print(f"[green]Exportados {len(rows)} registro(s) a {output}[/green]")
+
+
+@alerts_app.command("run")
+def alerts_run(
+    subscriptions: Annotated[Path, typer.Option(help="Path to an alert subscriptions YAML file")],
+    db_path: Annotated[Path, typer.Option(help="SQLite database path")] = DEFAULT_DB_PATH,
+    dry_run: Annotated[bool, typer.Option(help="Preview without actually sending or recording alerts")] = True,
+) -> None:
+    """Send alerts for new/modified incentives matching saved subscriptions.
+
+    Never resends an alert for the same incentive content twice (see CLAUDE.md).
+    Defaults to --dry-run; pass --no-dry-run to actually deliver alerts.
+    """
+    subs = load_subscriptions(subscriptions)
+    if not subs:
+        console.print(f"[yellow]No hay suscripciones en {subscriptions}[/yellow]")
+        raise typer.Exit(code=1)
+
+    engine = get_engine(db_path)
+    init_db(engine)
+    with get_session(engine) as session:
+        incentives = load_incentives(session)
+        summary = run_alerts(session, incentives, subs, default_channels(), dry_run=dry_run)
+
+    mode = "[yellow]DRY RUN[/yellow]" if dry_run else "[green]ENVIADO[/green]"
+    console.print(f"{mode} - {summary.total} alerta(s) {'simuladas' if dry_run else 'procesadas'}\n")
+    for event in summary.events:
+        console.print(f"  [{event.subscription_name}] {event.title} (score {event.score}) -> {', '.join(event.channels)}")
+
+    if not summary.events:
+        console.print("[dim]Ningún incentivo nuevo/modificado supera el umbral configurado.[/dim]")
+
+
+@app.command()
+def serve(
+    host: Annotated[str, typer.Option(help="Bind host")] = "127.0.0.1",
+    port: Annotated[int, typer.Option(help="Bind port")] = 8000,
+    reload: Annotated[bool, typer.Option(help="Auto-reload on code changes (development only)")] = False,
+) -> None:
+    """Run the REST API (equivalent to `uvicorn agevolamatch.api.app:app`)."""
+    import uvicorn
+
+    uvicorn.run("agevolamatch.api.app:app", host=host, port=port, reload=reload)
 
 
 if __name__ == "__main__":

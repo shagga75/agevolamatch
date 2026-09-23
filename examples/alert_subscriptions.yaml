@@ -1,0 +1,8 @@
+# Example alert subscriptions. Copy/adapt and point --subscriptions at your copy.
+# Run with: uv run agevolamatch alerts run --subscriptions examples/alert_subscriptions.yaml --dry-run
+
+subscriptions:
+  - name: "startup-lazio"
+    profile: examples/startup_profile.yaml
+    min_score: 60
+    channels: ["telegram"]

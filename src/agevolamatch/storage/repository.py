@@ -12,7 +12,7 @@ from datetime import UTC, datetime
 
 from sqlmodel import Session, select
 
-from agevolamatch.models.opportunity import Opportunity
+from agevolamatch.models.opportunity import Incentive, Opportunity
 from agevolamatch.storage.tables import OpportunityRecord
 
 
@@ -76,3 +76,13 @@ def upsert_opportunities(session: Session, opportunities: list[Opportunity]) -> 
 
     session.commit()
     return summary
+
+
+def load_incentives(session: Session, status: str | None = None) -> list[Incentive]:
+    """Deserializes stored payloads back into Incentive models. Shared by the
+    CLI and the API so both read incentives the same way."""
+    query = select(OpportunityRecord)
+    if status:
+        query = query.where(OpportunityRecord.status == status)
+    records = session.exec(query).all()
+    return [Incentive.model_validate(r.payload) for r in records]
