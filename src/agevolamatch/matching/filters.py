@@ -32,7 +32,7 @@ def _expected_beneficiary_types(profile: CompanyProfile) -> set[str]:
     special-flag variants it qualifies for.
     """
     expected = {IMPRESA}
-    if profile.legal_form and profile.legal_form.value == "cooperativa":
+    if profile.legal_form and profile.legal_form.value in ("cooperativa", "associazione"):
         expected.add(COOPERATIVA)
     if profile.is_startup_innovativa or profile.is_pmi_innovativa:
         expected.add(STARTUP_OR_PMI_INNOVATIVA)

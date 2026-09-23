@@ -106,6 +106,9 @@ docker compose up --build                # api + dashboard + ingest/alerts loop 
   and the startup/PMI/femminile/under-35 flags, defaulting every profile to
   "Impresa" (the value ~89% of incentives use). Revisit if a profile type
   that isn't a plain company (e.g. Professionista, Ente Pubblico) is needed.
+  `LegalForm.ASSOCIAZIONE` (APS/ODV/ONLUS/Terzo Settore) maps to the same
+  `BeneficiaryType.COOPERATIVA_NONPROFIT` bucket as `cooperativa` - the source
+  vocabulary doesn't distinguish them (verified against the live dataset).
 - **Score components a profile leaves unconfigured get neutral half-credit**,
   not 0 or full weight (`matching/scoring.py`, `_NEUTRAL_FRACTION`) - an
   incomplete profile shouldn't be punished or flattered on axes it didn't

@@ -169,7 +169,14 @@ class SpecialTerritory(StrEnum):
 
 class LegalForm(StrEnum):
     """Legal form of a company profile - not sourced from incentivi.gov.it
-    (that dataset has no company registry data); used only for CompanyProfile."""
+    (that dataset has no company registry data); used only for CompanyProfile.
+
+    ASSOCIAZIONE covers APS, ODV, ONLUS and other Terzo Settore associations -
+    the source's Tipologia_Soggetto vocabulary has no value distinguishing
+    these from cooperatives, so both map to BeneficiaryType.COOPERATIVA_NONPROFIT
+    ("Cooperative/Associazioni Non Profit") in matching/filters.py. Confirmed
+    against 13 real incentives mentioning APS/ODV/Terzo Settore in the live
+    dataset (2026-09-23) - none uses a more specific beneficiary type."""
 
     SRL = "srl"
     SRLS = "srls"
@@ -178,6 +185,7 @@ class LegalForm(StrEnum):
     SAS = "sas"
     DITTA_INDIVIDUALE = "ditta_individuale"
     COOPERATIVA = "cooperativa"
+    ASSOCIAZIONE = "associazione"
     ALTRO = "altro"
 
 
