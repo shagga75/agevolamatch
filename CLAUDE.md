@@ -128,6 +128,15 @@ docker compose up --build                # api + ingest/alerts loop services
   sync` runs at build time; `ENV UV_NO_SYNC=1` stops `uv run` from re-syncing
   (and pulling the dev dependency group) on every container start - this was
   a real bug caught by actually running the built image, not just building it.
+- **Telegram messages are sent as plain text, no `parse_mode`**
+  (`alerts/telegram_channel.py`). This was `parse_mode=Markdown` originally;
+  confirmed against the real Telegram API with a live bot that it 400s
+  ("can't find end of the entity") on real incentive titles/URLs containing
+  unmatched `*`/`_`/`[` characters, which we don't control and can't
+  reliably escape for legacy Markdown. Mocked tests alone never caught this
+  since a mock returns whatever status you tell it to. Don't reintroduce a
+  parse_mode without also escaping the incentive title/URL/description for
+  that mode's specific special-character rules.
 
 ## Testing
 

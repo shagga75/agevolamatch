@@ -39,6 +39,24 @@ def test_telegram_channel_sends_via_bot_api(monkeypatch):
 
 
 @respx.mock
+def test_telegram_channel_sends_plain_text_without_parse_mode(monkeypatch):
+    """Regression test: parse_mode=Markdown was confirmed against the real
+    Telegram API to 400 on real incentive titles/URLs containing unmatched
+    markdown special characters. Plain text (no parse_mode) needs no escaping."""
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "fake-token")
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "12345")
+    route = respx.post(f"{TELEGRAM_API_BASE}/botfake-token/sendMessage").mock(
+        return_value=Response(200, json={"ok": True})
+    )
+
+    subject_with_markdown_chars = "[AgevolaMatch] Bando *Test* (score 90) - a/b_c"
+    TelegramChannel().send(subject_with_markdown_chars, "https://example.com/a_b-(c)")
+
+    sent_form = route.calls[0].request.content.decode()
+    assert "parse_mode" not in sent_form
+
+
+@respx.mock
 def test_telegram_channel_raises_on_http_error(monkeypatch):
     monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "fake-token")
     monkeypatch.setenv("TELEGRAM_CHAT_ID", "12345")

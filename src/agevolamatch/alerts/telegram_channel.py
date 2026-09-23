@@ -20,10 +20,15 @@ class TelegramChannel(AlertChannel):
                 "Telegram channel not configured: set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID in the environment (.env)"
             )
 
-        text = f"*{subject}*\n\n{body}"
+        # No parse_mode: subject/body embed incentive titles and URLs we don't
+        # control, and Telegram's Markdown parser 400s on unmatched
+        # */_/[ characters in that text (confirmed against the real API -
+        # legacy Markdown is not forgiving about unescaped special chars).
+        # Plain text needs no escaping and always succeeds.
+        text = f"{subject}\n\n{body}"
         response = httpx.post(
             f"{TELEGRAM_API_BASE}/bot{token}/sendMessage",
-            data={"chat_id": chat_id, "text": text, "parse_mode": "Markdown"},
+            data={"chat_id": chat_id, "text": text},
             timeout=15,
         )
         response.raise_for_status()
