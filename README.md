@@ -13,13 +13,15 @@ find which incentives they actually qualify for.
 
 ## Status
 
-Fase 1 (core ingestion) is implemented and validated against the live
-dataset. Matching, the REST API, alerts, and the dashboard are on the
-roadmap - see [Roadmap](#roadmap) below.
+Fase 1-2 (core ingestion + matching) are implemented and validated against
+the live dataset. The REST API, alerts, and the dashboard are on the roadmap
+- see [Roadmap](#roadmap) below.
 
 - ✅ **Fase 1 - Core**: repo structure, Pydantic models + JSON Schema,
   incentivi.gov.it source, SQLite storage with new/modified detection.
-- ⏳ Fase 2 - Matching + CLI export
+- ✅ **Fase 2 - Matching + CLI**: hard eligibility filters, configurable
+  weighted score, explanations (reasons for/against/unverifiable), CSV/JSON
+  export, example profile.
 - ⏳ Fase 3 - REST API + alerts (email/Telegram) + Docker
 - ⏳ Fase 4 - Dashboard, Invitalia scraper, optional LLM, MCP server
 - ⏳ Fase 5 - Public tenders (gare d'appalto): ANAC + TED, separate module
@@ -51,12 +53,26 @@ uv run agevolamatch ingest
 
 # List stored incentives, with filters
 uv run agevolamatch list --status open --region Lazio --limit 20
+
+# Rank stored incentives against a company profile, with explanations
+uv run agevolamatch match --profile examples/startup_profile.yaml --top 10
+
+# Export stored incentives (or, with --profile, match results) to CSV/JSON
+uv run agevolamatch export --format csv --output incentives.csv --status open
+uv run agevolamatch export --format json --output ranking.json --profile examples/startup_profile.yaml
 ```
 
 `ingest` is safe to re-run: it only reports records as new or modified when
 their content actually changed (see [`CLAUDE.md`](CLAUDE.md) for how change
 detection works), and never deletes closed incentives - they remain queryable
 as history.
+
+`match` applies hard eligibility filters first (status, region, company size,
+beneficiary type, ATECO, and a few checks that the source data simply can't
+make more than "unverifiable" - see [`docs/sources.md`](docs/sources.md)),
+then ranks the eligible incentives with a configurable weighted score, and
+prints why each one scored the way it did. `examples/sample_match_output.json`
+is a real (dated) snapshot of this output against the live dataset.
 
 ## Data model
 
@@ -80,8 +96,24 @@ for a complete example, including HTTP caching and rate limiting.
 
 ## Adjusting the matching score
 
-Not yet implemented (Fase 2). Once available, scoring weights will live in a
-YAML file (documented here and by `--help` on the `match` command).
+Weights (see [`src/agevolamatch/matching/weights.py`](src/agevolamatch/matching/weights.py)
+for defaults) live in `ScoringWeights`: `ateco_match`, `eligible_costs_match`,
+`support_form_match`, `amount_fit`, `urgency`, `special_flags_match`. Pass a
+YAML file overriding any subset of them:
+
+```yaml
+# weights.yaml
+ateco_match: 40
+amount_fit: 10
+```
+
+```bash
+uv run agevolamatch match --profile examples/startup_profile.yaml --weights weights.yaml
+```
+
+No LLM is used anywhere in the matching pipeline; every score component comes
+with a human-readable reason, surfaced under "reasons for/against/unverifiable"
+in both the CLI output and CSV/JSON export.
 
 ## Development
 

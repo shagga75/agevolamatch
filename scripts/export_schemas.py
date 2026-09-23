@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from agevolamatch.matching.models import MatchResult
 from agevolamatch.models.company_profile import CompanyProfile
 from agevolamatch.models.opportunity import Incentive, Opportunity
 
@@ -14,6 +15,7 @@ MODELS = {
     "opportunity.schema.json": Opportunity,
     "incentive.schema.json": Incentive,
     "company_profile.schema.json": CompanyProfile,
+    "match_result.schema.json": MatchResult,
 }
 
 

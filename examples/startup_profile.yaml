@@ -1,0 +1,33 @@
+# Example CompanyProfile: an innovative software startup based in Lazio.
+# Validate with: uv run agevolamatch match --profile examples/startup_profile.yaml
+
+name: "Esempio Software Startup Srl"
+
+ateco_codes:
+  - code: "62.01"
+    version: "2025"
+  - code: "62.02"
+    version: "2025"
+
+region: "Lazio"
+province: "RM"
+size: "Microimpresa"
+
+founded_on: "2024-06-01"
+legal_form: "srls"
+
+is_startup_innovativa: true
+is_pmi_innovativa: false
+is_impresa_femminile: false
+is_under_35: true
+
+planned_expense_types:
+  - "Costo del personale"
+  - "Servizi, brevetti e licenze"
+  - "Impianti/Macchinari/Attrezzature"
+
+planned_investment_amount: 60000
+
+preferred_support_forms:
+  - "Contributo/Fondo perduto"
+  - "Agevolazione fiscale"

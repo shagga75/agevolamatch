@@ -22,6 +22,8 @@ uv run python scripts/export_schemas.py   # regenerate schemas/*.json after mode
 
 uv run agevolamatch ingest       # fetch + store incentives from incentivi.gov.it
 uv run agevolamatch list --status open --region Lazio
+uv run agevolamatch match --profile examples/startup_profile.yaml --top 10
+uv run agevolamatch export --format csv --output out.csv --profile examples/startup_profile.yaml
 ```
 
 ## Architecture decisions
@@ -69,6 +71,34 @@ uv run agevolamatch list --status open --region Lazio
 - **No LLM by default anywhere.** Matching (Fase 2) is 100% deterministic
   (hard filters + configurable weighted score + explanation). Any LLM
   integration point must be optional and behind an explicit opt-in.
+- **Matching only scores incentives that already passed hard filters**
+  (`matching/engine.py::match_incentive`). A low score always means "eligible
+  but not a great fit", never "might be ineligible" - those are two different
+  things and mixing them into one number would make the ranking misleading.
+  `match_profile(..., include_ineligible=True)` exists for debugging/transparency
+  but is off by default.
+- **Hard filter checks default to UNVERIFIABLE, never to a silent pass or a
+  disqualifying fail, whenever the data needed to verify them doesn't exist**
+  - either because the source field is empty (rare - see docs/sources.md null
+    rates) or because AgevolaMatch doesn't model the company-side data needed
+    to check it at all (company age - the source has no such field at all;
+    municipality-level eligibility - no comune→provincia mapping yet; special
+    territorial status like ZES/Aree interne - not modeled in CompanyProfile).
+    This is a deliberate product decision from Fase 0, not a gap to silently
+    paper over.
+- **`CompanyProfile` has no explicit "beneficiary type" field** matching the
+  source's `Tipologia_Soggetto` vocabulary directly (Impresa, Cooperativa,
+  Professionista, ...). `matching/filters.py::_expected_beneficiary_types`
+  derives the set of source values a profile could satisfy from `legal_form`
+  and the startup/PMI/femminile/under-35 flags, defaulting every profile to
+  "Impresa" (the value ~89% of incentives use). Revisit if a profile type
+  that isn't a plain company (e.g. Professionista, Ente Pubblico) is needed.
+- **Score components a profile leaves unconfigured get neutral half-credit**,
+  not 0 or full weight (`matching/scoring.py`, `_NEUTRAL_FRACTION`) - an
+  incomplete profile shouldn't be punished or flattered on axes it didn't
+  provide data for. This is different from the hard-filter UNVERIFIABLE
+  status (which never affects eligibility) - here it's a genuine scoring
+  choice that does affect the ranking.
 
 ## Testing
 
@@ -85,13 +115,22 @@ uv run agevolamatch list --status open --region Lazio
   (naive vs. timezone-aware datetimes) that neither layer's isolated tests
   exercised. Prefer adding to this file over trusting layer-level tests alone
   when touching normalize() or the storage layer.
+- `tests/unit/test_matching_engine.py::test_startup_profile_fixture_produces_a_coherent_ranking`
+  runs `examples/startup_profile.yaml` (the real example profile, not a test
+  double) against the real curated fixture - this is the same path
+  `agevolamatch match --profile examples/startup_profile.yaml` exercises, so
+  it should keep passing whenever that command does.
 - Ruff must be clean (`uv run ruff check .`) before considering a phase done.
 
 ## Non-goals / explicit decisions from Fase 0
 
-- ATECO 2007↔2025 official correspondence table: not yet integrated (TODO,
-  Fase 2). Until then, ATECO prefix matching treats both versions the same.
-- Comune→provincia lookup: not yet integrated (TODO, Fase 2) - needed to
-  match a company's province against a `municipalities`-restricted incentive.
+- ATECO 2007↔2025 official correspondence table: still not integrated. Until
+  it is, `matching/ateco.py` compares codes from either version as plain
+  digit strings (exact/prefix), which under-matches across a renumbered
+  2007/2025 boundary but never over-matches into a wrong sector.
+- Comune→provincia lookup: still not integrated - `matching/filters.py`
+  marks any incentive restricted to specific `municipalities` as
+  UNVERIFIABLE rather than guessing. Needed to actually check a company's
+  province against a municipality-restricted incentive.
 - Invitalia dedup (Fase 4) will match on (normalized title, granting body,
   dates) since there's no shared external ID with incentivi.gov.it.

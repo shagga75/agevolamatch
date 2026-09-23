@@ -14,13 +14,15 @@ a quali incentivi possono davvero accedere.
 
 ## Stato del progetto
 
-La Fase 1 (ingestione core) è implementata e validata contro il dataset live.
-Matching, API REST, alert e dashboard sono nella roadmap - vedi
+Le Fasi 1-2 (ingestione core + matching) sono implementate e validate contro
+il dataset live. API REST, alert e dashboard sono nella roadmap - vedi
 [Roadmap](#roadmap).
 
 - ✅ **Fase 1 - Core**: struttura del repo, modelli Pydantic + JSON Schema,
   fonte incentivi.gov.it, storage SQLite con rilevamento nuovi/modificati.
-- ⏳ Fase 2 - Matching + export CLI
+- ✅ **Fase 2 - Matching + CLI**: filtri duri di ammissibilità, scoring pesato
+  configurabile, spiegazioni (motivi a favore/contro/da verificare), export
+  CSV/JSON, profilo di esempio.
 - ⏳ Fase 3 - API REST + alert (email/Telegram) + Docker
 - ⏳ Fase 4 - Dashboard, scraper Invitalia, LLM opzionale, server MCP
 - ⏳ Fase 5 - Gare d'appalto: ANAC + TED, modulo separato
@@ -53,12 +55,27 @@ uv run agevolamatch ingest
 
 # Elenca gli incentivi salvati, con filtri
 uv run agevolamatch list --status open --region Lazio --limit 20
+
+# Confronta gli incentivi salvati con un profilo aziendale, con spiegazioni
+uv run agevolamatch match --profile examples/startup_profile.yaml --top 10
+
+# Esporta gli incentivi salvati (o, con --profile, i risultati del matching) in CSV/JSON
+uv run agevolamatch export --format csv --output incentives.csv --status open
+uv run agevolamatch export --format json --output ranking.json --profile examples/startup_profile.yaml
 ```
 
 `ingest` può essere rieseguito in sicurezza: segnala un record come nuovo o
 modificato solo se il suo contenuto è effettivamente cambiato (vedi
 [`CLAUDE.md`](CLAUDE.md) per i dettagli), e non cancella mai gli incentivi
 chiusi - restano consultabili come storico.
+
+`match` applica prima i filtri di ammissibilità duri (stato, regione,
+dimensione aziendale, tipo di beneficiario, ATECO, e alcuni controlli che i
+dati di origine non permettono di verificare del tutto - vedi
+[`docs/sources.md`](docs/sources.md)), poi ordina gli incentivi ammissibili
+con uno scoring pesato configurabile, spiegando il motivo di ogni punteggio.
+`examples/sample_match_output.json` è uno snapshot reale (datato) di questo
+output contro il dataset live.
 
 ## Modello dati
 
@@ -83,8 +100,24 @@ per un esempio completo, incluso caching HTTP e rate limiting.
 
 ## Regolare i pesi dello scoring
 
-Non ancora implementato (Fase 2). Una volta disponibile, i pesi vivranno in un
-file YAML (documentato qui e nell'help del comando `match`).
+I pesi (vedi [`src/agevolamatch/matching/weights.py`](src/agevolamatch/matching/weights.py)
+per i default) vivono in `ScoringWeights`: `ateco_match`, `eligible_costs_match`,
+`support_form_match`, `amount_fit`, `urgency`, `special_flags_match`. Passa un
+file YAML per sovrascriverne un sottoinsieme qualsiasi:
+
+```yaml
+# weights.yaml
+ateco_match: 40
+amount_fit: 10
+```
+
+```bash
+uv run agevolamatch match --profile examples/startup_profile.yaml --weights weights.yaml
+```
+
+Nessun LLM viene usato nella pipeline di matching: ogni componente del
+punteggio arriva con una motivazione leggibile, mostrata sotto "motivi a
+favore/contro/da verificare" sia nell'output CLI che nell'export CSV/JSON.
 
 ## Sviluppo
 
