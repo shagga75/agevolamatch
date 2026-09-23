@@ -17,6 +17,7 @@ from agevolamatch.matching import (
     load_company_profile,
     match_profile,
 )
+from agevolamatch.matching.llm import enrich_with_llm_requirements, get_llm_provider
 from agevolamatch.models.enums import OpportunitySourceName
 from agevolamatch.sources.dedup import find_duplicate
 from agevolamatch.sources.incentivi_gov_it import IncentiviGovItSource
@@ -147,6 +148,13 @@ def match(
     weights: Annotated[Path | None, typer.Option(help="Optional YAML file overriding scoring weights")] = None,
     top: Annotated[int, typer.Option(help="Max results to display")] = 20,
     min_score: Annotated[float, typer.Option(help="Hide results scoring below this threshold")] = 0.0,
+    llm: Annotated[
+        bool,
+        typer.Option(
+            "--llm/--no-llm",
+            help="Optionally extract extra eligibility requirements from descriptions via an LLM (off by default; needs AGEVOLAMATCH_LLM_PROVIDER)",
+        ),
+    ] = False,
 ) -> None:
     """Rank stored incentives against a company profile, with explanations."""
     company_profile = load_company_profile(profile)
@@ -159,6 +167,16 @@ def match(
 
     results = match_profile(incentives, company_profile, weights=scoring_weights)
     results = [r for r in results if r.score >= min_score][:top]
+
+    if llm:
+        provider = get_llm_provider()
+        if provider is None:
+            console.print(
+                "[yellow]--llm pedido pero AGEVOLAMATCH_LLM_PROVIDER no está configurado en .env; "
+                "continuando sin enriquecimiento LLM.[/yellow]\n"
+            )
+        else:
+            results = enrich_with_llm_requirements(results, provider)
 
     console.print(f"[bold]{company_profile.name}[/bold] - {len(results)} incentivo(s) elegible(s) mostrados\n")
 

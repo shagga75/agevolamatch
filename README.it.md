@@ -25,7 +25,7 @@ roadmap - vedi [Roadmap](#roadmap).
   CSV/JSON, profilo di esempio.
 - ✅ **Fase 3 - API + alert**: API REST FastAPI, canali email (SMTP) e
   Telegram con deduplica anti-reinvio, Docker + docker-compose.
-- 🚧 Fase 4 - Extra: ✅ scraper Invitalia (deduplicato), ⏳ dashboard, LLM opzionale, server MCP
+- 🚧 Fase 4 - Extra: ✅ scraper Invitalia (deduplicato), ✅ LLM opzionale, ⏳ dashboard, server MCP
 - ⏳ Fase 5 - Gare d'appalto: ANAC + TED, modulo separato
 
 ## Perché
@@ -120,6 +120,30 @@ identico contenuto - rieseguire il comando non rinvia mai lo stesso alert, e
 un incentivo effettivamente modificato (content_hash diverso) ne genera uno
 nuovo. `--dry-run` (default) mostra un'anteprima senza inviare né toccare il
 registro di deduplica.
+
+## LLM opzionale
+
+Completamente opzionale e disattivato di default - matching, filtri e
+scoring non usano mai un LLM. Se abilitato, `match --llm` estrae requisiti di
+ammissibilità aggiuntivi menzionati nel testo libero della descrizione (es.
+"azienda costituita da meno di 5 anni") che i campi strutturati non
+catturano, e li aggiunge alla lista "da verificare" del risultato, prefissati
+`[LLM]`. Non cambia mai l'ammissibilità né lo score, e qualsiasi errore del
+provider (configurazione mancante, errore di rete, timeout) viene loggato -
+il comando si completa comunque normalmente.
+
+```bash
+# Locale, gratuito, privato (serve un server Ollama attivo: https://ollama.com)
+AGEVOLAMATCH_LLM_PROVIDER=ollama uv run agevolamatch match --profile examples/startup_profile.yaml --llm
+
+# API a pagamento (OpenAI o qualsiasi endpoint OpenAI-compatibile)
+AGEVOLAMATCH_LLM_PROVIDER=openai uv run agevolamatch match --profile examples/startup_profile.yaml --llm
+```
+
+Vedi `.env.example` per tutte le variabili `OLLAMA_*` / `LLM_*` (modello,
+host, API key, base URL, timeout). Se `--llm` viene passato senza
+`AGEVOLAMATCH_LLM_PROVIDER` impostato, il comando stampa un avviso e procede
+senza arricchimento invece di fallire.
 
 ## Docker
 

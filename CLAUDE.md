@@ -181,6 +181,30 @@ docker compose up --build                # api + ingest/alerts loop services
   incentivi.gov.it records before upserting. A dropped duplicate is counted
   and logged, never silently discarded.
 
+- **The optional LLM feature is informational-only and fails safe.**
+  `matching/llm/` is a pluggable `LLMProvider` interface (`OllamaProvider`,
+  `OpenAICompatibleProvider`), disabled unless `AGEVOLAMATCH_LLM_PROVIDER` is
+  set, and only invoked at all when `match --llm` is explicitly passed.
+  `enrich_with_llm_requirements()` only ever *appends* to
+  `MatchExplanation.unverifiable` (prefixed `[LLM]`) on already-eligible,
+  already-scored results - it never touches eligibility or the score. Any
+  provider failure (bad config, network error, timeout) is caught and logged
+  per-result, never raised - confirmed live: a real local Ollama run where
+  every call timed out (see below) still completed the match command
+  normally with exit code 0, just without LLM enrichment.
+- **Provider config fields use `field(default_factory=...)`, not a plain
+  `= os.environ.get(...)` default** (`ollama_provider.py`,
+  `openai_compatible_provider.py`). A plain default is evaluated once at
+  module-import time and then frozen for the process; `default_factory` is
+  evaluated per instantiation. This is the same principle as the alert
+  channels reading config lazily inside `send()` - don't regress it back to
+  a plain default when touching these files.
+- **`OllamaProvider`'s default timeout is 120s, not something shorter.**
+  Confirmed live on this machine: a 3B model on CPU-only hardware took over
+  60s per call (cold load + generation), consistently timing out at a 60s
+  default. `OLLAMA_TIMEOUT_SECONDS` is configurable via env for slower/faster
+  hardware.
+
 ## Non-goals / explicit decisions from Fase 0
 
 - ATECO 2007↔2025 official correspondence table: still not integrated. Until

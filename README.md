@@ -24,7 +24,7 @@ the roadmap - see [Roadmap](#roadmap) below.
   export, example profile.
 - ✅ **Fase 3 - API + alerts**: FastAPI REST API, email (SMTP) and Telegram
   alert channels with send-once dedup, Docker + docker-compose.
-- 🚧 Fase 4 - Extras: ✅ Invitalia scraper (deduped), ⏳ dashboard, optional LLM, MCP server
+- 🚧 Fase 4 - Extras: ✅ Invitalia scraper (deduped), ✅ optional LLM, ⏳ dashboard, MCP server
 - ⏳ Fase 5 - Public tenders (gare d'appalto): ANAC + TED, separate module
 
 ## Why
@@ -117,6 +117,30 @@ above `min_score`, and (b) hasn't already been alerted at this exact content
 - re-running never resends the same alert twice, and a genuinely modified
 incentive (different `content_hash`) does trigger a new one. `--dry-run`
 (the default) previews without sending anything or touching the dedup log.
+
+## Optional LLM enrichment
+
+Fully optional and off by default - matching, filtering, and scoring never
+use an LLM. When enabled, `match --llm` extracts extra eligibility
+requirements mentioned in an incentive's free-text description (e.g. "azienda
+costituita da meno di 5 anni") that the structured fields don't capture, and
+appends them to the result's "unverifiable" list, prefixed `[LLM]`. It never
+changes eligibility or the score, and any provider failure (bad config,
+network error, timeout) is caught and logged - the command always completes
+normally either way.
+
+```bash
+# Local, free, private (needs a running Ollama server: https://ollama.com)
+AGEVOLAMATCH_LLM_PROVIDER=ollama uv run agevolamatch match --profile examples/startup_profile.yaml --llm
+
+# Paid API (OpenAI or any OpenAI-compatible endpoint)
+AGEVOLAMATCH_LLM_PROVIDER=openai uv run agevolamatch match --profile examples/startup_profile.yaml --llm
+```
+
+See `.env.example` for the full set of `OLLAMA_*` / `LLM_*` variables
+(model, host, API key, base URL, timeout). If `--llm` is passed without
+`AGEVOLAMATCH_LLM_PROVIDER` set, the command prints a warning and proceeds
+without enrichment rather than failing.
 
 ## Docker
 

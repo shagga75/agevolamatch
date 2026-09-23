@@ -23,7 +23,8 @@ dependencies = [
 
 [project.optional-dependencies]
 dashboard = ["streamlit>=1.40"]
-llm = ["ollama>=0.4"]
+# No extra dependency for LLM support: both Ollama and OpenAI-compatible
+# providers are plain HTTP APIs, called via the httpx already required above.
 
 [project.scripts]
 agevolamatch = "agevolamatch.cli.main:app"
