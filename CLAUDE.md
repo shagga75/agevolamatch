@@ -205,6 +205,29 @@ docker compose up --build                # api + ingest/alerts loop services
   default. `OLLAMA_TIMEOUT_SECONDS` is configurable via env for slower/faster
   hardware.
 
+- **The MCP server (`mcp/server.py`) is a third thin wrapper over
+  storage/matching**, alongside the CLI and REST API - `search_incentives`,
+  `get_incentive`, `match_company_profile` call the exact same
+  `load_incentives`/`match_profile` functions. Uses `mcp.server.mcpserver.
+  MCPServer`, not `FastMCP` - the installed SDK (mcp>=2.0) renamed `FastMCP`
+  to `MCPServer` between 1.x and 2.x; this was confirmed against the actually
+  installed version (`uv add mcp` resolved 2.2.0), not assumed from training
+  data, after `from mcp.server.fastmcp import FastMCP` raised a
+  `ModuleNotFoundError` with the SDK's own migration-guide pointer. Re-check
+  the installed API before assuming an import path if this dependency is
+  ever upgraded across a major version again.
+- **A malformed `match_company_profile` argument must raise `ToolError`,
+  not let pydantic's `ValidationError` propagate raw** - confirmed live
+  (not just from documentation) that this SDK treats an unhandled exception
+  from inside a tool body as an "unexpected crash" (`UnexpectedToolError`),
+  while a deliberately-raised `ToolError`/`ResourceError` is what the
+  stdio/JSON-RPC transport layer translates into a graceful
+  `CallToolResult(isError=True)` for the actual MCP client. Note that
+  `MCPServer.call_tool()` itself - the API these tests call directly -
+  *raises* in both cases; only the full transport layer does the
+  isError-result translation, so don't expect `result.is_error` when testing
+  via `call_tool()` directly, only via a real client/transport round-trip.
+
 ## Non-goals / explicit decisions from Fase 0
 
 - ATECO 2007↔2025 official correspondence table: still not integrated. Until

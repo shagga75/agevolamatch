@@ -25,7 +25,7 @@ roadmap - vedi [Roadmap](#roadmap).
   CSV/JSON, profilo di esempio.
 - ✅ **Fase 3 - API + alert**: API REST FastAPI, canali email (SMTP) e
   Telegram con deduplica anti-reinvio, Docker + docker-compose.
-- 🚧 Fase 4 - Extra: ✅ scraper Invitalia (deduplicato), ✅ LLM opzionale, ⏳ dashboard, server MCP
+- 🚧 Fase 4 - Extra: ✅ scraper Invitalia (deduplicato), ✅ LLM opzionale, ✅ server MCP, ⏳ dashboard
 - ⏳ Fase 5 - Gare d'appalto: ANAC + TED, modulo separato
 
 ## Perché
@@ -144,6 +144,32 @@ Vedi `.env.example` per tutte le variabili `OLLAMA_*` / `LLM_*` (modello,
 host, API key, base URL, timeout). Se `--llm` viene passato senza
 `AGEVOLAMATCH_LLM_PROVIDER` impostato, il comando stampa un avviso e procede
 senza arricchimento invece di fallire.
+
+## Server MCP
+
+Espone ricerca e matching a qualsiasi client MCP (es. Claude Desktop) tramite
+`agevolamatch-mcp`, via stdio. Tre tool, tutti wrapper sottili sullo stesso
+codice storage/matching usato da CLI e API REST:
+
+| Tool | Descrizione |
+|---|---|
+| `search_incentives(status, region, limit)` | Elenca gli incentivi salvati |
+| `get_incentive(source_id)` | Dettagli completi di un incentivo, o null |
+| `match_company_profile(profile, top, min_score)` | Match ordinati con spiegazioni - forma di `profile`: `schemas/company_profile.schema.json` |
+
+Aggiungi alla configurazione del tuo client MCP (es. `claude_desktop_config.json` di Claude Desktop):
+
+```json
+{
+  "mcpServers": {
+    "agevolamatch": {
+      "command": "uv",
+      "args": ["run", "--directory", "/percorso/assoluto/a/agevolamatch", "agevolamatch-mcp"],
+      "env": { "AGEVOLAMATCH_DB_PATH": "/percorso/assoluto/a/agevolamatch/data/agevolamatch.db" }
+    }
+  }
+}
+```
 
 ## Docker
 

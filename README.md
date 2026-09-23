@@ -24,7 +24,7 @@ the roadmap - see [Roadmap](#roadmap) below.
   export, example profile.
 - ✅ **Fase 3 - API + alerts**: FastAPI REST API, email (SMTP) and Telegram
   alert channels with send-once dedup, Docker + docker-compose.
-- 🚧 Fase 4 - Extras: ✅ Invitalia scraper (deduped), ✅ optional LLM, ⏳ dashboard, MCP server
+- 🚧 Fase 4 - Extras: ✅ Invitalia scraper (deduped), ✅ optional LLM, ✅ MCP server, ⏳ dashboard
 - ⏳ Fase 5 - Public tenders (gare d'appalto): ANAC + TED, separate module
 
 ## Why
@@ -141,6 +141,32 @@ See `.env.example` for the full set of `OLLAMA_*` / `LLM_*` variables
 (model, host, API key, base URL, timeout). If `--llm` is passed without
 `AGEVOLAMATCH_LLM_PROVIDER` set, the command prints a warning and proceeds
 without enrichment rather than failing.
+
+## MCP server
+
+Exposes search and matching to any MCP client (e.g. Claude Desktop) via
+`agevolamatch-mcp`, over stdio. Three tools, all thin wrappers over the same
+storage/matching code the CLI and REST API use:
+
+| Tool | Description |
+|---|---|
+| `search_incentives(status, region, limit)` | List stored incentives |
+| `get_incentive(source_id)` | One incentive's full details, or null |
+| `match_company_profile(profile, top, min_score)` | Ranked matches with explanations - `profile` shape: `schemas/company_profile.schema.json` |
+
+Add to your MCP client's config (e.g. Claude Desktop's `claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "agevolamatch": {
+      "command": "uv",
+      "args": ["run", "--directory", "/absolute/path/to/agevolamatch", "agevolamatch-mcp"],
+      "env": { "AGEVOLAMATCH_DB_PATH": "/absolute/path/to/agevolamatch/data/agevolamatch.db" }
+    }
+  }
+}
+```
 
 ## Docker
 
