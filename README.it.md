@@ -1,5 +1,7 @@
 # AgevolaMatch
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Motore open-source di matching tra incentivi pubblici italiani (finanza
 agevolata) e profili aziendali - pensato per startup e PMI che vogliono capire
 a quali incentivi possono davvero accedere.

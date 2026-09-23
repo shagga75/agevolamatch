@@ -1,5 +1,7 @@
 # AgevolaMatch
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Open-source matching engine between Italian public incentives ("finanza
 agevolata") and company profiles - built for startups and SMEs (PMI) trying to
 find which incentives they actually qualify for.
