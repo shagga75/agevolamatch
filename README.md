@@ -115,6 +115,9 @@ above `min_score`, and (b) hasn't already been alerted at this exact content
 - re-running never resends the same alert twice, and a genuinely modified
 incentive (different `content_hash`) does trigger a new one. `--dry-run`
 (the default) previews without sending anything or touching the dedup log.
+The same subscriptions file works for tenders too - see `gare alerts run` in
+the [Gare d'appalto](#gare-dappalto-public-tenders---a-separate-domain)
+section below.
 
 ## Optional LLM enrichment
 
@@ -156,16 +159,19 @@ uv run agevolamatch gare ingest --source ted     # rolling 60-day window, Italy,
 uv run agevolamatch gare ingest --source all
 
 uv run agevolamatch gare match --profile examples/startup_profile.yaml --top 10
+
+# Alerts for tenders - same subscriptions file and dedup mechanism as incentives (see Alerts above)
+uv run agevolamatch gare alerts run --subscriptions examples/alert_subscriptions.yaml --dry-run
 ```
 
 `CompanyProfile.cpv_codes` (separate from `ateco_codes` - no official
 ATECO↔CPV crosswalk exists) drives tender matching; `examples/startup_profile.yaml`
-already sets both, so it works with `match` and `gare match` alike. Not yet
-wired into the REST API, MCP server, dashboard, or alerts - `gare` is
-CLI-only for now (see `CLAUDE.md` for the reasoning); the ingestion,
-model, and matching logic are the same regardless of which surface would
-call them, so adding those is straightforward follow-up work, not a
-redesign.
+already sets both, so it works with `match`/`gare match` and `alerts run`/
+`gare alerts run` alike. The dashboard's **📄 Gare** tab lists stored tenders,
+and its **🎯 Matching** tab has a "Gare" sub-tab alongside "Incentivos" -
+both read the same stored data and the same session-state profile. Not yet
+wired into the REST API or MCP server - those would be the same
+thin-wrapper pattern already used for incentives, just not done yet.
 
 ## MCP server
 
@@ -200,10 +206,12 @@ uv sync --extra dashboard   # installs streamlit (optional - not a core dependen
 uv run streamlit run src/agevolamatch/dashboard/app.py
 ```
 
-Three tabs, same storage/matching code as the CLI/API/MCP server: a
-filterable incentive list with a detail view, a company-profile editor
-(load the example profile or build one with a form), and matching results
-with the same for/against/unverifiable explanations the CLI prints.
+Four tabs, same storage/matching code as the CLI/API/MCP server: a
+filterable incentive list with a detail view, a filterable **gare/tenders**
+list with a detail view, a company-profile editor (load the example profile
+or build one with a form - including CPV codes for tender matching), and a
+matching tab with an "Incentivos" and a "Gare" sub-tab, each with the same
+for/against/unverifiable explanations the CLI prints.
 
 ## Docker
 

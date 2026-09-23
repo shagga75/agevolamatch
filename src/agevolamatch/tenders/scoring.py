@@ -8,7 +8,9 @@ honest list. Only called for tenders that already passed the hard filters.
 from __future__ import annotations
 
 from datetime import date
+from pathlib import Path
 
+import yaml
 from pydantic import BaseModel, Field
 
 from agevolamatch.models.company_profile import CompanyProfile
@@ -23,6 +25,11 @@ class TenderScoringWeights(BaseModel):
     cpv_match: float = Field(default=50.0, description="CPV code match: exact > prefix")
     amount_fit: float = Field(default=30.0, description="Estimated contract value near the profile's target deal size")
     urgency: float = Field(default=20.0, description="Closer deadline scores higher")
+
+    @classmethod
+    def from_yaml(cls, path: Path) -> TenderScoringWeights:
+        data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        return cls.model_validate(data)
 
 
 DEFAULT_TENDER_WEIGHTS = TenderScoringWeights()

@@ -24,6 +24,8 @@ services:
       - INGEST_INTERVAL_SECONDS=86400
       # Flip to "true" only once your .env has real SMTP/Telegram credentials.
       - ALERTS_DRY_RUN=true
+      # Flip to "true" to also ingest ANAC/TED tenders and run gare alerts each cycle.
+      - ENABLE_GARE=false
     entrypoint: ["./scripts/ingest_loop.sh"]
 
   dashboard:

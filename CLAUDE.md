@@ -34,6 +34,7 @@ uv run streamlit run src/agevolamatch/dashboard/app.py   # needs --extra dashboa
 
 uv run agevolamatch gare ingest --source anac|ted|all    # tenders/gare - separate domain, see below
 uv run agevolamatch gare match --profile examples/startup_profile.yaml --top 10
+uv run agevolamatch gare alerts run --subscriptions examples/alert_subscriptions.yaml --dry-run
 
 docker compose up --build                # api + dashboard + ingest/alerts loop services
 ```
@@ -178,6 +179,12 @@ docker compose up --build                # api + dashboard + ingest/alerts loop 
   to construct that case directly instead, once discovered.
 - `tests/unit/test_tenders_engine.py::test_real_fixture_data_from_both_sources_produces_a_coherent_ranking`
   is the tenders equivalent of the incentive test above - same principle.
+- `tests/unit/test_dashboard.py` has two AppTest env fixtures:
+  `dashboard_env` (incentives only) and `dashboard_env_with_gare`
+  (incentives + real ANAC tender fixture rows). Use the latter for anything
+  touching the Gare tab or the Matching tab's Gare sub-tab - the former will
+  make the Gare tab correctly show its "no gare" info message, not test
+  the actual tender-list/tender-matching code paths.
 - Ruff must be clean (`uv run ruff check .`) before considering a phase done.
 
 - **HTTP fetching is shared, not duplicated, across sources**:
@@ -333,6 +340,32 @@ docker compose up --build                # api + dashboard + ingest/alerts loop 
   and continues to the next source. Added after real experience: TED's rate
   limit produced an unhandled `HTTPStatusError` that would otherwise have
   aborted an `ingest --source all` run before it got to ANAC.
+- **Gare/tenders is wired into the dashboard and alerts, reusing the exact
+  same generic types** where they were already domain-agnostic, and adding
+  a parallel path only where a type was genuinely Incentive-typed:
+  - `alerts/service.py::run_tender_alerts` is a near-duplicate of
+    `run_alerts` (different matching call and message formatter), not a
+    generalization of it - `AlertEvent`/`AlertRunSummary`/`SentAlert`/
+    `already_sent`/`record_sent` needed no changes at all, since none of
+    them reference `Incentive` directly (confirmed before writing the
+    duplicate, not assumed). `AlertSubscription` (profile/min_score/
+    channels/weights) is shared as-is between `alerts run` and `gare alerts
+    run` - one subscriptions file drives both domains for the same profile.
+  - `dashboard/app.py` gained a fourth tab (📄 Gare) and a "Gare" sub-tab
+    inside Matching, both thin wrappers calling `load_tenders`/
+    `match_tender_profile` the same way the incentive tabs call
+    `load_incentives`/`match_profile`. The profile editor form gained a
+    `cpv_codes` text input alongside `ateco_codes`; the "at least one
+    classification" validation now accepts either, not just ATECO, since a
+    profile might only care about gare.
+  - `TenderScoringWeights` was missing a `from_yaml()` classmethod that
+    `ScoringWeights` already had - added for parity, needed for
+    `run_tender_alerts`'s `subscription.weights` support. If you add a
+    third weights class anywhere, check for this same gap before assuming
+    parity with the incentive path.
+  - Still not wired: REST API and MCP server. Same thin-wrapper pattern
+    would apply (`load_tenders`/`match_tender_profile`), just not written
+    yet - not a design gap, just unrequested so far.
 
 ## Non-goals / explicit decisions from Fase 0
 

@@ -117,7 +117,8 @@ maggiore o uguale a `min_score`, e (b) non è già stato notificato con questo
 identico contenuto - rieseguire il comando non rinvia mai lo stesso alert, e
 un incentivo effettivamente modificato (content_hash diverso) ne genera uno
 nuovo. `--dry-run` (default) mostra un'anteprima senza inviare né toccare il
-registro di deduplica.
+registro di deduplica. Lo stesso file di subscription funziona anche per le
+gare - vedi `gare alerts run` nella sezione [Gare d'appalto](#gare-dappalto---un-dominio-separato) sotto.
 
 ## LLM opzionale
 
@@ -160,16 +161,20 @@ uv run agevolamatch gare ingest --source ted     # finestra mobile di 60 giorni,
 uv run agevolamatch gare ingest --source all
 
 uv run agevolamatch gare match --profile examples/startup_profile.yaml --top 10
+
+# Alert per le gare - stesso file di subscription e stesso meccanismo di deduplica degli incentivi (vedi Alert sopra)
+uv run agevolamatch gare alerts run --subscriptions examples/alert_subscriptions.yaml --dry-run
 ```
 
 `CompanyProfile.cpv_codes` (separato da `ateco_codes` - non esiste una
 tabella di raccordo ATECO↔CPV ufficiale) guida il matching delle gare;
 `examples/startup_profile.yaml` imposta già entrambi, quindi funziona sia con
-`match` che con `gare match`. Non ancora collegato ad API REST, server MCP,
-dashboard o alert - `gare` è solo CLI per ora (vedi `CLAUDE.md` per il
-perché); ingestione, modello e logica di matching sono gli stessi
-indipendentemente da quale superficie li chiamerebbe, quindi aggiungerli è
-un lavoro di follow-up diretto, non una riprogettazione.
+`match`/`gare match` che con `alerts run`/`gare alerts run`. La scheda
+**📄 Gare** della dashboard elenca le gare salvate, e la sua scheda
+**🎯 Matching** ha una sotto-scheda "Gare" accanto a "Incentivos" - entrambe
+leggono gli stessi dati salvati e lo stesso profilo in sessione. Non ancora
+collegato ad API REST o server MCP - sarebbe lo stesso pattern a wrapper
+sottile già usato per gli incentivi, solo non ancora fatto.
 
 ## Server MCP
 
@@ -204,11 +209,13 @@ uv sync --extra dashboard   # installa streamlit (opzionale - non è una dipende
 uv run streamlit run src/agevolamatch/dashboard/app.py
 ```
 
-Tre schede, stesso codice storage/matching di CLI/API/server MCP: un elenco
-incentivi filtrabile con vista di dettaglio, un editor del profilo aziendale
-(carica il profilo di esempio o costruiscine uno con un form), e i risultati
-del matching con le stesse spiegazioni a favore/contro/da verificare che
-stampa la CLI.
+Quattro schede, stesso codice storage/matching di CLI/API/server MCP: un
+elenco incentivi filtrabile con vista di dettaglio, un elenco **gare**
+filtrabile con vista di dettaglio, un editor del profilo aziendale (carica
+il profilo di esempio o costruiscine uno con un form - inclusi i codici CPV
+per il matching delle gare), e una scheda di matching con una sotto-scheda
+"Incentivos" e una "Gare", ciascuna con le stesse spiegazioni a favore/
+contro/da verificare che stampa la CLI.
 
 ## Docker
 

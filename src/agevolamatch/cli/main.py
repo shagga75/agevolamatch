@@ -9,7 +9,7 @@ from rich.console import Console
 from rich.table import Table
 from sqlmodel import select
 
-from agevolamatch.alerts import default_channels, load_subscriptions, run_alerts
+from agevolamatch.alerts import default_channels, load_subscriptions, run_alerts, run_tender_alerts
 from agevolamatch.export import incentive_records_to_rows, match_results_to_rows, write_rows
 from agevolamatch.matching import (
     DEFAULT_WEIGHTS,
@@ -41,6 +41,8 @@ alerts_app = typer.Typer(help="Manage and run alert subscriptions")
 app.add_typer(alerts_app, name="alerts")
 gare_app = typer.Typer(help="Gare d'appalto (public tenders) - ANAC + TED, a separate domain from incentives")
 app.add_typer(gare_app, name="gare")
+gare_alerts_app = typer.Typer(help="Manage and run alert subscriptions for tenders")
+gare_app.add_typer(gare_alerts_app, name="alerts")
 console = Console()
 
 
@@ -361,6 +363,40 @@ def gare_match(
 
     if not results:
         console.print("[yellow]Ninguna gara elegible superó el umbral de score configurado.[/yellow]")
+
+
+@gare_alerts_app.command("run")
+def gare_alerts_run(
+    subscriptions: Annotated[Path, typer.Option(help="Path to an alert subscriptions YAML file")],
+    db_path: Annotated[Path, typer.Option(help="SQLite database path")] = DEFAULT_DB_PATH,
+    dry_run: Annotated[bool, typer.Option(help="Preview without actually sending or recording alerts")] = True,
+) -> None:
+    """Send alerts for new/modified tenders matching saved subscriptions.
+
+    Same subscriptions file as `alerts run` works here too (profile,
+    min_score, channels) - a subscription's CompanyProfile.cpv_codes drives
+    tender matching the same way ateco_codes drives incentive matching.
+    Never resends an alert for the same tender content twice. Defaults to
+    --dry-run; pass --no-dry-run to actually deliver alerts.
+    """
+    subs = load_subscriptions(subscriptions)
+    if not subs:
+        console.print(f"[yellow]No hay suscripciones en {subscriptions}[/yellow]")
+        raise typer.Exit(code=1)
+
+    engine = get_engine(db_path)
+    init_db(engine)
+    with get_session(engine) as session:
+        tenders = load_tenders(session)
+        summary = run_tender_alerts(session, tenders, subs, default_channels(), dry_run=dry_run)
+
+    mode = "[yellow]DRY RUN[/yellow]" if dry_run else "[green]ENVIADO[/green]"
+    console.print(f"{mode} - {summary.total} alerta(s) {'simuladas' if dry_run else 'procesadas'}\n")
+    for event in summary.events:
+        console.print(f"  [{event.subscription_name}] {event.title} (score {event.score}) -> {', '.join(event.channels)}")
+
+    if not summary.events:
+        console.print("[dim]Ninguna gara nueva/modificada supera el umbral configurado.[/dim]")
 
 
 if __name__ == "__main__":
