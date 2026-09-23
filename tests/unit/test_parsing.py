@@ -9,6 +9,7 @@ from agevolamatch.sources.parsing import (
     parse_ateco,
     parse_iso_datetime,
     parse_italian_money,
+    parse_ted_date,
 )
 
 
@@ -107,6 +108,31 @@ class TestComputeStatus:
     def test_open_when_only_open_date_in_past(self):
         status = compute_status(datetime(2020, 1, 1), None, as_of=date(2024, 6, 1))
         assert status == OpportunityStatus.OPEN
+
+
+class TestParseTedDate:
+    """Regression coverage: datetime.fromisoformat misparses TED's
+    'date+offset, no time' format (e.g. '2026-09-01+02:00' -> silently
+    becomes 2026-09-01 02:00:00 with the offset digits read as a time)."""
+
+    def test_date_with_positive_offset(self):
+        assert parse_ted_date("2026-09-01+02:00") == datetime(2026, 9, 1, tzinfo=UTC)
+
+    def test_date_with_negative_offset(self):
+        assert parse_ted_date("2026-09-01-05:00") == datetime(2026, 9, 1, tzinfo=UTC)
+
+    def test_plain_date_without_offset(self):
+        assert parse_ted_date("2026-09-01") == datetime(2026, 9, 1, tzinfo=UTC)
+
+    def test_none_returns_none(self):
+        assert parse_ted_date(None) is None
+
+    def test_garbage_returns_none(self):
+        assert parse_ted_date("not-a-date") is None
+
+    def test_never_silently_reads_offset_as_time_of_day(self):
+        result = parse_ted_date("2026-09-01+02:00")
+        assert result.hour == 0 and result.minute == 0
 
 
 class TestComputeContentHash:

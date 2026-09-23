@@ -1,5 +1,6 @@
 # Example CompanyProfile: an innovative software startup based in Lazio.
 # Validate with: uv run agevolamatch match --profile examples/startup_profile.yaml
+# For tenders (Fase 5): uv run agevolamatch gare match --profile examples/startup_profile.yaml
 
 name: "Esempio Software Startup Srl"
 
@@ -8,6 +9,14 @@ ateco_codes:
     version: "2025"
   - code: "62.02"
     version: "2025"
+
+# CPV codes for tender/gare matching (Fase 5) - a separate classification
+# from ateco_codes above, no official crosswalk between the two exists.
+# 72200000: software programming and consultancy services
+# 72212000: application software programming services
+cpv_codes:
+  - "72200000"
+  - "72212000"
 
 region: "Lazio"
 province: "RM"

@@ -14,8 +14,7 @@ a quali incentivi possono davvero accedere.
 
 ## Stato del progetto
 
-Le Fasi 1-4 sono implementate e validate contro il dataset live. Resta solo
-la Fase 5 (gare d'appalto) - vedi [Roadmap](#roadmap).
+Tutte e 5 le fasi previste sono implementate e validate contro dati live.
 
 - ✅ **Fase 1 - Core**: struttura del repo, modelli Pydantic + JSON Schema,
   fonte incentivi.gov.it, storage SQLite con rilevamento nuovi/modificati.
@@ -25,7 +24,7 @@ la Fase 5 (gare d'appalto) - vedi [Roadmap](#roadmap).
 - ✅ **Fase 3 - API + alert**: API REST FastAPI, canali email (SMTP) e
   Telegram con deduplica anti-reinvio, Docker + docker-compose.
 - ✅ **Fase 4 - Extra**: scraper Invitalia (deduplicato), LLM opzionale, server MCP, dashboard Streamlit.
-- ⏳ Fase 5 - Gare d'appalto: ANAC + TED, modulo separato
+- ✅ **Fase 5 - Gare d'appalto**: ANAC + TED, un dominio e modulo di matching separati (vedi sotto).
 
 ## Perché
 
@@ -144,6 +143,34 @@ host, API key, base URL, timeout). Se `--llm` viene passato senza
 `AGEVOLAMATCH_LLM_PROVIDER` impostato, il comando stampa un avviso e procede
 senza arricchimento invece di fallire.
 
+## Gare d'appalto - un dominio separato
+
+La Fase 5 aggiunge un secondo dominio, deliberatamente separato: le gare
+d'appalto pubbliche da **ANAC** (dati nazionali italiani, CC-BY-SA 4.0) e
+**TED** (API ufficiale UE, senza autenticazione richiesta). Le gare non hanno
+tipo di beneficiario, costi ammissibili o forma di agevolazione - il matching
+si basa invece sui **codici CPV** (classificazione degli appalti, l'analogo
+ATECO per questo dominio) e su una scadenza di presentazione, tramite un
+modulo di matching dedicato (`agevolamatch.tenders`) con propri filtri duri e
+scoring, separato dal matching degli incentivi.
+
+```bash
+uv run agevolamatch gare ingest --source anac    # delta mensile da dati.anticorruzione.it, solo aperte
+uv run agevolamatch gare ingest --source ted     # finestra mobile di 60 giorni, Italia, bandi standard
+uv run agevolamatch gare ingest --source all
+
+uv run agevolamatch gare match --profile examples/startup_profile.yaml --top 10
+```
+
+`CompanyProfile.cpv_codes` (separato da `ateco_codes` - non esiste una
+tabella di raccordo ATECO↔CPV ufficiale) guida il matching delle gare;
+`examples/startup_profile.yaml` imposta già entrambi, quindi funziona sia con
+`match` che con `gare match`. Non ancora collegato ad API REST, server MCP,
+dashboard o alert - `gare` è solo CLI per ora (vedi `CLAUDE.md` per il
+perché); ingestione, modello e logica di matching sono gli stessi
+indipendentemente da quale superficie li chiamerebbe, quindi aggiungerli è
+un lavoro di follow-up diretto, non una riprogettazione.
+
 ## Server MCP
 
 Espone ricerca e matching a qualsiasi client MCP (es. Claude Desktop) tramite
@@ -256,7 +283,10 @@ le verifiche di licenza.
 
 ## Roadmap
 
-Vedi la sezione Stato sopra e le issue aperte per i dettagli sulle Fasi 2-5.
+Tutte e 5 le fasi previste sono complete - vedi Stato sopra. Le issue aperte
+tracciano eventuali estensioni (es. un mapping comune/provincia→regione, una
+tabella di raccordo ATECO 2007↔2025 - entrambi documentati come limiti noti
+in `CLAUDE.md`).
 
 ## Licenza
 

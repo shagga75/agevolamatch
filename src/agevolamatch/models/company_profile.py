@@ -52,6 +52,15 @@ class CompanyProfile(BaseModel):
         default_factory=list, description="Values matching SupportForm, ranked by preference for scoring"
     )
 
+    cpv_codes: list[str] = Field(
+        default_factory=list,
+        description=(
+            "CPV (Common Procurement Vocabulary) codes for tender matching (Fase 5, gare/tenders) - "
+            "a separate classification from ateco_codes, which is for incentives only. No official "
+            "ATECO<->CPV crosswalk exists, so this is set independently, not derived from ateco_codes."
+        ),
+    )
+
     def age_years(self, as_of: date | None = None) -> float | None:
         if self.founded_on is None:
             return None

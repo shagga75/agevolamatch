@@ -84,3 +84,35 @@ class Incentive(Opportunity):
     official_gazette_ref: str | None = Field(default=None, description="Gazzetta_ufficiale")
     other_characteristics: str | None = Field(default=None, description="Altre_caratteristiche")
     close_date_note: str | None = Field(default=None, description="Note_di_apertura_chiusura")
+
+
+class Tender(Opportunity):
+    """A public tender / gara d'appalto - subtype of Opportunity, fed by ANAC
+    (Italian national data) and TED (EU-wide official API). See
+    docs/sources.md for the real field mapping from each source - the two
+    sources overlap only partially, so most fields here are optional and a
+    given Tender will usually have either the ANAC-specific fields (cig,
+    province, outcome) or the TED-specific ones (buyer_country, notice_type)
+    populated, not both.
+    """
+
+    buyer_name: str | None = Field(default=None, description="Contracting authority / stazione appaltante")
+    buyer_country: str | None = Field(default=None, description="ISO 3166-1 alpha-3, e.g. 'ITA' (TED only)")
+    province: str | None = Field(default=None, description="Italian province name, e.g. 'ROMA' (ANAC only)")
+
+    cpv_codes: list[str] = Field(
+        default_factory=list, description="EU procurement classification codes (Common Procurement Vocabulary)"
+    )
+    contract_type: str | None = Field(
+        default=None, description="LAVORI/SERVIZI/FORNITURE (works/services/supplies) - ANAC only"
+    )
+    procedure_type: str | None = Field(default=None, description="Tender procedure, e.g. open/negotiated")
+    notice_type: str | None = Field(default=None, description="eForms notice type, e.g. 'cn-standard' - TED only")
+
+    estimated_value: float | None = Field(default=None, description="Estimated/lot contract value")
+    estimated_value_currency: str | None = Field(default=None, description="ISO 4217 currency code")
+
+    outcome: str | None = Field(
+        default=None, description="Award outcome when already decided (esito) - ANAC only, informational"
+    )
+    cig: str | None = Field(default=None, description="Codice Identificativo Gara - ANAC's unique tender ID")

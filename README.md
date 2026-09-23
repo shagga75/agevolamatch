@@ -13,8 +13,7 @@ find which incentives they actually qualify for.
 
 ## Status
 
-Fases 1-4 are implemented and validated against the live dataset. Only Fase 5
-(public tenders) remains - see [Roadmap](#roadmap) below.
+All 5 planned fases are implemented and validated against live data.
 
 - ✅ **Fase 1 - Core**: repo structure, Pydantic models + JSON Schema,
   incentivi.gov.it source, SQLite storage with new/modified detection.
@@ -24,7 +23,7 @@ Fases 1-4 are implemented and validated against the live dataset. Only Fase 5
 - ✅ **Fase 3 - API + alerts**: FastAPI REST API, email (SMTP) and Telegram
   alert channels with send-once dedup, Docker + docker-compose.
 - ✅ **Fase 4 - Extras**: Invitalia scraper (deduped), optional LLM, MCP server, Streamlit dashboard.
-- ⏳ Fase 5 - Public tenders (gare d'appalto): ANAC + TED, separate module
+- ✅ **Fase 5 - Gare/tenders**: ANAC + TED, a separate domain and matching module (see below).
 
 ## Why
 
@@ -141,6 +140,33 @@ See `.env.example` for the full set of `OLLAMA_*` / `LLM_*` variables
 `AGEVOLAMATCH_LLM_PROVIDER` set, the command prints a warning and proceeds
 without enrichment rather than failing.
 
+## Gare d'appalto (public tenders) - a separate domain
+
+Fase 5 adds a second, deliberately separate domain: public tenders from
+**ANAC** (Italian national data, CC-BY-SA 4.0) and **TED** (EU official API,
+no auth required). Tenders have no beneficiary type, eligible costs, or
+support form - matching instead turns on **CPV codes** (procurement
+classification, the tender-domain analog of ATECO) and a submission
+deadline, via a dedicated matching module (`agevolamatch.tenders`) with its
+own hard filters and scoring, kept separate from incentive matching.
+
+```bash
+uv run agevolamatch gare ingest --source anac    # monthly delta from dati.anticorruzione.it, open-only
+uv run agevolamatch gare ingest --source ted     # rolling 60-day window, Italy, standard contract notices
+uv run agevolamatch gare ingest --source all
+
+uv run agevolamatch gare match --profile examples/startup_profile.yaml --top 10
+```
+
+`CompanyProfile.cpv_codes` (separate from `ateco_codes` - no official
+ATECO↔CPV crosswalk exists) drives tender matching; `examples/startup_profile.yaml`
+already sets both, so it works with `match` and `gare match` alike. Not yet
+wired into the REST API, MCP server, dashboard, or alerts - `gare` is
+CLI-only for now (see `CLAUDE.md` for the reasoning); the ingestion,
+model, and matching logic are the same regardless of which surface would
+call them, so adding those is straightforward follow-up work, not a
+redesign.
+
 ## MCP server
 
 Exposes search and matching to any MCP client (e.g. Claude Desktop) via
@@ -250,7 +276,9 @@ for prior art and license checks on related projects.
 
 ## Roadmap
 
-See the Status section above and open issues for details on Fases 2-5.
+All 5 originally planned fases are done - see Status above. Open issues track
+anything further (e.g. a comune/provincia→regione lookup, an ATECO 2007↔2025
+crosswalk - both documented as known gaps in `CLAUDE.md`).
 
 ## License
 

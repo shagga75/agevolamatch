@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import csv
 import json
 from datetime import UTC, datetime
 from pathlib import Path
@@ -8,7 +9,7 @@ from typing import Any
 import pytest
 
 from agevolamatch.models.enums import OpportunitySourceName, OpportunityStatus
-from agevolamatch.models.opportunity import Incentive
+from agevolamatch.models.opportunity import Incentive, Tender
 
 FIXTURES_DIR = Path(__file__).parent / "fixtures"
 
@@ -67,3 +68,38 @@ def startup_profile():
 
     path = Path(__file__).parent.parent / "examples" / "startup_profile.yaml"
     return load_company_profile(path)
+
+
+@pytest.fixture
+def anac_cig_raw_rows() -> list[dict]:
+    with (FIXTURES_DIR / "anac_cig_sample.csv").open(encoding="utf-8") as f:
+        return list(csv.DictReader(f, delimiter=";", quotechar='"'))
+
+
+@pytest.fixture
+def ted_notices_raw() -> list[dict]:
+    payload = json.loads((FIXTURES_DIR / "ted_notices_sample.json").read_text(encoding="utf-8"))
+    return payload["notices"]
+
+
+def make_tender(source_id: str = "T1", **overrides: Any) -> Tender:
+    now = datetime.now(tz=UTC)
+    defaults: dict[str, Any] = {
+        "source": OpportunitySourceName.ANAC,
+        "source_id": source_id,
+        "title": f"Gara di test {source_id}",
+        "status": OpportunityStatus.OPEN,
+        "open_date": datetime(2024, 1, 1, tzinfo=UTC),
+        "close_date": datetime(2099, 1, 1, tzinfo=UTC),
+        "content_hash": f"hash-{source_id}",
+        "first_seen": now,
+        "last_seen_at": now,
+        "cpv_codes": ["72200000"],
+    }
+    defaults.update(overrides)
+    return Tender(**defaults)
+
+
+@pytest.fixture
+def tender_factory():
+    return make_tender

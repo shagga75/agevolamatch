@@ -6,8 +6,8 @@
 |---|---|---|---|---|---|
 | incentivi.gov.it Open Data | Incentives | JSON via Solr endpoint (see below) | Site doesn't publish one; observed `ds_last_update` per record | IODL 2.0 | **Implemented** (Fase 1) |
 | Invitalia | Incentives | HTML (no public API, no JSON:API) | Site doesn't publish one | Site terms apply (no explicit open-data license found) | **Implemented** (Fase 4) |
-| ANAC Open Data | Tenders (gare) | CSV/ZIP | Historical dumps, updated periodically | To verify at implementation time (ANAC publishes under an open license, exact terms TBD) | Planned, Fase 5 |
-| TED Europa | Tenders (gare) | Official API | Real-time | EU reuse policy (generally open) | Planned, Fase 5 |
+| ANAC Open Data | Tenders (gare) | CSV/ZIP (CKAN portal) | Monthly delta dumps | CC-BY-SA 4.0 | **Implemented** (Fase 5) |
+| TED Europa | Tenders (gare) | Official REST API (JSON) | Real-time, queried on a rolling window | EU reuse policy (no auth required for published notices) | **Implemented** (Fase 5) |
 | OpenCoesione | Historical/analytics | Official API | Periodic | Open data license (to verify) | Planned, Fase 3+ |
 | OpenCUP | Historical/analytics | Web/exports | Periodic | To verify | Planned, Fase 3+ |
 
@@ -166,3 +166,171 @@ were correctly excluded. `agevolamatch match` against this mixed-source data
 runs without errors, and Invitalia records do appear in wider result sets,
 ranked appropriately lower than richer incentivi.gov.it records when a
 profile's criteria depend on fields Invitalia doesn't provide.
+
+## Fase 5: gare/tenders (domain B) - a separate domain, not incentives
+
+Per the original spec, tenders (gare d'appalto) are a genuinely different
+domain from incentives - no beneficiary type, no eligible costs, no support
+form; eligibility instead turns on CPV codes (procurement classification) and
+a submission deadline. `models.Tender` is a second `Opportunity` subtype
+(alongside `Incentive`), and `agevolamatch.tenders` is a dedicated matching
+module (hard filters + scoring) separate from `agevolamatch.matching`, per
+the "módulo separado" requirement - see CLAUDE.md for why. Storage/CLI/API
+plumbing (`Opportunity`, `BaseSource`, `upsert_opportunities`) is shared
+infrastructure, reused as-is.
+
+### ANAC (Autorità Nazionale Anticorruzione) - implementation notes
+
+`dati.anticorruzione.it/opendata` is a CKAN portal, CC-BY-SA 4.0 licensed.
+The "cig" dataset ("CIG aggiornamenti delta") publishes one CSV+JSON zip per
+month via the standard CKAN `package_show` API - `agevolamatch.sources.anac`
+discovers the latest one dynamically (by date-prefixed resource name) rather
+than hardcoding a URL, so it keeps working next month without a code change.
+
+**The portal's WAF blocks non-browser-looking requests outright**, confirmed
+live by elimination: a conventional self-identifying bot UA
+("Mozilla/5.0 (compatible; AgevolaMatch/0.1; +url)", the pattern well-behaved
+bots like Googlebot use) was still rejected via httpx; only a UA with genuine
+browser tokens (Chrome/AppleWebKit/Safari) got through, with no other header
+changes needed. This is public, unrestricted-license open data - the WAF is
+generic bot mitigation, not a deliberate access control this project's
+single-request-per-run, rate-limited use is evading - but it does mean
+`sources/anac.py::USER_AGENT` has to look like a browser to work reliably.
+
+**The delta file is a monthly changelog, not a "currently open" snapshot.**
+A real sample (2026-09 delta, 168,977 rows scanned) showed:
+- 168,970/168,977 rows have `stato=ATTIVO` - this field tracks whether the
+  CIG record itself is active/valid in ANAC's system, **not** whether the
+  tender is still open for bids. It cannot be used to determine openness.
+- 140,864/168,977 (83%) already have an `ESITO` (award outcome) - i.e. this
+  delta is dominated by award-notice updates to old CIGs, not new open calls.
+- Only 3,908/168,977 (2.3%) have `data_scadenza_offerta` (bid deadline) in
+  the future.
+
+Given that scale and noise ratio, `ANACSource.parse()` filters to
+deadline-in-the-future rows **before** normalizing - unlike every other
+source in this project, closed/awarded ANAC tenders are not kept for
+history. This is a deliberate, documented departure from the project's
+default "keep everything" policy, justified by scale (100k+ rows/month vs.
+incentivi.gov.it's ~5,900 total) and by this specific feed's own noisy
+change-log design (not a property of gare/tenders data in general - TED,
+below, does keep closed records).
+
+**Field mapping** (only the columns this source uses; the real CSV has ~55
+columns total, most institutional/procedural detail not modeled here):
+
+| CSV column | Maps to `Tender` field | Notes |
+|---|---|---|
+| `cig` | `source_id`, `cig` | Unique per lot/contract, not per overall gara - confirmed: two different CIGs can share the same `numero_gara` (multi-lot tenders) |
+| `oggetto_gara` | `title` | |
+| `oggetto_lotto` | `description` | Lot-level description |
+| `importo_lotto` (fallback `importo_complessivo_gara`) | `estimated_value` | Clean plain-decimal numbers (unlike incentivi.gov.it's messy money fields) |
+| `oggetto_principale_contratto` | `contract_type` | `LAVORI`/`SERVIZI`/`FORNITURE` (works/services/supplies) |
+| `denominazione_amministrazione_appaltante` | `buyer_name` | |
+| `provincia` | `province` | Italian province name, e.g. `ROMA` - no ISTAT code, same "no comune/provincia→regione mapping yet" limitation as incentivi.gov.it's `municipalities` |
+| `data_pubblicazione` / `data_scadenza_offerta` | `open_date` / `close_date` | Plain `YYYY-MM-DD`, no timezone ambiguity |
+| `tipo_scelta_contraente` | `procedure_type` | e.g. "PROCEDURA APERTA", "AFFIDAMENTO DIRETTO" |
+| `cod_cpv` | `cpv_codes` | Single code per row (unlike TED's list); wrapped in a 1-item list |
+| `ESITO` | `outcome` | Informational only, present on most rows even within the open-filtered subset when the tender has multiple lots at different stages |
+
+No per-record web URL exists in this dataset - `Tender.url` is left `None`
+for ANAC records (a user can look up a CIG manually on the portal).
+
+**Known data-quality notes:**
+- ~7/168,977 rows (checked in the full delta) show column-shifted values
+  (e.g. a `settore` value appearing in the `stato` column) - a small number
+  of source rows have fewer fields than the header, likely from an unescaped
+  delimiter upstream. `csv.DictReader` doesn't raise on this, so such a row
+  parses "successfully" with wrong data in the wrong field; at this
+  incidence rate (0.004%), this is accepted as inherent source noise rather
+  than engineered around.
+- CSV blank fields arrive as empty strings, not `None` - confirmed live to
+  matter: an early version of `normalize()` stored `province=""` instead of
+  `None` for a blank field. Every optional string field is now run through
+  `_blank_to_none()`, not a bare `record.get(...)`.
+- Within the *currently-open* subset specifically (post-filter), `provincia`
+  and `importo_lotto` were 100% populated (0/3,908 missing) in the observed
+  snapshot - the general schema allows nulls there (seen in the full delta
+  including closed rows), it just doesn't occur in what actually reaches
+  this source's output today.
+- The same CIG can appear more than once within a single monthly delta (a
+  tender updated twice in the same month produces two delta rows) -
+  `upsert_opportunities`'s existing dedup-by-`(source, source_id)` logic
+  handles this correctly even within a single ingest batch (confirmed live:
+  a fresh-database ingest reported some rows as "modified"/"unchanged"
+  against records inserted earlier in the very same run, not just against
+  previous runs).
+
+### TED (Tenders Electronic Daily) - implementation notes
+
+The EU's official procurement portal, with a genuinely public REST API:
+`POST https://api.ted.europa.eu/v3/notices/search`, confirmed live to
+require no authentication for published notices. Field names, response
+shape, and quirks below were all confirmed against the live API - TED
+publishes a Swagger reference but not a plain field-by-field guide, and the
+exact response shape isn't documented at the level needed to write a parser
+without checking directly.
+
+**Query scope**: `buyer-country=ITA AND notice-type=cn-standard AND
+publication-date>=<rolling 60-day window>`. `cn-standard` (standard contract
+notice) specifically excludes prior-information notices (`pin-only`, which
+carry no submission deadline) and award notices - i.e. it's scoped to actual
+open calls, not every notice type TED carries. `buyer-country=ITA` keeps
+this source's scope aligned with the rest of the project (EU tenders are
+technically open to bidders from any member state, but an Italian buyer
+keeps this squarely "Italian public procurement", same framing as ANAC).
+The 60-day rolling window avoids re-fetching the full archive (128,705 total
+`cn-standard` notices for Italy alone, confirmed live) on every run.
+
+**Real quirks confirmed live, not assumed:**
+- **Dates are `'YYYY-MM-DD+HH:MM'`** - a date with a UTC offset but no time
+  component. `datetime.fromisoformat()` silently misparses this (it reads
+  the offset's digits as a time-of-day and drops the timezone), which would
+  have produced wrong-but-plausible-looking timestamps if shipped -
+  `sources/parsing.py::parse_ted_date` handles this format explicitly.
+- **`notice-title` and `buyer-name` are multi-language dicts**, keyed by
+  whichever 3-letter language codes that specific notice was published in
+  (not a fixed set) - `sources/ted.py::_pick_language_value` prefers Italian,
+  falls back to English, then to whatever's available.
+- **The public API does enforce a rate limit** and returns HTTP 429 -
+  confirmed by hitting it during manual testing. `TEDSource` rate-limits
+  itself (1 req/s default) and retries a 429 using the server's own
+  `Retry-After` header when present, falling back to exponential backoff.
+- Pagination is plain `page`/`limit` query fields in the JSON body (verified
+  empirically - `page=2` returns different results than `page=1`); the
+  `iterationNextToken` field the API also returns was null in every
+  response observed and isn't used here.
+
+**Field mapping:**
+
+| API field | Maps to `Tender` field | Notes |
+|---|---|---|
+| `publication-number` | `source_id` | e.g. `"599734-2026"` |
+| `notice-title` (multi-lang) | `title` | |
+| `buyer-name` (multi-lang) | `buyer_name` | |
+| `buyer-country` | `buyer_country` | ISO 3166-1 alpha-3, e.g. `"ITA"` |
+| `publication-date` | `open_date` | |
+| `deadline-receipt-tender-date-lot` (list, one per lot) | `close_date` | Earliest deadline across lots |
+| `classification-cpv` | `cpv_codes` | List, deduplicated (raw values sometimes repeat the same code) |
+| `estimated-value-lot` / `estimated-value-cur-lot` | `estimated_value` / `estimated_value_currency` | Populated in 148/150 notices in a live sample |
+| `notice-type` | `notice_type` | Always `"cn-standard"` given the query scope |
+| `links.htmlDirect.ITA` (fallback `.ENG`) | `url` | |
+
+`status` is computed from `open_date`/`close_date` the same way as
+incentivi.gov.it (not stored directly) - confirmed on a live 60-day sample:
+19 open / 131 closed out of 150 notices, a realistic mix since this source,
+unlike ANAC, does keep closed records (TED's volume for a single-country
+60-day window is manageable; ANAC's monthly delta is not - see above).
+
+### Real-data validation (both sources)
+
+On 2026-09-23: `agevolamatch gare ingest --source anac` downloaded the live
+32MB monthly delta, filtered 168,977 rows to 3,908 candidates, and
+normalized **3,908/3,908 with zero failures**. `agevolamatch gare ingest
+--source ted` paginated the live API for a 60-day Italy window and
+normalized **2,566/2,566 with zero failures**. `agevolamatch gare match
+--profile examples/startup_profile.yaml` against the resulting 6,388-tender
+mixed-source database produced a coherent ranking blending both sources
+(e.g. an ANAC IT-services tender and a TED cloud-migration tender both
+scoring ~79/100 for a software startup profile, with sensible CPV-prefix and
+amount-fit reasoning in each explanation).

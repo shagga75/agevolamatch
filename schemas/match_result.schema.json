@@ -483,7 +483,9 @@
     "OpportunitySourceName": {
       "enum": [
         "incentivi_gov_it",
-        "invitalia"
+        "invitalia",
+        "anac",
+        "ted_europa"
       ],
       "title": "OpportunitySourceName",
       "type": "string"

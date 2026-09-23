@@ -6,9 +6,9 @@ import pytest
 from sqlmodel import Session, SQLModel, create_engine
 
 from agevolamatch.models.enums import OpportunitySourceName, OpportunityStatus
-from agevolamatch.models.opportunity import Incentive
+from agevolamatch.models.opportunity import Incentive, Tender
 from agevolamatch.sources.parsing import compute_content_hash
-from agevolamatch.storage.repository import upsert_opportunities
+from agevolamatch.storage.repository import load_incentives, load_tenders, upsert_opportunities
 
 
 @pytest.fixture
@@ -69,3 +69,32 @@ def test_closed_opportunity_is_kept_not_deleted(session):
     closed.status = OpportunityStatus.CLOSED
     summary = upsert_opportunities(session, [closed])
     assert summary.unchanged[0].status == OpportunityStatus.CLOSED
+
+
+def make_tender(source_id: str, title: str) -> Tender:
+    now = datetime.now(tz=UTC)
+    content_hash = compute_content_hash({"source_id": source_id, "title": title})
+    return Tender(
+        source=OpportunitySourceName.ANAC,
+        source_id=source_id,
+        title=title,
+        status=OpportunityStatus.OPEN,
+        content_hash=content_hash,
+        first_seen=now,
+        last_seen_at=now,
+    )
+
+
+def test_load_incentives_ignores_tenders_sharing_the_same_table(session):
+    """Regression test: Incentive.model_validate() has extra='forbid', so it
+    raises on a Tender's payload (buyer_name, cpv_codes, ... aren't declared
+    on Incentive) unless load_incentives filters by source first."""
+    upsert_opportunities(session, [make_incentive("1", "Bando A"), make_tender("T1", "Gara A")])
+    incentives = load_incentives(session)
+    assert [i.source_id for i in incentives] == ["1"]
+
+
+def test_load_tenders_ignores_incentives_sharing_the_same_table(session):
+    upsert_opportunities(session, [make_incentive("1", "Bando A"), make_tender("T1", "Gara A")])
+    tenders = load_tenders(session)
+    assert [t.source_id for t in tenders] == ["T1"]

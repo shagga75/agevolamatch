@@ -7,15 +7,18 @@ from pathlib import Path
 
 from agevolamatch.matching.models import MatchResult
 from agevolamatch.models.company_profile import CompanyProfile
-from agevolamatch.models.opportunity import Incentive, Opportunity
+from agevolamatch.models.opportunity import Incentive, Opportunity, Tender
+from agevolamatch.tenders.models import TenderMatchResult
 
 SCHEMAS_DIR = Path(__file__).resolve().parent.parent / "schemas"
 
 MODELS = {
     "opportunity.schema.json": Opportunity,
     "incentive.schema.json": Incentive,
+    "tender.schema.json": Tender,
     "company_profile.schema.json": CompanyProfile,
     "match_result.schema.json": MatchResult,
+    "tender_match_result.schema.json": TenderMatchResult,
 }
 
 

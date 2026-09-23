@@ -1,0 +1,941 @@
+{
+  "notices": [
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-09-30+02:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "516094-2026",
+      "classification-cpv": [
+        "60130000",
+        "60130000"
+      ],
+      "estimated-value-lot": [
+        "660000"
+      ],
+      "buyer-name": {
+        "ita": [
+          "Cuc - IX Comunità Montana del Lazio"
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/516094-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/516094-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Különleges közúti személyszállítási szolgáltatások – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "lav": "Itāija – Īpaša nolūka pasažieru autopārvadājumu pakalpojumi – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "swe": "Italien – Passagerartransport på väg för särskilda ändamål – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "gle": "An Iodáil – Special-purpose road passenger-transport services – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "ell": "Ιταλία – Υπηρεσίες ειδικών οδικών μεταφορών επιβατών – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "spa": "Italia – Servicios especiales de transporte de pasajeros por carretera – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "est": "Itaalia – Eriotstarbelised maanteetranspordi reisijateveoteenused – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "nld": "Italië – Diensten voor speciaal personenvervoer over land – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "fin": "Italia – Matkustajien erikoismaantiekuljetukset – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "pol": "Włochy – Usługi w zakresie specjalistycznego transportu drogowego osób – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "hrv": "Italija – Usluge cestovnog putničkog prijevoza za posebne namjene – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "ces": "Itálie – Služby jednoúčelové silniční osobní dopravy – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "dan": "Italien – Specialiseret personbefordring ad vej – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "ron": "Italia – Servicii de transport rutier specializat de pasageri – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "por": "Itália – Serviços de transporte rodoviário de passageiros com finalidade específica – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "slk": "Taliansko – Služby osobnej cestnej dopravy na osobitné účely – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "fra": "Italie – Services spécialisés de transport routier de passagers – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "mlt": "L-Italja – Servizzi ta' trasport b'għan speċjali tal-passiġġieri bit-triq – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "deu": "Italien – Personensonderbeförderung (Straße) – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "lit": "Italija – Specialiojo keleivinio kelių transporto paslaugos – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "ita": "Italia – Servizi speciali di trasporto passeggeri su strada – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "bul": "Итaлия – Специализирани услуги за пътен превоз на пътници – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "slv": "Italija – Storitve cestnega potniškega prevoza za posebne namene – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE",
+        "eng": "Italy – Special-purpose road passenger-transport services – TIVOLI FORMA UNIPERSONALE A R.L. PROCEDURA APERTA AD EVIDENZA PUBBLICA, PER L'AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO PER GLI ALUNNI FREQUENTANTI LE SEDI DELLA TIVOLI FORMA PER DUE ANNI CON EVENTUALE RINNOVO PER UN ULTERIORE ANNO, RIF.ANNI FORM. 2026/2027 2027/2028 (A PARTIRE DAL 01/01/2027), 2028/2029, CON EVENTUALE RINNOVO PER A.F. 2029/2030 (FINO AL 31/12/2029) DA AGGIUDICARSI AI SE"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-09-24+02:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "516361-2026",
+      "classification-cpv": [
+        "50400000",
+        "50400000"
+      ],
+      "estimated-value-lot": [
+        "780500.00"
+      ],
+      "buyer-name": {
+        "ita": [
+          "A.O.U. \"LUIGI VANVITELLI\""
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/516361-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/516361-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Gyógyászati és precíziós berendezéssel kapcsolatos javítási és karbantartási szolgáltatások – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "lav": "Itāija – Medicīnisko un precīzijas iekārtu remonta un tehniskās apkopes pakalpojumi – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "swe": "Italien – Reparation och underhåll av medicinsk utrustning och precisionsutrustning – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "gle": "An Iodáil – Repair and maintenance services of medical and precision equipment – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "ell": "Ιταλία – Υπηρεσίες επισκευής και συντήρησης ιατρικού εξοπλισμού και εξοπλισμού ακριβείας – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "spa": "Italia – Servicios de reparación y mantenimiento de equipo médico y de precisión – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "est": "Itaalia – Meditsiini- ja täppisseadmete remondi- ja hooldusteenused – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "nld": "Italië – Reparatie en onderhoud van medische en precisie-uitrusting – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "fin": "Italia – Lääketieteellisten laitteiden ja tarkkuuslaitteiden korjaus ja huolto – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "pol": "Włochy – Usługi w zakresie napraw i konserwacji urządzeń medycznych i precyzyjnych – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "hrv": "Italija – Usluge popravaka i održavanja medicinske i precizne opreme – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "ces": "Itálie – Opravy a údržba zdravotnických a přesných přístrojů – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "dan": "Italien – Reparation og vedligeholdelse af medicinsk udstyr og præcisionsudstyr – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "ron": "Italia – Servicii de reparare şi de întreţinere a echipamentului medical şi de precizie – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "por": "Itália – Serviços de reparação e manutenção de equipamento médico e de precisão – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "slk": "Taliansko – Opravy a údržba lekárskych a presných zariadení – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "fra": "Italie – Services de réparation et d'entretien de matériel médical et de matériel de précision – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "mlt": "L-Italja – Servizzi ta’ tiswija u tal-manutenzjoni ta’ l-apparat mediku u ta’ preċiżjoni – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "deu": "Italien – Reparatur und Wartung von medizinischen Geräten und Präzisionsgeräten – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "lit": "Italija – Medicinos ir precizinės įrangos remonto ir priežiūros paslaugos – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "ita": "Italia – Servizi di riparazione e manutenzione di attrezzature mediche e di precisione – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "bul": "Итaлия – Услуги по ремонт и поддържане на медицинско оборудване и прецизни апарати – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "slv": "Italija – Storitve popravila in vzdrževanja medicinske in precizne opreme – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche",
+        "eng": "Italy – Repair and maintenance services of medical and precision equipment – Servizi Integrati per la Gestione e Manutenzione delle Apparecchiature Biomediche"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-10-08+02:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "517005-2026",
+      "classification-cpv": [
+        "71317000",
+        "71317000"
+      ],
+      "estimated-value-lot": [
+        "26988739.72"
+      ],
+      "buyer-name": {
+        "ita": [
+          "Grandi Stazioni Rail S.p.A."
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/517005-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/517005-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Veszélymegelőzési és rizikófelügyeleti tanácsadó szolgáltatások – 15/2026 - Servizi 81/2008",
+        "lav": "Itāija – Riska aizsardzības un kontroles konsultāciju pakalpojumi – 15/2026 - Servizi 81/2008",
+        "swe": "Italien – Konsulttjänster för skydd mot och kontroll av faror – 15/2026 - Servizi 81/2008",
+        "gle": "An Iodáil – Hazard protection and control consultancy services – 15/2026 - Servizi 81/2008",
+        "ell": "Ιταλία – Υπηρεσίες παροχής συμβουλών σχετιζόμενες με τον έλεγχο και την προστασία από κινδύνους – 15/2026 - Servizi 81/2008",
+        "spa": "Italia – Servicios de consultoría en protección y control de riesgos – 15/2026 - Servizi 81/2008",
+        "est": "Itaalia – Riskimaandamis- ja -juhtimisalased nõustamisteenused – 15/2026 - Servizi 81/2008",
+        "nld": "Italië – Advies inzake beveiliging en risicobeheersing – 15/2026 - Servizi 81/2008",
+        "fin": "Italia – Vaaroilta suojautumista ja riskienhallintaa koskevat konsulttipalvelut – 15/2026 - Servizi 81/2008",
+        "pol": "Włochy – Usługi doradcze w zakresie kontroli i zapobiegania zagrożeniom – 15/2026 - Servizi 81/2008",
+        "hrv": "Italija – Savjetodavne usluge u zaštiti od opasnosti i obuzdavanju opasnosti – 15/2026 - Servizi 81/2008",
+        "ces": "Itálie – Poradenství v oblasti ochrany před riziky a boje s nimi – 15/2026 - Servizi 81/2008",
+        "dan": "Italien – Rådgivning i forbindelse med beskyttelse mod og bekæmpelse af farer – 15/2026 - Servizi 81/2008",
+        "ron": "Italia – Servicii de consultanţă în protecţia contra riscurilor şi în controlul riscurilor – 15/2026 - Servizi 81/2008",
+        "por": "Itália – Serviços de consultoria em matéria de controlo e protecção contra os riscos potenciais – 15/2026 - Servizi 81/2008",
+        "slk": "Taliansko – Poradenské služby pre oblasť ochrany a kontroly pred nebezpečím – 15/2026 - Servizi 81/2008",
+        "fra": "Italie – Services de conseil en protection et contrôle des risques – 15/2026 - Servizi 81/2008",
+        "mlt": "L-Italja – Servizzi ta' spezzjoni dwar il-protezzjoni u l-kontroll ta' perikoli – 15/2026 - Servizi 81/2008",
+        "deu": "Italien – Beratung im Bereich Gefahrenschutz und -kontrolle – 15/2026 - Servizi 81/2008",
+        "lit": "Italija – Apsaugos nuo pavojaus ir pavojaus valdymo konsultacinės paslaugos – 15/2026 - Servizi 81/2008",
+        "ita": "Italia – Servizi di consulenza per la protezione e il controllo di rischi – 15/2026 - Servizi 81/2008",
+        "bul": "Итaлия – Консултантски услуги относно защита и контрол при възникване на рискови ситуации – 15/2026 - Servizi 81/2008",
+        "slv": "Italija – Storitve svetovanja na področju zaščite pred nevarnostmi in njihovega obvladovanja – 15/2026 - Servizi 81/2008",
+        "eng": "Italy – Hazard protection and control consultancy services – 15/2026 - Servizi 81/2008"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-08-25+02:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "515837-2026",
+      "classification-cpv": [
+        "45240000",
+        "45240000"
+      ],
+      "estimated-value-lot": [
+        "8007236.63"
+      ],
+      "buyer-name": {
+        "ita": [
+          "CONSORZIO DI BONIFICA DELL'ORISTANESE"
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/515837-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/515837-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Vízi létesítmények építése – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "lav": "Itāija – Ūdens projektu būvdarbi – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "swe": "Italien – Anläggningsarbete för vattenprojekt – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "gle": "An Iodáil – Construction work for water projects – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "ell": "Ιταλία – Κατασκευαστικές εργασίες για υδραυλικά έργα – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "spa": "Italia – Trabajos de construcción para proyectos hidráulicos – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "est": "Itaalia – Vesiehitustööd – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "nld": "Italië – Waterbouwwerkzaamheden – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "fin": "Italia – Vesirakennustyöt – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "pol": "Włochy – Budowa obiektów inżynierii wodnej – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "hrv": "Italija – Građevinski radovi na hidrograđevnim objektima – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "ces": "Itálie – Výstavba vodních děl – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "dan": "Italien – Arbejder i forbindelse med udførelse af vandbygningsanlæg – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "ron": "Italia – Lucrări de construcţii de lucrări hidraulice – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "por": "Itália – Construção relacionada com projectos de engenharia hidráulica – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "slk": "Taliansko – Výstavba vodných diel – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "fra": "Italie – Travaux de construction d'ouvrages hydrauliques – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "mlt": "L-Italja – Xogħol tal-kostruzzjoni għal proġetti ta’ l-ilma – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "deu": "Italien – Wasserbauarbeiten – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "lit": "Italija – Vandens objektų statybos darbai – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "ita": "Italia – Lavori di costruzione per opere idrauliche – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "bul": "Итaлия – Строителни и монтажни работи на хидротехнически съоръжения – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "slv": "Italija – Gradbena dela na vodnih objektih – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO",
+        "eng": "Italy – Construction work for water projects – MANUTENZIONE STRAORDINARIA DEL CANALE ADDUTTORE DESTRA TIRSO. IMPERMEABILIZZAZIONE INTEGRALE DELLA SEZIONE. LOTTO V - PROSECUZIONE INTERVENTI PER ELIMINAZIONE PERDITE CANALE ADDUTTORE DESTRA TIRSO"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-08-27+02:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "515916-2026",
+      "classification-cpv": [
+        "45233000",
+        "71322000",
+        "45233000",
+        "71322000"
+      ],
+      "estimated-value-lot": [
+        "16479197.99"
+      ],
+      "buyer-name": {
+        "ita": [
+          "Regione Autonoma della Sardegna"
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/515916-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/515916-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Autópályák és közutak építése, alapozása és burkolása – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "lav": "Itāija – Automaģistrāļu un ceļu būves, pamatu ielikšanas un virsmas noklāšanas darbi – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "swe": "Italien – Anläggningsarbete för motorvägar, vägar, järnvägar samt start- och landningsbanor – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "gle": "An Iodáil – Construction, foundation and surface works for highways, roads – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "ell": "Ιταλία – Κατασκευαστικά έργα, έργα θεμελίωσης και επιφανειακά έργα σε αυτοκινητοδρόμους και οδούς – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "spa": "Italia – Trabajos de construcción, cimentación y pavimentación de autopistas y carreteras – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "est": "Itaalia – Kiir- ja maanteede ehitus-, rajamis- ja pindamistööd – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "nld": "Italië – Aanleg van snelwegen en wegen – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "fin": "Italia – Maanteiden, rautateiden ja kiitoratojen rakennus-, perustus- ja päällystystyöt – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "pol": "Włochy – Roboty w zakresie konstruowania, fundamentowania oraz wykonywania nawierzchni autostrad, dróg – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "hrv": "Italija – Građevinski radovi, građevinski radovi na temelju i građevinski radovi na površinskom sloju autocesta, cesta – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "ces": "Itálie – Výstavba, zakládání a povrchové práce pro komunikace – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "dan": "Italien – Bygge-, funderings- og belægningsarbejder i forbindelse med anlæg af hovedveje, veje – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "ron": "Italia – Lucrări de construcţii, de fundaţie şi de îmbrăcare a autostrăzilor şi a drumurilor – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "por": "Itália – Construção, fundação e pavimentação de vias rápidas e estradas – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "slk": "Taliansko – Stavebné práce, práce spodnej a vrchnej stavby diaľnic, ciest – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "fra": "Italie – Travaux de construction, de fondation et de revêtement d'autoroutes, de routes – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "mlt": "L-Italja – Kostruzzjoni, pedamenti u xogħol tal-wiċċ għal toroq u toroq ewlenija – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "deu": "Italien – Bauarbeiten, Fundamentierungsarbeiten und Oberbauarbeiten für Fernstraßen und Straßen – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "lit": "Italija – Greitkelių, kelių tiesimo, jų pamatų ir dangos klojimo darbai – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "ita": "Italia – Lavori di costruzione, di fondazione e di superficie per autostrade e strade – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "bul": "Итaлия – Строителни работи по изпълнение на основа на пътна настилка и настилка на пътища – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "slv": "Italija – Gradbena dela, dela na temeljenju in dela na zgornjem ustroju daljinskih cest in cest – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe",
+        "eng": "Italy – Construction, foundation and surface works for highways, roads – Procedura aperta per l’affidamento della progettazione esecutiva e l’esecuzione dei lavori di Recupero strutturale della galleria di Mughina Su Nuraghe"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-09-22+02:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "515974-2026",
+      "classification-cpv": [
+        "77311000",
+        "77311000"
+      ],
+      "estimated-value-lot": [
+        "1605000.58"
+      ],
+      "buyer-name": {
+        "ita": [
+          "COMUNE DI GIUGLIANO IN CAMPANIA"
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/515974-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/515974-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Dísz- és pihenőkert-fenntartási szolgáltatások – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "lav": "Itāija – Dekoratīvo un atpūtas dārzu kopšanas pakalpojumi – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "swe": "Italien – Skötsel av trädgårdar och parker – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "gle": "An Iodáil – Ornamental and pleasure gardens maintenance services – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "ell": "Ιταλία – Συντήρηση διακοσμητικών κήπων ή κήπων αναψυχής – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "spa": "Italia – Servicios de mantenimiento de jardines y parques – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "est": "Itaalia – Iluaedade ja parkide hooldusteenused – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "nld": "Italië – Onderhouden van sier- en recreatietuinen – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "fin": "Italia – Puistojen ja puutarhojen hoitopalvelut – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "pol": "Włochy – Usługi utrzymania ogródków ozdobnych – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "hrv": "Italija – Usluge održavanja ukrasnih parkova i perivoja – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "ces": "Itálie – Služby související s údržbou okrasných zahrad a parků – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "dan": "Italien – Vedligeholdelse af have- og parkanlæg – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "ron": "Italia – Întreţinere de grădini decorative sau de recreere – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "por": "Itália – Serviços de manutenção de jardins ornamentais e recreativos – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "slk": "Taliansko – Údržba okrasných a rekreačných záhrad – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "fra": "Italie – Entretien de pelouses décoratives ou d'agrément – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "mlt": "L-Italja – Servizzi tal-manutenzjoni ta' gonna ornamentali u oqsma tad-divertiment – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "deu": "Italien – Pflegearbeiten für Ziergärten und Parks – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "lit": "Italija – Dekoratyvinių ir poilsio sodų priežiūros paslaugos – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "ita": "Italia – Servizi di manutenzione di giardini ornamentali o ricreativi – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "bul": "Итaлия – Услуги по поддържане на зелени площи в паркове и места за развлечения – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "slv": "Italija – Storitve vzdrževanja okrasnih vrtov in parkov – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA).",
+        "eng": "Italy – Ornamental and pleasure gardens maintenance services – Gara mediante procedura aperta, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., espletata in modalità telematica, per un Accordo Quadro con un solo Operatore Economico ai sensi dell’art. 59, comma 1 e 3, del citato decreto legislativo, per l’affidamento del “Servizio triennale di manutenzione delle aree verdi” - Comune di Giugliano in Campania (NA)."
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "notice-type": "cn-standard",
+      "publication-number": "518830-2026",
+      "classification-cpv": [
+        "65110000",
+        "65110000"
+      ],
+      "buyer-name": {
+        "ita": [
+          "Regione Siciliana Dipartimento Energia Distretto minerario PA"
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/518830-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/518830-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Vízellátás, vízszolgáltatás – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "lav": "Itāija – Ūdens apgāde – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "swe": "Italien – Vattendistribution – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "gle": "An Iodáil – Water distribution – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "ell": "Ιταλία – Διανομή ύδατος – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "spa": "Italia – Distribución de agua – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "est": "Itaalia – Veejaotus – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "nld": "Italië – Waterdistributie – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "fin": "Italia – Vesihuolto – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "pol": "Włochy – Przesył wody – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "hrv": "Italija – Distribucija vode – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "ces": "Itálie – Rozvod vody – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "dan": "Italien – Vanddistribution – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "ron": "Italia – Distribuţie de apă – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "por": "Itália – Distribuição de água – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "slk": "Taliansko – Rozvod vody – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "fra": "Italie – Distribution d'eau – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "mlt": "L-Italja – Distribuzzjoni ta' l-ilma – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "deu": "Italien – Wasserversorgung – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "lit": "Italija – Vandens paskirstymas – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "ita": "Italia – Erogazione di acqua – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "bul": "Итaлия – Разпределение на вода – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "slv": "Italija – Distribucija vode – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30",
+        "eng": "Italy – Water distribution – Bando di Gara per l’individuazione dell’Operatore Economico a cui assegnare la proroga della concessione mineraria per acque minerali denominata “Etna – Cavagrande” per un massimo di ulteriori anni 30"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-08-28+03:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "521854-2026",
+      "classification-cpv": [
+        "79710000",
+        "79710000",
+        "60170000"
+      ],
+      "buyer-name": {
+        "eng": [
+          "Italian Agency for Development Cooperation - Kyiv Office"
+        ]
+      },
+      "publication-date": "2026-07-28+02:00",
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/521854-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/521854-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Biztonsági szolgáltatások – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "lav": "Itāija – Apsardzes pakalpojumi – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "swe": "Italien – Säkerhetstjänster – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "gle": "An Iodáil – Security services – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "ell": "Ιταλία – Υπηρεσίες ασφάλειας – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "spa": "Italia – Servicios de seguridad – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "est": "Itaalia – Turvateenused – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "nld": "Italië – Beveiligingsdiensten – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "fin": "Italia – Turvallisuuspalvelut – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "pol": "Włochy – Usługi ochroniarskie – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "hrv": "Italija – Usluge na području sigurnosti – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "ces": "Itálie – Bezpečnostní služby – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "dan": "Italien – Sikkerhedstjenester – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "ron": "Italia – Servicii de siguranţă – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "por": "Itália – Serviços de segurança – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "slk": "Taliansko – Bezpečnostné služby – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "fra": "Italie – Services de sécurité – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "mlt": "L-Italja – Servizzi tas-sigurtà – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "deu": "Italien – Dienstleistungen von Sicherheitsdiensten – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "lit": "Italija – Apsaugos paslaugos – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "ita": "Italia – Servizi di sicurezza – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "bul": "Итaлия – Услуги по безопасност – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "slv": "Italija – Varovalne storitve – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services",
+        "eng": "Italy – Security services – Open tender: Framework contract for on demand provision of armoured vehicle rental services and auxiliary security services, including the deployment of Liaison Security Officers (LSO), Security Oriented Drivers (SOD), and the provision of information and security-related services"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-09-11+02:00",
+        "2026-09-11+02:00",
+        "2026-09-11+02:00",
+        "2026-09-11+02:00",
+        "2026-09-11+02:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "516484-2026",
+      "classification-cpv": [
+        "03220000",
+        "15800000",
+        "03220000",
+        "15810000",
+        "15851220",
+        "15100000"
+      ],
+      "estimated-value-lot": [
+        "129927.6",
+        "52936.8",
+        "30072",
+        "28617.6",
+        "75979.2"
+      ],
+      "buyer-name": {
+        "ita": [
+          "Unione Montana Potenza Esino Musone: Centrale Unica di Committenza"
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/516484-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/516484-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Zöldségek, gyümölcsök és diófélék – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "lav": "Itāija – Dārzeņi, augļi un rieksti – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "swe": "Italien – Grönsaker, frukt och nötter – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "gle": "An Iodáil – Vegetables, fruits and nuts – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "ell": "Ιταλία – Λαχανικά, φρούτα και ξηροί καρποί – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "spa": "Italia – Hortalizas, frutas y frutos de cáscara – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "est": "Itaalia – Köögiviljad, puuviljad ja pähklid – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "nld": "Italië – Groenten, vruchten en noten – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "fin": "Italia – Kasvikset, hedelmät, pähkinät – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "pol": "Włochy – Warzywa, owoce i orzechy – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "hrv": "Italija – Povrće, voće i orašasti plodovi – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "ces": "Itálie – Zelenina, ovoce a ořechy – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "dan": "Italien – Grøntsager, frugt og nødder – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "ron": "Italia – Legume, fructe şi fructe cu coajă – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "por": "Itália – Produtos hortícolas, frutas e frutos de casca rija – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "slk": "Taliansko – Zelenina, ovocie a orechy – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "fra": "Italie – Légumes, fruits et noix – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "mlt": "L-Italja – Ħaxix, frott u ġewż – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "deu": "Italien – Gemüse, Obst und Schalenfrüchte – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "lit": "Italija – Daržovės, vaisiai ir riešutai – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "ita": "Italia – Verdura, frutta e noci – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "bul": "Итaлия – Зеленчуци, плодове и черупкови плодове – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "slv": "Italija – Vrtnine, sadje in lupinarji – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO",
+        "eng": "Italy – Vegetables, fruits and nuts – CUC P/C COMUNE DI LORO PICENO: GARA EUROPEA A PROCEDURA APERTA PER L'AFFIDAMENTO DELLE FORNITURE DI DERRATE ALIMENTARI, SUDDIVISE IN CINQUE LOTTI, PER LA MENSA SCOLASTICA COMUNALE DI LORO PICENO"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-09-18+02:00",
+        "2026-09-18+02:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "517431-2026",
+      "classification-cpv": [
+        "45454000",
+        "45400000",
+        "45400000"
+      ],
+      "estimated-value-lot": [
+        "6970000",
+        "6970000"
+      ],
+      "buyer-name": {
+        "ita": [
+          "MM S.p.A."
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/517431-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/517431-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Szerkezetátalakítás – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "lav": "Itāija – Pārbūves darbi – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "swe": "Italien – Ombyggnadstjänster – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "gle": "An Iodáil – Restructuring work – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "ell": "Ιταλία – Εργασίες αναδόμησης – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "spa": "Italia – Trabajos de reestructuración – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "est": "Itaalia – Ümberehitustööd – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "nld": "Italië – Herstructurering – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "fin": "Italia – Uudelleenorganisointityöt – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "pol": "Włochy – Roboty restrukturyzacyjne – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "hrv": "Italija – Radovi na rekonstrukciji – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "ces": "Itálie – Přestavba budov – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "dan": "Italien – Omstrukturering – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "ron": "Italia – Lucrări de restructurare – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "por": "Itália – Obras de reestruturação – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "slk": "Taliansko – Obnovovacie práce – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "fra": "Italie – Travaux de restructuration – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "mlt": "L-Italja – Xogħol ta’ ristrutturar – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "deu": "Italien – Mit der Umstrukturierung verbundene Arbeiten – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "lit": "Italija – Pertvarkymo darbai – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "ita": "Italia – Lavori di ristrutturazione – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "bul": "Итaлия – Строителни работи по преустройство – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "slv": "Italija – Rekonstrukcijska dela – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8",
+        "eng": "Italy – Restructuring work – PROCEDURA APERTA PER L’AFFIDAMENTO DI UN ACCORDO QUADRO, SUDDIVISO IN DUE LOTTI NON CUMULABILI, CIASCUNO DEI QUALI DA AFFIDARE A PIÙ OPERATORI ECONOMICI, RELATIVO ALL’ESECUZIONE DEGLI INTERVENTI DI RECUPERO DI UNITÀ IMMOBILIARI DA DESTINARE A SERVIZI ABITATIVI PRESENTI NEL PATRIMONIO DI PROPRIETÀ DEL COMUNE DI MILANO – LOTTI 4 DI 8 E 5 DI 8"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-09-25+01:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "517319-2026",
+      "classification-cpv": [
+        "72514000",
+        "72514000"
+      ],
+      "estimated-value-lot": [
+        "300000"
+      ],
+      "buyer-name": {
+        "ita": [
+          "CONSORZIO DI BONIFICA GARDA CHIESE"
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/517319-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/517319-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Számítógépes létesítménykezelési szolgáltatások – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "lav": "Itāija – Datoriekārtu vadības pakalpojumi – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "swe": "Italien – Drift av dataanläggning – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "gle": "An Iodáil – Computer facilities management services – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "ell": "Ιταλία – Υπηρεσίες διαχείρισης εγκαταστάσεων ηλεκτρονικού υπολογιστή – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "spa": "Italia – Servicios de gestión de instalaciones informáticas – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "est": "Itaalia – Arvutuskeskuste haldamisteenused – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "nld": "Italië – Beheer van computerfaciliteiten – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "fin": "Italia – Tietokonekeskuspalvelut – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "pol": "Włochy – Usługi zarządzania udogodnieniami komputerowymi – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "hrv": "Italija – Usluge upravljanja računalnim napravama – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "ces": "Itálie – Péče o počítačové zařízení – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "dan": "Italien – Servicebureauvirksomhed i forbindelse med databehandling – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "ron": "Italia – Servicii de gestionare a instalaţiilor informatice – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "por": "Itália – Serviços de gestão de instalações informáticas – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "slk": "Taliansko – Správa výpočtových zariadení – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "fra": "Italie – Services de gestion des installations informatiques – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "mlt": "L-Italja – Servizzi ta' l-amministrazzjoni tal-faċilitajiet tal-kompjuter – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "deu": "Italien – Verwaltung von Computeranlagen – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "lit": "Italija – Kompiuterių įrangos valdymo paslaugos – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "ita": "Italia – Servizi di gestione di attrezzature informatiche – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "bul": "Итaлия – Услуги по управление на компютърни системи – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "slv": "Italija – Storitve upravljanja računalniških naprav – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\"",
+        "eng": "Italy – Computer facilities management services – PROT. 5224/23-07-26 - Procedura aperta, sopra soglia comunitaria, per l'affidamento del servizio di \"MIGRAZIONE DEI SERVIZI CLOUD PER IL RINNOVO E L'IMPLEMENTAZIONE PRESTAZIONALE DEL SISTEMA INFORMATIVO CONSORTILE\""
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-08-08+02:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "518393-2026",
+      "classification-cpv": [
+        "72322000",
+        "72322000"
+      ],
+      "estimated-value-lot": [
+        "307615.99"
+      ],
+      "buyer-name": {
+        "ita": [
+          "UOC PROVVEDITORATO"
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/518393-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/518393-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Adatfeldolgozási/adatkezelési szolgáltatások – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "lav": "Itāija – Datu pārvaldīšanas pakalpojumi – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "swe": "Italien – Datahantering – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "gle": "An Iodáil – Data management services – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "ell": "Ιταλία – Υπηρεσίες διαχείρισης δεδομένων – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "spa": "Italia – Servicios de gestión de datos – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "est": "Itaalia – Andmehaldusteenused – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "nld": "Italië – Gegevensbeheerdiensten – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "fin": "Italia – Tiedonhallinta – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "pol": "Włochy – Usługi zarządzania danymi – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "hrv": "Italija – Usluge upravljanja podacima – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "ces": "Itálie – Správa dat – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "dan": "Italien – Dataadministration – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "ron": "Italia – Servicii de gestionare a datelor – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "por": "Itália – Serviços de gestão de dados – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "slk": "Taliansko – Správa údajov – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "fra": "Italie – Services de gestion de données – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "mlt": "L-Italja – Servizzi ta' l-amministrazzjoni tad-data – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "deu": "Italien – Datenverwaltung – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "lit": "Italija – Duomenų valdymo paslaugos – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "ita": "Italia – Servizi di gestione dati – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "bul": "Итaлия – Услуги по управление на данни – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "slv": "Italija – Storitve upravljanja podatkov – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento",
+        "eng": "Italy – Data management services – PROVV 59/2026 - GARA A PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI RILEVAZIONE E GESTIONE DEI DATI DELLA SPESA FARMACEUTICA PER L' ASL BENEVENTO PER 24 MESI PIU OPZIONE DI RINNOVO DI ULTERIORI MESI 12. Delibera del Direttore Generale n. 273 del 21.04.2026 e atti di gara allegati - RETTIFICA importo posto a base di affidamento"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-09-08+02:00",
+        "2026-09-08+02:00",
+        "2026-09-08+02:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "515981-2026",
+      "classification-cpv": [
+        "90620000",
+        "90620000",
+        "90620000",
+        "90620000"
+      ],
+      "estimated-value-lot": [
+        "1032060",
+        "1140711",
+        "666498"
+      ],
+      "buyer-name": {
+        "ita": [
+          "ANAS SPA STRUTTURA TERRITORIALE VENETO"
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/515981-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/515981-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Hólapátolási szolgáltatások – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "lav": "Itāija – Sniega tīrīšanas pakalpojumi – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "swe": "Italien – Snöröjning – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "gle": "An Iodáil – Snow-clearing services – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "ell": "Ιταλία – Υπηρεσίες εκχιονισμού – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "spa": "Italia – Servicios de limpieza y eliminación de nieve – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "est": "Itaalia – Lumekoristusteenused – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "nld": "Italië – Sneeuwruimingsdiensten – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "fin": "Italia – Lumenaurauspalvelut – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "pol": "Włochy – Usługi odśnieżania – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "hrv": "Italija – Usluge čišćenja snijega – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "ces": "Itálie – Odklízení sněhu – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "dan": "Italien – Snerydning – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "ron": "Italia – Servicii de deszăpezire – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "por": "Itália – Serviços de limpeza de neve – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "slk": "Taliansko – Odpratávanie snehu – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "fra": "Italie – Services de déneigement – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "mlt": "L-Italja – Servizzi tat-tindif tal-borra – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "deu": "Italien – Schneeräumung – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "lit": "Italija – Sniego valymo paslaugos – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "ita": "Italia – Servizi di sgombero neve – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "bul": "Итaлия – Услуги по почистване на улици от сняг – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "slv": "Italija – Storitve odstranjevanja snega – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto",
+        "eng": "Italy – Snow-clearing services – VELAV0-14-26 (Lotto 1- Lotto 2- Lotto 3) - Servizio forfettario relativo agli interventi di sgombero neve e trattamento antigelo dei piani viabili delle strade statali per il triennio 2026-2029. Centro di Manutenzione E Nucleo B – Area Gestione Rete Veneto"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-08-24+02:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "516059-2026",
+      "classification-cpv": [
+        "55300000",
+        "55300000"
+      ],
+      "estimated-value-lot": [
+        "3057432"
+      ],
+      "buyer-name": {
+        "ita": [
+          "CENTRALE UNICA DI COMMITTENZA GRADISCA"
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/516059-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/516059-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Éttermi és felszolgálási szolgáltatások – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "lav": "Itāija – Restorānu un ēdināšanas pakalpojumi – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "swe": "Italien – Restaurang- och serveringstjänster – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "gle": "An Iodáil – Restaurant and food-serving services – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "ell": "Ιταλία – Υπηρεσίες εστιατορίου και παροχής φαγητού – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "spa": "Italia – Servicios de restaurante y de suministro de comidas – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "est": "Itaalia – Restorani- ja toiduserveerimisteenused – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "nld": "Italië – Bereiden en serveren van maaltijden – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "fin": "Italia – Ravintola- ja tarjoilupalvelut – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "pol": "Włochy – Usługi restauracyjne i dotyczące podawania posiłków – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "hrv": "Italija – Usluge restorana i usluge posluživanja hranom – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "ces": "Itálie – Provozování restaurací a podávání jídel – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "dan": "Italien – Restaurationsvirksomhed og servering – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "ron": "Italia – Servicii de restaurant şi de servire a mâncării – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "por": "Itália – Serviços de mesa e de restauração – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "slk": "Taliansko – Reštauračné služby a podávanie jedál – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "fra": "Italie – Services de restaurant et services de personnel en salle – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "mlt": "L-Italja – Servizzi ta’ resturanti u tal-preżentazzjoni ta’ l-ikel – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "deu": "Italien – Restaurant- und Bewirtungsdienste – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "lit": "Italija – Restoranų ir maisto tiekimo paslaugos – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "ita": "Italia – Servizi di ristorazione e di distribuzione pasti – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "bul": "Итaлия – Услуги на ресторанти, столове и заведения за приготвяне и доставяне на храна – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "slv": "Italija – Storitve restavracij in postrežbe – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo",
+        "eng": "Italy – Restaurant and food-serving services – Affidamento del servizio a ridotto impatto ambientale di ristorazione scolastica e di preparazione pasti per gli utenti del centro estivo, della residenza per anziani “San Salvatore” e del s.a.d. Gradisca d’Isonzo"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-09-16+02:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "516080-2026",
+      "classification-cpv": [
+        "98380000",
+        "98380000"
+      ],
+      "estimated-value-lot": [
+        "578450"
+      ],
+      "buyer-name": {
+        "ita": [
+          "AZIENDA SANITARIA UNIVERSITARIA FRIULI CENTRALE"
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/516080-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/516080-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Ebtenyésztési szolgáltatások – FC25SER146",
+        "lav": "Itāija – Suņu viesnīcu pakalpojumi – FC25SER146",
+        "swe": "Italien – Kenneltjänster – FC25SER146",
+        "gle": "An Iodáil – Dog kennel services – FC25SER146",
+        "ell": "Ιταλία – Υπηρεσίες κατασκευής σπιτιών για σκύλους – FC25SER146",
+        "spa": "Italia – Servicios de perrera – FC25SER146",
+        "est": "Itaalia – Koerakasvanduste teenused – FC25SER146",
+        "nld": "Italië – Hondenkenneldiensten – FC25SER146",
+        "fin": "Italia – Koiratarhapalvelut – FC25SER146",
+        "pol": "Włochy – Usługi psiarni – FC25SER146",
+        "hrv": "Italija – Usluge štenara – FC25SER146",
+        "ces": "Itálie – Psí hotely – FC25SER146",
+        "dan": "Italien – Hundekenneltjenester – FC25SER146",
+        "ron": "Italia – Servicii de cuşti pentru câini – FC25SER146",
+        "por": "Itália – Serviços de canis – FC25SER146",
+        "slk": "Taliansko – Služby psiarní – FC25SER146",
+        "fra": "Italie – Services de chenils – FC25SER146",
+        "mlt": "L-Italja – Servizzi ta' kenn għall-klieb – FC25SER146",
+        "deu": "Italien – Hundezwinger – FC25SER146",
+        "lit": "Italija – Šunidžių paslaugos – FC25SER146",
+        "ita": "Italia – Servizi di canile – FC25SER146",
+        "bul": "Итaлия – Услуги, свързани с развъдници и пансиони за кучета – FC25SER146",
+        "slv": "Italija – Storitve, povezane s pesjaki – FC25SER146",
+        "eng": "Italy – Dog kennel services – FC25SER146"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-09-01+02:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "516111-2026",
+      "classification-cpv": [
+        "30199770",
+        "30199770"
+      ],
+      "estimated-value-lot": [
+        "3000000"
+      ],
+      "buyer-name": {
+        "ita": [
+          "CTP SpA"
+        ]
+      },
+      "publication-date": "2026-07-27+02:00",
+      "estimated-value-cur-lot": [
+        "EUR"
+      ],
+      "links": {
+        "htmlDirect": {
+          "ENG": "https://ted.europa.eu/en/notice/516111-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/516111-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Olaszország – Ebédjegy – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "lav": "Itāija – Pusdienu taloni – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "swe": "Italien – Lunchkuponger – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "gle": "An Iodáil – Luncheon vouchers – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "ell": "Ιταλία – Κουπόνια φαγητού – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "spa": "Italia – Cheques restaurante – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "est": "Itaalia – Toidutalongid – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "nld": "Italië – Maaltijdcheques – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "fin": "Italia – Lounassetelit – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "pol": "Włochy – Talony na posiłki – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "hrv": "Italija – Bonovi za obrok – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "ces": "Itálie – Stravenky – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "dan": "Italien – Spisebilletter – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "ron": "Italia – Tichete de masă – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "por": "Itália – Cheques-refeição – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "slk": "Taliansko – Stravné poukážky – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "fra": "Italie – Chèques-repas – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "mlt": "L-Italja – Fatturi b'għelm għall-ikel – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "deu": "Italien – Essensgutscheine – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "lit": "Italija – Priešpiečių talonai – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "ita": "Italia – Buoni pasto – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "bul": "Итaлия – Купони за храна – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "slv": "Italija – Boni za prehrano – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI",
+        "eng": "Italy – Luncheon vouchers – PROCEDURA APERTA AD EVIDENZA EUROPEA AI SENSI DEL D.LGS n.36/2023 PER L’AFFIDAMENTO DEL SERVIZIO TRIENNALE SOSTITUTIVO MENSA MEDIANTE FORNITURA DI BUONI PASTO ELETTRONICI AL PERSONALE DIPENDENTE CTP SPA CON FACOLTA’ DI PROROGA PER UN PERIODO FINO AD ULTERIORI DODICI MESI"
+      },
+      "buyer-country": [
+        "ITA"
+      ]
+    }
+  ]
+}

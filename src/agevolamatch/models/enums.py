@@ -22,6 +22,8 @@ class OpportunityStatus(StrEnum):
 class OpportunitySourceName(StrEnum):
     INCENTIVI_GOV_IT = "incentivi_gov_it"
     INVITALIA = "invitalia"
+    ANAC = "anac"
+    TED_EUROPA = "ted_europa"
 
 
 class IncentiveScope(StrEnum):

@@ -24,12 +24,20 @@ requires a `NOTICE` file, since nothing was copied.
 (filter + score), and `alerts/` as clearly separated stages with typed
 boundaries between them, rather than one monolithic ingestion+matching script.
 
-**ANAC-OD-DOWNLOADER / ANAC-OD-ANALYSER** - both are relevant to the Fase 5
+**ANAC-OD-DOWNLOADER / ANAC-OD-ANALYSER** - both relevant to the Fase 5
 "gare d'appalto" module (ANAC Open Data), not to the Fase 1-3 incentive MVP.
 Their pattern of separating "download raw data" from "build a queryable
 database from it" as two distinct steps matches this project's `fetch()` /
-`normalize()` / storage split. When Fase 5 is implemented, ANAC's CIG-based
-CSV format (documented in their READMEs) will be revisited.
+`normalize()` / storage split. Now that Fase 5 is implemented
+(`agevolamatch.sources.anac`), the actual live CIG CSV format (discovered by
+inspecting it directly, not from either repo's README - see docs/sources.md)
+turned out to be a monthly incremental delta dominated by award-notice
+noise, not the multi-year full-history CSVs those two repos work with. Their
+underlying idea - segment/merge `cig_*.csv`-shaped data - still describes the
+right general approach; the specific noise/scale characteristics were
+confirmed independently, not assumed from their code (which, being
+unlicensed, was never read for implementation details, only cited here as
+prior art with a similar goal).
 
 **BandiRadar (MCP)** - the closest project in scope and the reason this
 project needed a different name. Its documented pipeline - ingest → normalize

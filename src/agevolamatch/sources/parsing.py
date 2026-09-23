@@ -29,6 +29,24 @@ def parse_iso_datetime(value: str | None) -> datetime | None:
     return parsed if parsed.tzinfo else parsed.replace(tzinfo=UTC)
 
 
+_TED_DATE_PATTERN = re.compile(r"^(\d{4}-\d{2}-\d{2})(?:[+-]\d{2}:\d{2})?$")
+
+
+def parse_ted_date(value: str | None) -> datetime | None:
+    """TED API dates look like '2026-09-01+02:00' - a date with a UTC offset
+    but no time component. `datetime.fromisoformat` silently misparses this
+    (confirmed: it reads the offset's digits as an 02:00 time-of-day and
+    drops the timezone entirely, giving a wrong-but-plausible-looking
+    result) - so this extracts just the date part and treats it as UTC
+    midnight, consistent with how other date-only sources are handled."""
+    if not value:
+        return None
+    match = _TED_DATE_PATTERN.match(value.strip())
+    if not match:
+        return None
+    return datetime.fromisoformat(match.group(1)).replace(tzinfo=UTC)
+
+
 def parse_ateco(raw: str | None) -> tuple[list[str] | None, bool]:
     """Returns (codes, all_sectors). ~71% of records use free-text 'all sectors
     eligible' instead of real codes; only ~29% carry semicolon-separated codes."""

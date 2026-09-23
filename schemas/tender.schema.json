@@ -1,0 +1,272 @@
+{
+  "$defs": {
+    "OpportunitySourceName": {
+      "enum": [
+        "incentivi_gov_it",
+        "invitalia",
+        "anac",
+        "ted_europa"
+      ],
+      "title": "OpportunitySourceName",
+      "type": "string"
+    },
+    "OpportunityStatus": {
+      "description": "Computed from open/close dates at ingest time; the source has no status field.",
+      "enum": [
+        "open",
+        "upcoming",
+        "closed",
+        "unknown"
+      ],
+      "title": "OpportunityStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "A public tender / gara d'appalto - subtype of Opportunity, fed by ANAC\n(Italian national data) and TED (EU-wide official API). See\ndocs/sources.md for the real field mapping from each source - the two\nsources overlap only partially, so most fields here are optional and a\ngiven Tender will usually have either the ANAC-specific fields (cig,\nprovince, outcome) or the TED-specific ones (buyer_country, notice_type)\npopulated, not both.",
+  "properties": {
+    "source": {
+      "$ref": "#/$defs/OpportunitySourceName"
+    },
+    "source_id": {
+      "description": "Identifier assigned by the origin system, e.g. the Drupal nid",
+      "title": "Source Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "description": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Description"
+    },
+    "url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Url"
+    },
+    "open_date": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Open Date"
+    },
+    "close_date": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Close Date"
+    },
+    "status": {
+      "$ref": "#/$defs/OpportunityStatus",
+      "default": "unknown"
+    },
+    "content_hash": {
+      "description": "sha256 of the normalized payload, used to detect changes",
+      "title": "Content Hash",
+      "type": "string"
+    },
+    "first_seen": {
+      "format": "date-time",
+      "title": "First Seen",
+      "type": "string"
+    },
+    "last_seen_at": {
+      "format": "date-time",
+      "title": "Last Seen At",
+      "type": "string"
+    },
+    "source_last_updated": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Origin system's own last-modified timestamp, when available",
+      "title": "Source Last Updated"
+    },
+    "buyer_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Contracting authority / stazione appaltante",
+      "title": "Buyer Name"
+    },
+    "buyer_country": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "ISO 3166-1 alpha-3, e.g. 'ITA' (TED only)",
+      "title": "Buyer Country"
+    },
+    "province": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Italian province name, e.g. 'ROMA' (ANAC only)",
+      "title": "Province"
+    },
+    "cpv_codes": {
+      "description": "EU procurement classification codes (Common Procurement Vocabulary)",
+      "items": {
+        "type": "string"
+      },
+      "title": "Cpv Codes",
+      "type": "array"
+    },
+    "contract_type": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "LAVORI/SERVIZI/FORNITURE (works/services/supplies) - ANAC only",
+      "title": "Contract Type"
+    },
+    "procedure_type": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Tender procedure, e.g. open/negotiated",
+      "title": "Procedure Type"
+    },
+    "notice_type": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "eForms notice type, e.g. 'cn-standard' - TED only",
+      "title": "Notice Type"
+    },
+    "estimated_value": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Estimated/lot contract value",
+      "title": "Estimated Value"
+    },
+    "estimated_value_currency": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "ISO 4217 currency code",
+      "title": "Estimated Value Currency"
+    },
+    "outcome": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Award outcome when already decided (esito) - ANAC only, informational",
+      "title": "Outcome"
+    },
+    "cig": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Codice Identificativo Gara - ANAC's unique tender ID",
+      "title": "Cig"
+    }
+  },
+  "required": [
+    "source",
+    "source_id",
+    "title",
+    "content_hash",
+    "first_seen",
+    "last_seen_at"
+  ],
+  "title": "Tender",
+  "type": "object"
+}

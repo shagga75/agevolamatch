@@ -19,22 +19,28 @@ from agevolamatch.matching import (
 )
 from agevolamatch.matching.llm import enrich_with_llm_requirements, get_llm_provider
 from agevolamatch.models.enums import OpportunitySourceName
+from agevolamatch.sources.anac import ANACSource
 from agevolamatch.sources.dedup import find_duplicate
 from agevolamatch.sources.incentivi_gov_it import IncentiviGovItSource
 from agevolamatch.sources.invitalia import InvitaliaSource
+from agevolamatch.sources.ted import TEDSource
 from agevolamatch.storage import (
     DEFAULT_DB_PATH,
     get_engine,
     get_session,
     init_db,
     load_incentives,
+    load_tenders,
     upsert_opportunities,
 )
 from agevolamatch.storage.tables import OpportunityRecord
+from agevolamatch.tenders import DEFAULT_TENDER_WEIGHTS, match_tender_profile
 
 app = typer.Typer(help="AgevolaMatch: matching engine for Italian public incentives (finanza agevolata)")
 alerts_app = typer.Typer(help="Manage and run alert subscriptions")
 app.add_typer(alerts_app, name="alerts")
+gare_app = typer.Typer(help="Gare d'appalto (public tenders) - ANAC + TED, a separate domain from incentives")
+app.add_typer(gare_app, name="gare")
 console = Console()
 
 
@@ -71,7 +77,11 @@ def ingest(
         sources_to_run.append(InvitaliaSource())
 
     for src in sources_to_run:
-        opportunities = src.run()
+        try:
+            opportunities = src.run()
+        except Exception as exc:
+            console.print(f"[red]{src.name}: fetch failed, skipping this source ({exc})[/red]")
+            continue
 
         if src.name == OpportunitySourceName.INVITALIA.value:
             with get_session(engine) as session:
@@ -271,6 +281,86 @@ def serve(
     import uvicorn
 
     uvicorn.run("agevolamatch.api.app:app", host=host, port=port, reload=reload)
+
+
+_GARE_INGEST_SOURCES = {"anac", "ted", "all"}
+
+
+@gare_app.command("ingest")
+def gare_ingest(
+    source: Annotated[str, typer.Option(help="anac, ted, or all")] = "all",
+    db_path: Annotated[Path, typer.Option(help="SQLite database path")] = DEFAULT_DB_PATH,
+    verbose: Annotated[bool, typer.Option(help="Enable debug logging")] = False,
+) -> None:
+    """Fetch public tenders (ANAC and/or TED) and store new/modified records."""
+    logging.basicConfig(level=logging.DEBUG if verbose else logging.INFO)
+
+    if source not in _GARE_INGEST_SOURCES:
+        console.print(f"[red]Fuente desconocida: {source!r} (opciones: {', '.join(sorted(_GARE_INGEST_SOURCES))})[/red]")
+        raise typer.Exit(code=1)
+
+    engine = get_engine(db_path)
+    init_db(engine)
+
+    sources_to_run = []
+    if source in ("anac", "all"):
+        sources_to_run.append(ANACSource())
+    if source in ("ted", "all"):
+        sources_to_run.append(TEDSource())
+
+    for src in sources_to_run:
+        try:
+            tenders = src.run()
+        except Exception as exc:
+            console.print(f"[red]{src.name}: fetch failed, skipping this source ({exc})[/red]")
+            continue
+        with get_session(engine) as session:
+            summary = upsert_opportunities(session, tenders)
+        console.print(
+            f"[green]{src.name}[/green]: {summary.total} total, "
+            f"[bold]{len(summary.new)}[/bold] new, "
+            f"[bold]{len(summary.modified)}[/bold] modified, "
+            f"{len(summary.unchanged)} unchanged"
+        )
+
+
+@gare_app.command("match")
+def gare_match(
+    profile: Annotated[Path, typer.Option(help="Path to a CompanyProfile YAML file (needs cpv_codes set)")],
+    db_path: Annotated[Path, typer.Option(help="SQLite database path")] = DEFAULT_DB_PATH,
+    top: Annotated[int, typer.Option(help="Max results to display")] = 20,
+    min_score: Annotated[float, typer.Option(help="Hide results scoring below this threshold")] = 0.0,
+) -> None:
+    """Rank stored tenders against a company profile, with explanations."""
+    company_profile = load_company_profile(profile)
+    engine = get_engine(db_path)
+    init_db(engine)
+    with get_session(engine) as session:
+        tenders = load_tenders(session)
+
+    if not tenders:
+        console.print("[yellow]No hay gare almacenadas. Corré `agevolamatch gare ingest` primero.[/yellow]")
+        raise typer.Exit(code=1)
+
+    results = match_tender_profile(tenders, company_profile, weights=DEFAULT_TENDER_WEIGHTS)
+    results = [r for r in results if r.score >= min_score][:top]
+
+    console.print(f"[bold]{company_profile.name}[/bold] - {len(results)} gara(s) elegible(s) mostrada(s)\n")
+
+    for rank, result in enumerate(results, start=1):
+        tender = result.tender
+        console.print(f"[bold cyan]{rank}. {tender.title}[/bold cyan]  [green]score={result.score}[/green]")
+        console.print(f"   [dim]{tender.url or 'sin URL'} | fuente: {tender.source}[/dim]")
+        for reason in result.explanation.reasons_for:
+            console.print(f"   [green]+[/green] {reason}")
+        for reason in result.explanation.reasons_against:
+            console.print(f"   [red]-[/red] {reason}")
+        for reason in result.explanation.unverifiable:
+            console.print(f"   [yellow]?[/yellow] {reason}")
+        console.print()
+
+    if not results:
+        console.print("[yellow]Ninguna gara elegible superó el umbral de score configurado.[/yellow]")
 
 
 if __name__ == "__main__":

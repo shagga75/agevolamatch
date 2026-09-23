@@ -32,6 +32,9 @@ uv run agevolamatch serve                # REST API on :8000
 uv run agevolamatch-mcp                  # MCP server (stdio) - console script, not a Typer subcommand
 uv run streamlit run src/agevolamatch/dashboard/app.py   # needs --extra dashboard installed
 
+uv run agevolamatch gare ingest --source anac|ted|all    # tenders/gare - separate domain, see below
+uv run agevolamatch gare match --profile examples/startup_profile.yaml --top 10
+
 docker compose up --build                # api + dashboard + ingest/alerts loop services
 ```
 
@@ -163,6 +166,18 @@ docker compose up --build                # api + dashboard + ingest/alerts loop 
   double) against the real curated fixture - this is the same path
   `agevolamatch match --profile examples/startup_profile.yaml` exercises, so
   it should keep passing whenever that command does.
+- `tests/fixtures/anac_cig_sample.csv` and `ted_notices_sample.json` are
+  curated real data (not synthetic) the same way the incentive fixtures are,
+  picked to cover: LAVORI/SERVIZI/FORNITURE, CPV starting with 72 (IT - so
+  the startup example profile actually matches something), with/without
+  ESITO, open/closed status. When curating a fixture like this, verify each
+  predicate actually found a real row (`add()` returning the count you
+  asked for) rather than assuming - two tests were written against cases
+  that turned out not to exist in the *currently-open* ANAC subset (0/3,908
+  real records were missing province or importo_lotto) and had to be fixed
+  to construct that case directly instead, once discovered.
+- `tests/unit/test_tenders_engine.py::test_real_fixture_data_from_both_sources_produces_a_coherent_ranking`
+  is the tenders equivalent of the incentive test above - same principle.
 - Ruff must be clean (`uv run ruff check .`) before considering a phase done.
 
 - **HTTP fetching is shared, not duplicated, across sources**:
@@ -252,15 +267,86 @@ docker compose up --build                # api + dashboard + ingest/alerts loop 
   import with `pytest.importorskip` so a plain `uv sync` (no `--extra
   dashboard`) still runs the rest of the suite cleanly.
 
+- **Gare/tenders (Fase 5) is a deliberately separate matching module**
+  (`agevolamatch/tenders/`), not folded into `agevolamatch/matching/`. The
+  spec calls this out explicitly ("módulo separado") because the domains
+  genuinely don't share business rules: tenders have no beneficiary type, no
+  eligible costs, no support form - eligibility turns on CPV codes (the
+  procurement-domain analog of ATECO) and a submission deadline, nothing
+  else. `TenderMatchResult`/`TenderHardFilterResult`/etc. in
+  `tenders/models.py` are separate types from `matching/models.py`'s
+  Incentive-typed equivalents, on purpose - forcing Tender through
+  `MatchResult` (typed to `incentive: Incentive`) would mean either bloating
+  that type with tender-only fields or misusing incentive-shaped fields for
+  a different domain. What *is* shared: `Opportunity`, `BaseSource`,
+  `storage.upsert_opportunities` - genuinely domain-agnostic infrastructure,
+  not business logic.
+- **`storage.load_incentives`/`load_tenders` filter by source** - both
+  domains' records live in the same `opportunities` table (they're both
+  `Opportunity` subtypes), so `load_incentives` must exclude ANAC/TED rows
+  and `load_tenders` must exclude incentivi.gov.it/Invitalia rows. This was
+  a real bug caught by actually mixing both domains in one database, not by
+  reasoning about the schema: `Incentive.model_validate()` has
+  `extra="forbid"`, so validating a Tender's payload (which has fields like
+  `buyer_name`/`cpv_codes` that `Incentive` doesn't declare) as an Incentive
+  raises. If you add a third Opportunity subtype, extend the source
+  allow-lists in `storage/repository.py`, don't assume the existing filters
+  generalize automatically.
+- **CPV matching (`tenders/cpv.py::match_cpv`) mirrors ATECO matching's
+  exact/prefix/no-match/unverifiable shape** on purpose - same underlying
+  problem (a hierarchical hardcoded classification, need prefix fallback
+  when there's no exact match). The prefix search tries decreasing lengths
+  (6 down to 2), not one fixed length - a fixed-length-6 check would miss a
+  real match at a shorter shared prefix (e.g. "72201000" vs "72470000" only
+  agree on the first 2 digits). This is the exact bug class already fixed
+  once in `matching/ateco.py` (see git history) - it very nearly got
+  reintroduced here by copying the pattern without copying the fix; caught
+  by mirroring the same test structure, not by inspection.
+- **ANAC's WAF requires a genuine browser User-Agent, not just a
+  "Mozilla/5.0"-prefixed self-identifying one** - confirmed live, by
+  elimination (see docs/sources.md). Don't "clean up" `sources/anac.py`'s
+  `USER_AGENT` to the project's usual self-identifying bot UA style without
+  re-testing against the live portal first.
+- **ANAC's monthly delta is filtered to open-only at `parse()` time** - the
+  only source in this project that doesn't keep closed/awarded records for
+  history. This is a scale-driven, source-specific exception (100k+ rows/
+  month of which ~97% is award-notice noise, not new tenders), not a
+  reversal of the project's general "keep everything" policy - TED (also
+  Fase 5) does keep closed records, since its per-country volume is
+  manageable. See docs/sources.md for the numbers behind this call.
+- **CSV blank fields are empty strings, not None** - `sources/anac.py`'s
+  `_blank_to_none()` exists because a real (constructed-but-realistic) test
+  case caught `record.get("provincia")` storing `province=""` instead of
+  `None` for a blank CSV field. Every optional string field read from a CSV
+  source must go through this or an equivalent, not a bare `.get(...)`
+  - `record.get(...) or None` inline is an acceptable equivalent (see
+  `oggetto_lotto` → `description`) but a bare `.get(...)` is not.
+- **TED enforces a rate limit on its public API** - confirmed live (a real
+  429 during manual testing, not documented in advance). `TEDSource`
+  rate-limits itself and retries a 429 with the server's `Retry-After` when
+  given, backing off exponentially otherwise. If you see 429s again, check
+  `min_request_interval_seconds` / `max_retries_on_rate_limit` before adding
+  another workaround.
+- **`ingest` and `gare ingest` both tolerate one source failing outright**
+  (not just one bad record within a source, which `BaseSource.run()` already
+  handled) - a `try/except` around each source's `.run()` in the CLI logs
+  and continues to the next source. Added after real experience: TED's rate
+  limit produced an unhandled `HTTPStatusError` that would otherwise have
+  aborted an `ingest --source all` run before it got to ANAC.
+
 ## Non-goals / explicit decisions from Fase 0
 
 - ATECO 2007↔2025 official correspondence table: still not integrated. Until
   it is, `matching/ateco.py` compares codes from either version as plain
   digit strings (exact/prefix), which under-matches across a renumbered
   2007/2025 boundary but never over-matches into a wrong sector.
-- Comune→provincia lookup: still not integrated - `matching/filters.py`
+- Comune/provincia→regione lookup: still not integrated - `matching/filters.py`
   marks any incentive restricted to specific `municipalities` as
-  UNVERIFIABLE rather than guessing. Needed to actually check a company's
-  province against a municipality-restricted incentive.
+  UNVERIFIABLE rather than guessing, and `tenders/filters.py` does the same
+  for a tender restricted to a `province` (ANAC). Same TODO, two call sites.
+- ATECO↔CPV crosswalk: doesn't exist officially, so `CompanyProfile.cpv_codes`
+  (tenders) is set independently from `ateco_codes` (incentives), never
+  derived from it. A profile that only fills in `ateco_codes` will get
+  UNVERIFIABLE on every tender's CPV check, not a guessed match.
 - Invitalia dedup (Fase 4) will match on (normalized title, granting body,
   dates) since there's no shared external ID with incentivi.gov.it.
