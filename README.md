@@ -4,6 +4,8 @@ Open-source matching engine between Italian public incentives ("finanza
 agevolata") and company profiles - built for startups and SMEs (PMI) trying to
 find which incentives they actually qualify for.
 
+Repo: [github.com/shagga75/agevolamatch](https://github.com/shagga75/agevolamatch)
+
 *[Leggi questo README in italiano](README.it.md)*
 
 > **Disclaimer**: this tool is informational only. Eligibility requirements

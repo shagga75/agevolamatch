@@ -4,6 +4,8 @@ Motore open-source di matching tra incentivi pubblici italiani (finanza
 agevolata) e profili aziendali - pensato per startup e PMI che vogliono capire
 a quali incentivi possono davvero accedere.
 
+Repo: [github.com/shagga75/agevolamatch](https://github.com/shagga75/agevolamatch)
+
 *[Read this README in English](README.md)*
 
 > **Disclaimer**: questo strumento ha finalità puramente informativa. I
