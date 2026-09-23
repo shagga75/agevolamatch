@@ -90,6 +90,9 @@ uv run agevolamatch serve            # http://127.0.0.1:8000, docs su /docs
 | `GET /incentives?status=&region=&limit=` | Elenca gli incentivi salvati |
 | `GET /incentives/{source_id}` | Un incentivo, 404 se sconosciuto |
 | `POST /match?top=&min_score=` | Body: un oggetto JSON `CompanyProfile`. Ritorna i `MatchResult` ordinati |
+| `GET /tenders?status=&province=&limit=` | Elenca le gare salvate |
+| `GET /tenders/{source_id}` | Una gara, 404 se sconosciuta |
+| `POST /tenders/match?top=&min_score=` | Body: un `CompanyProfile` (serve `cpv_codes`). Ritorna i `TenderMatchResult` ordinati |
 
 `AGEVOLAMATCH_DB_PATH` (letto anche da `.env`) sceglie quale file SQLite legge l'API.
 
@@ -169,24 +172,26 @@ uv run agevolamatch gare alerts run --subscriptions examples/alert_subscriptions
 `CompanyProfile.cpv_codes` (separato da `ateco_codes` - non esiste una
 tabella di raccordo ATECO↔CPV ufficiale) guida il matching delle gare;
 `examples/startup_profile.yaml` imposta già entrambi, quindi funziona sia con
-`match`/`gare match` che con `alerts run`/`gare alerts run`. La scheda
-**📄 Gare** della dashboard elenca le gare salvate, e la sua scheda
-**🎯 Matching** ha una sotto-scheda "Gare" accanto a "Incentivos" - entrambe
-leggono gli stessi dati salvati e lo stesso profilo in sessione. Non ancora
-collegato ad API REST o server MCP - sarebbe lo stesso pattern a wrapper
-sottile già usato per gli incentivi, solo non ancora fatto.
+`match`/`gare match`, `alerts run`/`gare alerts run`, gli endpoint
+`/tenders*` dell'API REST, che i tool `*_tenders`/`get_tender` del server
+MCP. La scheda **📄 Gare** della dashboard elenca le gare salvate, e la sua
+scheda **🎯 Matching** ha una sotto-scheda "Gare" accanto a "Incentivos" -
+entrambe leggono gli stessi dati salvati e lo stesso profilo in sessione.
 
 ## Server MCP
 
 Espone ricerca e matching a qualsiasi client MCP (es. Claude Desktop) tramite
-`agevolamatch-mcp`, via stdio. Tre tool, tutti wrapper sottili sullo stesso
+`agevolamatch-mcp`, via stdio. Sei tool, tutti wrapper sottili sullo stesso
 codice storage/matching usato da CLI e API REST:
 
 | Tool | Descrizione |
 |---|---|
 | `search_incentives(status, region, limit)` | Elenca gli incentivi salvati |
 | `get_incentive(source_id)` | Dettagli completi di un incentivo, o null |
-| `match_company_profile(profile, top, min_score)` | Match ordinati con spiegazioni - forma di `profile`: `schemas/company_profile.schema.json` |
+| `match_company_profile(profile, top, min_score)` | Match di incentivi ordinati - forma di `profile`: `schemas/company_profile.schema.json` |
+| `search_tenders(status, province, limit)` | Elenca le gare salvate |
+| `get_tender(source_id)` | Dettagli completi di una gara, o null |
+| `match_tenders(profile, top, min_score)` | Match di gare ordinati - usa `profile.cpv_codes` |
 
 Aggiungi alla configurazione del tuo client MCP (es. `claude_desktop_config.json` di Claude Desktop):
 

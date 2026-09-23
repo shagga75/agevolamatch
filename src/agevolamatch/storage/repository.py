@@ -16,8 +16,8 @@ from agevolamatch.models.enums import OpportunitySourceName
 from agevolamatch.models.opportunity import Incentive, Opportunity, Tender
 from agevolamatch.storage.tables import OpportunityRecord
 
-_INCENTIVE_SOURCES = (OpportunitySourceName.INCENTIVI_GOV_IT, OpportunitySourceName.INVITALIA)
-_TENDER_SOURCES = (OpportunitySourceName.ANAC, OpportunitySourceName.TED_EUROPA)
+INCENTIVE_SOURCES = (OpportunitySourceName.INCENTIVI_GOV_IT, OpportunitySourceName.INVITALIA)
+TENDER_SOURCES = (OpportunitySourceName.ANAC, OpportunitySourceName.TED_EUROPA)
 
 
 @dataclass
@@ -90,7 +90,7 @@ def load_incentives(session: Session, status: str | None = None) -> list[Incenti
     (ANAC/TED, Fase 5) since both are Opportunity subtypes sharing one table -
     without this filter, Incentive.model_validate() would raise on a Tender's
     payload (extra="forbid" rejects Tender-only fields like buyer_name)."""
-    query = select(OpportunityRecord).where(OpportunityRecord.source.in_(_INCENTIVE_SOURCES))
+    query = select(OpportunityRecord).where(OpportunityRecord.source.in_(INCENTIVE_SOURCES))
     if status:
         query = query.where(OpportunityRecord.status == status)
     records = session.exec(query).all()
@@ -99,8 +99,33 @@ def load_incentives(session: Session, status: str | None = None) -> list[Incenti
 
 def load_tenders(session: Session, status: str | None = None) -> list[Tender]:
     """Same idea as load_incentives, filtered to tender sources (ANAC/TED)."""
-    query = select(OpportunityRecord).where(OpportunityRecord.source.in_(_TENDER_SOURCES))
+    query = select(OpportunityRecord).where(OpportunityRecord.source.in_(TENDER_SOURCES))
     if status:
         query = query.where(OpportunityRecord.status == status)
     records = session.exec(query).all()
     return [Tender.model_validate(r.payload) for r in records]
+
+
+def get_incentive_record(session: Session, source_id: str) -> OpportunityRecord | None:
+    """Single-record lookup, scoped to incentive sources - same reasoning as
+    load_incentives: without the source filter, a Tender whose source_id
+    happens to coincide with an incentive's (unlikely given ANAC/TED's id
+    shapes, but not impossible - source_id is only unique per (source,
+    source_id), not globally) could be looked up here and then fail to
+    validate as an Incentive."""
+    return session.exec(
+        select(OpportunityRecord).where(
+            OpportunityRecord.source_id == source_id,
+            OpportunityRecord.source.in_(INCENTIVE_SOURCES),
+        )
+    ).first()
+
+
+def get_tender_record(session: Session, source_id: str) -> OpportunityRecord | None:
+    """Tender counterpart of get_incentive_record - same reasoning."""
+    return session.exec(
+        select(OpportunityRecord).where(
+            OpportunityRecord.source_id == source_id,
+            OpportunityRecord.source.in_(TENDER_SOURCES),
+        )
+    ).first()

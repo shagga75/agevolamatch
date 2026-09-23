@@ -12,13 +12,20 @@ from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Query
 from sqlalchemy import Engine
-from sqlmodel import select
 
 from agevolamatch.matching import DEFAULT_WEIGHTS, MatchResult, match_profile
 from agevolamatch.models.company_profile import CompanyProfile
-from agevolamatch.models.opportunity import Incentive
-from agevolamatch.storage import get_engine, get_session, init_db, load_incentives
-from agevolamatch.storage.tables import OpportunityRecord
+from agevolamatch.models.opportunity import Incentive, Tender
+from agevolamatch.storage import (
+    get_engine,
+    get_incentive_record,
+    get_session,
+    get_tender_record,
+    init_db,
+    load_incentives,
+    load_tenders,
+)
+from agevolamatch.tenders import DEFAULT_TENDER_WEIGHTS, TenderMatchResult, match_tender_profile
 
 
 def _db_path() -> Path:
@@ -43,9 +50,10 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
 app = FastAPI(
     title="AgevolaMatch API",
     description=(
-        "Read-only view of ingested Italian public incentives, plus matching "
-        "against a CompanyProfile. Informational only - always verify "
-        "eligibility against the official source before applying."
+        "Read-only view of ingested Italian public incentives and tenders "
+        "(gare d'appalto), plus matching against a CompanyProfile. "
+        "Informational only - always verify eligibility against the "
+        "official source before applying."
     ),
     version="0.1.0",
     lifespan=lifespan,
@@ -73,7 +81,7 @@ def list_incentives(
 @app.get("/incentives/{source_id}", response_model=Incentive)
 def get_incentive(source_id: str) -> Incentive:
     with get_session(_current_engine()) as session:
-        record = session.exec(select(OpportunityRecord).where(OpportunityRecord.source_id == source_id)).first()
+        record = get_incentive_record(session, source_id)
     if record is None:
         raise HTTPException(status_code=404, detail=f"No incentive with source_id={source_id!r}")
     return Incentive.model_validate(record.payload)
@@ -88,4 +96,42 @@ def match(
     with get_session(_current_engine()) as session:
         incentives = load_incentives(session)
     results = match_profile(incentives, profile, weights=DEFAULT_WEIGHTS)
+    return [r for r in results if r.score >= min_score][:top]
+
+
+@app.get("/tenders", response_model=list[Tender])
+def list_tenders(
+    status: str | None = None,
+    province: str | None = None,
+    limit: int = Query(default=50, le=500),
+) -> list[Tender]:
+    """Gare d'appalto (public tenders) - ANAC + TED, a separate domain from
+    incentives (see CLAUDE.md). Same thin-wrapper pattern as /incentives."""
+    with get_session(_current_engine()) as session:
+        tenders = load_tenders(session, status=status)
+    if province:
+        tenders = [t for t in tenders if t.province == province]
+    return tenders[:limit]
+
+
+@app.get("/tenders/{source_id}", response_model=Tender)
+def get_tender(source_id: str) -> Tender:
+    with get_session(_current_engine()) as session:
+        record = get_tender_record(session, source_id)
+    if record is None:
+        raise HTTPException(status_code=404, detail=f"No tender with source_id={source_id!r}")
+    return Tender.model_validate(record.payload)
+
+
+@app.post("/tenders/match", response_model=list[TenderMatchResult])
+def match_tenders(
+    profile: CompanyProfile,
+    top: int = Query(default=20, le=200),
+    min_score: float = 0.0,
+) -> list[TenderMatchResult]:
+    """profile.cpv_codes drives tender matching (separate from ateco_codes,
+    which drives /match for incentives)."""
+    with get_session(_current_engine()) as session:
+        tenders = load_tenders(session)
+    results = match_tender_profile(tenders, profile, weights=DEFAULT_TENDER_WEIGHTS)
     return [r for r in results if r.score >= min_score][:top]

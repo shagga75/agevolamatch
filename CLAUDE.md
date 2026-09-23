@@ -363,9 +363,24 @@ docker compose up --build                # api + dashboard + ingest/alerts loop 
     `run_tender_alerts`'s `subscription.weights` support. If you add a
     third weights class anywhere, check for this same gap before assuming
     parity with the incentive path.
-  - Still not wired: REST API and MCP server. Same thin-wrapper pattern
-    would apply (`load_tenders`/`match_tender_profile`), just not written
-    yet - not a design gap, just unrequested so far.
+  - REST API: `GET /tenders`, `GET /tenders/{source_id}`,
+    `POST /tenders/match` - same thin-wrapper pattern as `/incentives`/
+    `/match`, using `load_tenders`/`match_tender_profile`.
+  - MCP server: `search_tenders`, `get_tender`, `match_tenders` - same
+    pattern as the incentive tools.
+  - Fixed a real bug while adding the single-record lookups: `get_incentive`
+    (both the API and the MCP tool) looked up by `source_id` alone, with no
+    source filter - since `source_id` is only unique per `(source,
+    source_id)`, not globally, an ANAC CIG or TED publication-number that
+    happened to collide with an incentive's id could have been returned
+    there and then failed `Incentive.model_validate()` the same way the
+    already-fixed `load_incentives` bug did. Added
+    `storage.get_incentive_record`/`get_tender_record` (both source-scoped)
+    and switched every single-record lookup (API `get_incentive`/
+    `get_tender`, MCP `get_incentive`/`get_tender`) to use them instead of
+    querying `OpportunityRecord` directly. If you add a fourth surface with
+    its own single-record lookup, use these helpers, don't re-query
+    `OpportunityRecord.source_id` unscoped.
 
 ## Non-goals / explicit decisions from Fase 0
 

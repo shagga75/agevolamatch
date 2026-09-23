@@ -87,6 +87,9 @@ uv run agevolamatch serve            # http://127.0.0.1:8000, docs at /docs
 | `GET /incentives?status=&region=&limit=` | List stored incentives |
 | `GET /incentives/{source_id}` | One incentive, 404 if unknown |
 | `POST /match?top=&min_score=` | Body: a `CompanyProfile` JSON object. Returns ranked `MatchResult`s |
+| `GET /tenders?status=&province=&limit=` | List stored tenders (gare) |
+| `GET /tenders/{source_id}` | One tender, 404 if unknown |
+| `POST /tenders/match?top=&min_score=` | Body: a `CompanyProfile` (needs `cpv_codes`). Returns ranked `TenderMatchResult`s |
 
 `AGEVOLAMATCH_DB_PATH` (also read from `.env`) selects which SQLite file the
 API reads from.
@@ -166,24 +169,27 @@ uv run agevolamatch gare alerts run --subscriptions examples/alert_subscriptions
 
 `CompanyProfile.cpv_codes` (separate from `ateco_codes` - no official
 ATECO↔CPV crosswalk exists) drives tender matching; `examples/startup_profile.yaml`
-already sets both, so it works with `match`/`gare match` and `alerts run`/
-`gare alerts run` alike. The dashboard's **📄 Gare** tab lists stored tenders,
-and its **🎯 Matching** tab has a "Gare" sub-tab alongside "Incentivos" -
-both read the same stored data and the same session-state profile. Not yet
-wired into the REST API or MCP server - those would be the same
-thin-wrapper pattern already used for incentives, just not done yet.
+already sets both, so it works with `match`/`gare match`, `alerts run`/
+`gare alerts run`, the REST API's `/tenders*` endpoints, and the MCP
+server's `*_tenders`/`get_tender` tools alike. The dashboard's **📄 Gare**
+tab lists stored tenders, and its **🎯 Matching** tab has a "Gare" sub-tab
+alongside "Incentivos" - both read the same stored data and the same
+session-state profile.
 
 ## MCP server
 
 Exposes search and matching to any MCP client (e.g. Claude Desktop) via
-`agevolamatch-mcp`, over stdio. Three tools, all thin wrappers over the same
+`agevolamatch-mcp`, over stdio. Six tools, all thin wrappers over the same
 storage/matching code the CLI and REST API use:
 
 | Tool | Description |
 |---|---|
 | `search_incentives(status, region, limit)` | List stored incentives |
 | `get_incentive(source_id)` | One incentive's full details, or null |
-| `match_company_profile(profile, top, min_score)` | Ranked matches with explanations - `profile` shape: `schemas/company_profile.schema.json` |
+| `match_company_profile(profile, top, min_score)` | Ranked incentive matches - `profile` shape: `schemas/company_profile.schema.json` |
+| `search_tenders(status, province, limit)` | List stored tenders (gare) |
+| `get_tender(source_id)` | One tender's full details, or null |
+| `match_tenders(profile, top, min_score)` | Ranked tender matches - uses `profile.cpv_codes` |
 
 Add to your MCP client's config (e.g. Claude Desktop's `claude_desktop_config.json`):
 

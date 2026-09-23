@@ -8,7 +8,13 @@ from sqlmodel import Session, SQLModel, create_engine
 from agevolamatch.models.enums import OpportunitySourceName, OpportunityStatus
 from agevolamatch.models.opportunity import Incentive, Tender
 from agevolamatch.sources.parsing import compute_content_hash
-from agevolamatch.storage.repository import load_incentives, load_tenders, upsert_opportunities
+from agevolamatch.storage.repository import (
+    get_incentive_record,
+    get_tender_record,
+    load_incentives,
+    load_tenders,
+    upsert_opportunities,
+)
 
 
 @pytest.fixture
@@ -98,3 +104,29 @@ def test_load_tenders_ignores_incentives_sharing_the_same_table(session):
     upsert_opportunities(session, [make_incentive("1", "Bando A"), make_tender("T1", "Gara A")])
     tenders = load_tenders(session)
     assert [t.source_id for t in tenders] == ["T1"]
+
+
+def test_get_incentive_record_ignores_a_tender_with_the_same_source_id(session):
+    """Regression test: source_id is only unique per (source, source_id), not
+    globally - an ANAC CIG and an incentivi.gov.it nid could coincidentally
+    share the same string. A lookup scoped to incentive sources must not
+    return the tender row just because the id string matches."""
+    upsert_opportunities(session, [make_incentive("SAME_ID", "Bando A"), make_tender("SAME_ID", "Gara A")])
+    record = get_incentive_record(session, "SAME_ID")
+    assert record is not None
+    assert record.source == OpportunitySourceName.INCENTIVI_GOV_IT
+
+
+def test_get_tender_record_ignores_an_incentive_with_the_same_source_id(session):
+    upsert_opportunities(session, [make_incentive("SAME_ID", "Bando A"), make_tender("SAME_ID", "Gara A")])
+    record = get_tender_record(session, "SAME_ID")
+    assert record is not None
+    assert record.source == OpportunitySourceName.ANAC
+
+
+def test_get_incentive_record_returns_none_for_unknown_id(session):
+    assert get_incentive_record(session, "does-not-exist") is None
+
+
+def test_get_tender_record_returns_none_for_unknown_id(session):
+    assert get_tender_record(session, "does-not-exist") is None
