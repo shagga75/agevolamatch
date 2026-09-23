@@ -5,7 +5,7 @@
 | Source | Domain | Format | Update frequency | License | Status |
 |---|---|---|---|---|---|
 | incentivi.gov.it Open Data | Incentives | JSON via Solr endpoint (see below) | Site doesn't publish one; observed `ds_last_update` per record | IODL 2.0 | **Implemented** (Fase 1) |
-| Invitalia | Incentives | HTML (no public API) | N/A | Site terms apply | Planned, Fase 4. Many measures duplicate incentivi.gov.it - dedupe by (normalized title, granting body, dates), no shared external ID exists |
+| Invitalia | Incentives | HTML (no public API, no JSON:API) | Site doesn't publish one | Site terms apply (no explicit open-data license found) | **Implemented** (Fase 4) |
 | ANAC Open Data | Tenders (gare) | CSV/ZIP | Historical dumps, updated periodically | To verify at implementation time (ANAC publishes under an open license, exact terms TBD) | Planned, Fase 5 |
 | TED Europa | Tenders (gare) | Official API | Real-time | EU reuse policy (generally open) | Planned, Fase 5 |
 | OpenCoesione | Historical/analytics | Official API | Periodic | Open data license (to verify) | Planned, Fase 3+ |
@@ -99,3 +99,70 @@ logic (built from a 37-record curated sample in
 `tests/fixtures/incentivi_gov_it_sample.json`) generalizes to the full
 dataset. Re-running ingest immediately after reports 0 new / 0 modified /
 5,896 unchanged, confirming the content-hash-based change detection is stable.
+
+## Invitalia - implementation notes
+
+`www.invitalia.it` runs Drupal too, but exposes neither a Solr-backed export
+(like incentivi.gov.it) nor a JSON:API (`/jsonapi/node/incentivi` 404s -
+checked 2026-09-23). `robots.txt` doesn't disallow the content pages used
+here. `agevolamatch.sources.invitalia.InvitaliaSource` scrapes the paginated
+HTML listing at `/per-le-imprese/incentivi-e-strumenti?page=N` (only the "for
+existing businesses" listing - the separate "for aspiring entrepreneurs"
+listing at `/per-chi-vuole-fare-impresa/...` is not scraped, since
+`CompanyProfile` models an existing company).
+
+**What's extracted, from the listing page cards only:**
+
+| Field | Source | Notes |
+|---|---|---|
+| `title` | Card `<h3><a class="card-unified__title">` | |
+| `url` | Same `<a href>` | Made absolute |
+| `source_id` | Last path segment of the URL (slug) | |
+| `description` | Card `<p class="fw-normal">` | Short one-line subtitle |
+| `status` | Card's `.category-top .category` label | `Attivo`→open, `Chiuso`→closed, `In apertura`→upcoming |
+
+**Individual measure detail pages are not scraped for structured fields.**
+Inspecting a real one (`/incentivi-e-strumenti/smartstart-italia`) showed it's
+long-form free text organized as Drupal Paragraphs ("A CHI SI RIVOLGE", "COSA
+FINANZIA", ...) with no structured dates/region/ATECO/size data comparable to
+incentivi.gov.it - there's nothing reliable to extract there generically
+across ~106 different measure pages. Every `Incentive` field this source
+can't populate (regions, company_sizes, ateco_codes, cost/grant ranges, ...)
+is left empty. This is not a special case for matching: the hard filters
+already treat an empty field as "unverifiable, don't disqualify" (see
+CLAUDE.md), so an Invitalia record without region data is neither wrongly
+excluded nor wrongly matched - it just carries less scoring signal than a
+fully-described incentivi.gov.it record.
+
+**Status is set directly, not computed from dates** (unlike incentivi.gov.it):
+Invitalia publishes a status label instead of open/close dates.
+`matching/filters.py::_check_status` was updated to fall back to the stored
+`status` field when an incentive has neither `open_date` nor `close_date`,
+rather than always recomputing from dates and treating "no dates" as
+automatically unverifiable - this was a real gap caught while designing this
+source, not something the original Fase 1 code needed to handle.
+
+### Deduplication against incentivi.gov.it
+
+Most Invitalia measures are already on incentivi.gov.it, usually under a
+longer or differently-worded title (e.g. Invitalia's "Smart&Start Italia" vs.
+incentivi.gov.it's "Smart&Start Italia - Sostegno alle startup innovative").
+There's no shared external ID, so `agevolamatch.sources.dedup.find_duplicate`
+compares normalized titles (accent/case/punctuation-stripped) via substring
+containment or word-set Jaccard similarity (default threshold 0.6), against
+every *currently stored* incentivi.gov.it record. `agevolamatch ingest
+--source invitalia` applies this before storing: a match is dropped and
+counted, not persisted.
+
+### Real-data validation
+
+On 2026-09-23, `agevolamatch ingest --source invitalia` against the live site
+scraped and normalized **106/106** listing cards with zero failures (9
+paginated pages), of which **45 were identified as duplicates** of already-
+ingested incentivi.gov.it records and dropped, leaving 61 new Invitalia-only
+incentives stored. Spot-checked several kept titles for plausibility and
+confirmed known-duplicate titles (e.g. "Smart&Start Italia", "Legge 181")
+were correctly excluded. `agevolamatch match` against this mixed-source data
+runs without errors, and Invitalia records do appear in wider result sets,
+ranked appropriately lower than richer incentivi.gov.it records when a
+profile's criteria depend on fields Invitalia doesn't provide.

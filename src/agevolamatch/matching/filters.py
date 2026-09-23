@@ -44,7 +44,15 @@ def _expected_beneficiary_types(profile: CompanyProfile) -> set[str]:
 
 
 def _check_status(incentive: Incentive, as_of: date) -> FilterCheck:
-    status = compute_status(incentive.open_date, incentive.close_date, as_of=as_of)
+    # Prefer recomputing from dates when we have them (incentivi.gov.it never
+    # publishes a status field directly - see docs/sources.md). Some sources
+    # (Invitalia) publish an explicit status label instead of open/close
+    # dates; for those, fall back to the status already resolved at ingest
+    # time rather than treating "no dates" as automatically unverifiable.
+    if incentive.open_date is not None or incentive.close_date is not None:
+        status = compute_status(incentive.open_date, incentive.close_date, as_of=as_of)
+    else:
+        status = incentive.status
     if status in (OpportunityStatus.OPEN, OpportunityStatus.UPCOMING):
         return FilterCheck(name="status", status=CheckStatus.PASSED, detail=f"Bando {status.value}")
     if status == OpportunityStatus.CLOSED:

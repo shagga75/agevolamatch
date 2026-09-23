@@ -25,7 +25,7 @@ roadmap - vedi [Roadmap](#roadmap).
   CSV/JSON, profilo di esempio.
 - ✅ **Fase 3 - API + alert**: API REST FastAPI, canali email (SMTP) e
   Telegram con deduplica anti-reinvio, Docker + docker-compose.
-- ⏳ Fase 4 - Dashboard, scraper Invitalia, LLM opzionale, server MCP
+- 🚧 Fase 4 - Extra: ✅ scraper Invitalia (deduplicato), ⏳ dashboard, LLM opzionale, server MCP
 - ⏳ Fase 5 - Gare d'appalto: ANAC + TED, modulo separato
 
 ## Perché
@@ -53,6 +53,8 @@ uv sync
 ```bash
 # Scarica gli incentivi da incentivi.gov.it e salva i record nuovi/modificati
 uv run agevolamatch ingest
+uv run agevolamatch ingest --source invitalia   # scraping, deduplicato contro incentivi.gov.it
+uv run agevolamatch ingest --source all
 
 # Elenca gli incentivi salvati, con filtri
 uv run agevolamatch list --status open --region Lazio --limit 20

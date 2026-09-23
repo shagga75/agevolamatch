@@ -33,6 +33,22 @@ class TestStatusCheck:
         assert status_check.status == CheckStatus.FAILED
         assert result.eligible is False
 
+    def test_falls_back_to_stored_status_when_no_dates_available(self, incentive_factory):
+        """Invitalia publishes an explicit status label instead of open/close
+        dates - a stored CLOSED status must still disqualify even without dates."""
+        incentive = incentive_factory(open_date=None, close_date=None, status="closed")
+        result = apply_hard_filters(incentive, make_profile(), as_of=date(2024, 6, 1))
+        status_check = next(c for c in result.checks if c.name == "status")
+        assert status_check.status == CheckStatus.FAILED
+        assert result.eligible is False
+
+    def test_unknown_status_with_no_dates_is_unverifiable(self, incentive_factory):
+        incentive = incentive_factory(open_date=None, close_date=None, status="unknown")
+        result = apply_hard_filters(incentive, make_profile(), as_of=date(2024, 6, 1))
+        status_check = next(c for c in result.checks if c.name == "status")
+        assert status_check.status == CheckStatus.UNVERIFIABLE
+        assert result.eligible is True
+
 
 class TestRegionCheck:
     def test_matching_region_passes(self, incentive_factory):

@@ -12,18 +12,16 @@ from __future__ import annotations
 
 import json
 import logging
-import time
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from typing import Any
 from urllib.parse import urlencode
 
-import httpx
-
 from agevolamatch.models.enums import OpportunitySourceName
 from agevolamatch.models.opportunity import Incentive
 from agevolamatch.sources.base import BaseSource
 from agevolamatch.sources.http_cache import CachedHttpClient
+from agevolamatch.sources.http_client import RateLimitedHttpClient
 from agevolamatch.sources.parsing import (
     compute_content_hash,
     compute_status,
@@ -98,34 +96,9 @@ class IncentiviGovItSource(BaseSource):
 
     name: str = OpportunitySourceName.INCENTIVI_GOV_IT.value
     page_size: int = 2000
-    min_request_interval_seconds: float = 1.0
-    timeout_seconds: float = 30.0
-    http_cache: CachedHttpClient = field(default_factory=CachedHttpClient)
-    client: httpx.Client | None = None
-    _last_request_at: float = field(default=0.0, init=False, repr=False)
-
-    def _rate_limit(self) -> None:
-        elapsed = time.monotonic() - self._last_request_at
-        wait = self.min_request_interval_seconds - elapsed
-        if wait > 0:
-            time.sleep(wait)
-        self._last_request_at = time.monotonic()
-
-    def _get(self, url: str) -> str:
-        cached = self.http_cache.get_cached(url)
-        if cached is not None:
-            return cached
-        self._rate_limit()
-        client = self.client or httpx.Client(timeout=self.timeout_seconds)
-        try:
-            response = client.get(url, headers={"User-Agent": USER_AGENT})
-            response.raise_for_status()
-            body = response.text
-        finally:
-            if self.client is None:
-                client.close()
-        self.http_cache.store(url, body)
-        return body
+    http: RateLimitedHttpClient = field(
+        default_factory=lambda: RateLimitedHttpClient(user_agent=USER_AGENT, http_cache=CachedHttpClient())
+    )
 
     def fetch(self) -> list[dict[str, Any]]:
         """Paginates through the Solr endpoint and returns all raw documents."""
@@ -134,7 +107,7 @@ class IncentiviGovItSource(BaseSource):
         num_found = None
         while num_found is None or start < num_found:
             url = build_query_url(rows=self.page_size, start=start)
-            payload = json.loads(self._get(url))
+            payload = json.loads(self.http.get(url))
             response = payload["response"]
             num_found = response["numFound"]
             page_docs = response["docs"]

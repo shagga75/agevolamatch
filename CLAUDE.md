@@ -20,7 +20,9 @@ uv run ruff check --fix .        # lint + autofix
 uv run ruff format .             # format
 uv run python scripts/export_schemas.py   # regenerate schemas/*.json after model changes
 
-uv run agevolamatch ingest       # fetch + store incentives from incentivi.gov.it
+uv run agevolamatch ingest                          # incentivi.gov.it (default)
+uv run agevolamatch ingest --source invitalia       # scrape + dedup against stored incentivi.gov.it records
+uv run agevolamatch ingest --source all
 uv run agevolamatch list --status open --region Lazio
 uv run agevolamatch match --profile examples/startup_profile.yaml --top 10
 uv run agevolamatch export --format csv --output out.csv --profile examples/startup_profile.yaml
@@ -159,6 +161,25 @@ docker compose up --build                # api + ingest/alerts loop services
   `agevolamatch match --profile examples/startup_profile.yaml` exercises, so
   it should keep passing whenever that command does.
 - Ruff must be clean (`uv run ruff check .`) before considering a phase done.
+
+- **HTTP fetching is shared, not duplicated, across sources**:
+  `sources/http_client.py::RateLimitedHttpClient` (cache + 1 req/s rate limit
+  + User-Agent) is composed by both `IncentiviGovItSource` and
+  `InvitaliaSource`. Add any third HTTP-based source the same way rather than
+  re-implementing rate limiting/caching per source.
+- **Invitalia is scraped at listing-card granularity only** - no per-measure
+  detail-page parsing. Detail pages are free-form Drupal Paragraphs content
+  with nothing structured to reliably extract across ~100 different measures
+  (confirmed by inspecting a real one). Fields the listing can't provide
+  (region, size, ATECO, cost/grant ranges, ...) are left empty rather than
+  guessed - the matching engine's existing UNVERIFIABLE handling absorbs this
+  correctly, so this isn't a special case anywhere else in the codebase.
+- **`sources/dedup.py::find_duplicate` is the only thing standing between
+  Invitalia ingestion and duplicate rows**: it's applied by the `ingest`
+  CLI command (not inside `InvitaliaSource` itself, which stays a plain,
+  source-agnostic `BaseSource`) by comparing against currently-stored
+  incentivi.gov.it records before upserting. A dropped duplicate is counted
+  and logged, never silently discarded.
 
 ## Non-goals / explicit decisions from Fase 0
 

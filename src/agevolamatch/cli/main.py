@@ -17,7 +17,10 @@ from agevolamatch.matching import (
     load_company_profile,
     match_profile,
 )
+from agevolamatch.models.enums import OpportunitySourceName
+from agevolamatch.sources.dedup import find_duplicate
 from agevolamatch.sources.incentivi_gov_it import IncentiviGovItSource
+from agevolamatch.sources.invitalia import InvitaliaSource
 from agevolamatch.storage import (
     DEFAULT_DB_PATH,
     get_engine,
@@ -41,29 +44,58 @@ def _load_stored_incentives(db_path: Path):
         return load_incentives(session)
 
 
+_INGEST_SOURCES = {"incentivi_gov_it", "invitalia", "all"}
+
+
 @app.command()
 def ingest(
+    source: Annotated[str, typer.Option(help="incentivi_gov_it, invitalia, or all")] = "incentivi_gov_it",
     db_path: Annotated[Path, typer.Option(help="SQLite database path")] = DEFAULT_DB_PATH,
     verbose: Annotated[bool, typer.Option(help="Enable debug logging")] = False,
 ) -> None:
-    """Fetch incentives from incentivi.gov.it and store new/modified records."""
+    """Fetch incentives and store new/modified records."""
     logging.basicConfig(level=logging.DEBUG if verbose else logging.INFO)
+
+    if source not in _INGEST_SOURCES:
+        console.print(f"[red]Fuente desconocida: {source!r} (opciones: {', '.join(sorted(_INGEST_SOURCES))})[/red]")
+        raise typer.Exit(code=1)
 
     engine = get_engine(db_path)
     init_db(engine)
 
-    source = IncentiviGovItSource()
-    opportunities = source.run()
+    sources_to_run = []
+    if source in ("incentivi_gov_it", "all"):
+        sources_to_run.append(IncentiviGovItSource())
+    if source in ("invitalia", "all"):
+        sources_to_run.append(InvitaliaSource())
 
-    with get_session(engine) as session:
-        summary = upsert_opportunities(session, opportunities)
+    for src in sources_to_run:
+        opportunities = src.run()
 
-    console.print(
-        f"[green]Ingest complete[/green]: {summary.total} total, "
-        f"[bold]{len(summary.new)}[/bold] new, "
-        f"[bold]{len(summary.modified)}[/bold] modified, "
-        f"{len(summary.unchanged)} unchanged"
-    )
+        if src.name == OpportunitySourceName.INVITALIA.value:
+            with get_session(engine) as session:
+                reference_incentives = [
+                    i for i in load_incentives(session) if i.source == OpportunitySourceName.INCENTIVI_GOV_IT
+                ]
+            deduped, skipped = [], 0
+            for opp in opportunities:
+                if find_duplicate(opp.title, reference_incentives) is not None:
+                    skipped += 1
+                else:
+                    deduped.append(opp)
+            opportunities = deduped
+            if skipped:
+                console.print(f"[dim]Invitalia: {skipped} medida(s) descartadas por duplicar incentivi.gov.it[/dim]")
+
+        with get_session(engine) as session:
+            summary = upsert_opportunities(session, opportunities)
+
+        console.print(
+            f"[green]{src.name}[/green]: {summary.total} total, "
+            f"[bold]{len(summary.new)}[/bold] new, "
+            f"[bold]{len(summary.modified)}[/bold] modified, "
+            f"{len(summary.unchanged)} unchanged"
+        )
 
 
 @app.command(name="list")

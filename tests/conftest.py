@@ -19,6 +19,16 @@ def incentivi_gov_it_raw_docs() -> list[dict]:
     return payload["response"]["docs"]
 
 
+@pytest.fixture
+def invitalia_listing_page0_html() -> str:
+    return (FIXTURES_DIR / "invitalia_listing_page0.html").read_text(encoding="utf-8")
+
+
+@pytest.fixture
+def invitalia_listing_page_chiuso_html() -> str:
+    return (FIXTURES_DIR / "invitalia_listing_page_chiuso.html").read_text(encoding="utf-8")
+
+
 def make_incentive(source_id: str = "1", **overrides: Any) -> Incentive:
     """Builds a minimal valid Incentive for tests, with sane defaults that
     match the "generic open incentive for any Impresa" case, overridable per
