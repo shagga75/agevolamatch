@@ -5,15 +5,17 @@ RUN pip install --no-cache-dir uv
 WORKDIR /app
 
 COPY pyproject.toml uv.lock ./
-RUN uv sync --frozen --no-dev --no-install-project
+RUN uv sync --frozen --no-dev --extra dashboard --no-install-project
 
 COPY . .
-RUN uv sync --frozen --no-dev
+RUN uv sync --frozen --no-dev --extra dashboard
 
 # The venv built above already matches the lockfile; skip uv re-syncing
 # (which would otherwise pull the dev dependency group) on every `uv run`.
 ENV UV_NO_SYNC=1
 
-EXPOSE 8000
+EXPOSE 8000 8501
 
+# Default command runs the API; docker-compose overrides this for the
+# `ingest` and `dashboard` services (same image, different command).
 CMD ["uv", "run", "uvicorn", "agevolamatch.api.app:app", "--host", "0.0.0.0", "--port", "8000"]

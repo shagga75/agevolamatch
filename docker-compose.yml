@@ -26,7 +26,26 @@ services:
       - ALERTS_DRY_RUN=true
     entrypoint: ["./scripts/ingest_loop.sh"]
 
-  # The Streamlit dashboard (Fase 4) will be added here once implemented.
+  dashboard:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - agevolamatch-data:/app/data
+    env_file:
+      - .env
+    environment:
+      - AGEVOLAMATCH_DB_PATH=data/agevolamatch.db
+    command:
+      [
+        "uv",
+        "run",
+        "streamlit",
+        "run",
+        "src/agevolamatch/dashboard/app.py",
+        "--server.address=0.0.0.0",
+        "--server.port=8501",
+      ]
 
 volumes:
   agevolamatch-data:

@@ -14,9 +14,8 @@ a quali incentivi possono davvero accedere.
 
 ## Stato del progetto
 
-Le Fasi 1-3 (ingestione core + matching + API/alert) sono implementate e
-validate contro il dataset live. Dashboard e scraper Invitalia sono nella
-roadmap - vedi [Roadmap](#roadmap).
+Le Fasi 1-4 sono implementate e validate contro il dataset live. Resta solo
+la Fase 5 (gare d'appalto) - vedi [Roadmap](#roadmap).
 
 - ✅ **Fase 1 - Core**: struttura del repo, modelli Pydantic + JSON Schema,
   fonte incentivi.gov.it, storage SQLite con rilevamento nuovi/modificati.
@@ -25,7 +24,7 @@ roadmap - vedi [Roadmap](#roadmap).
   CSV/JSON, profilo di esempio.
 - ✅ **Fase 3 - API + alert**: API REST FastAPI, canali email (SMTP) e
   Telegram con deduplica anti-reinvio, Docker + docker-compose.
-- 🚧 Fase 4 - Extra: ✅ scraper Invitalia (deduplicato), ✅ LLM opzionale, ✅ server MCP, ⏳ dashboard
+- ✅ **Fase 4 - Extra**: scraper Invitalia (deduplicato), LLM opzionale, server MCP, dashboard Streamlit.
 - ⏳ Fase 5 - Gare d'appalto: ANAC + TED, modulo separato
 
 ## Perché
@@ -171,6 +170,19 @@ Aggiungi alla configurazione del tuo client MCP (es. `claude_desktop_config.json
 }
 ```
 
+## Dashboard
+
+```bash
+uv sync --extra dashboard   # installa streamlit (opzionale - non è una dipendenza core)
+uv run streamlit run src/agevolamatch/dashboard/app.py
+```
+
+Tre schede, stesso codice storage/matching di CLI/API/server MCP: un elenco
+incentivi filtrabile con vista di dettaglio, un editor del profilo aziendale
+(carica il profilo di esempio o costruiscine uno con un form), e i risultati
+del matching con le stesse spiegazioni a favore/contro/da verificare che
+stampa la CLI.
+
 ## Docker
 
 ```bash
@@ -178,12 +190,13 @@ cp .env.example .env   # compila le credenziali SMTP/Telegram se servono
 docker compose up --build
 ```
 
-Avvia il servizio `api` (porta 8000) e un servizio `ingest` che ripete
-`ingest` + `alerts run` ogni `INGEST_INTERVAL_SECONDS` (default: una volta al
-giorno). Il passo alert di `ingest` è in dry-run di default
-(`ALERTS_DRY_RUN=true` in `docker-compose.yml`) - passalo a `false` solo dopo
-aver testato le credenziali reali in `.env`. Monta il tuo file di subscription
-al posto di `examples/alert_subscriptions.yaml` nei volumi del servizio `ingest`.
+Avvia il servizio `api` (porta 8000), il servizio `dashboard` (porta 8501) e
+un servizio `ingest` che ripete `ingest` + `alerts run` ogni
+`INGEST_INTERVAL_SECONDS` (default: una volta al giorno). Il passo alert di
+`ingest` è in dry-run di default (`ALERTS_DRY_RUN=true` in
+`docker-compose.yml`) - passalo a `false` solo dopo aver testato le
+credenziali reali in `.env`. Monta il tuo file di subscription al posto di
+`examples/alert_subscriptions.yaml` nei volumi del servizio `ingest`.
 
 ## Modello dati
 

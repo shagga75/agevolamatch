@@ -14,6 +14,7 @@ end-user usage.
 
 ```bash
 uv sync                          # install deps (dev group included by default)
+uv sync --all-extras             # also installs the dashboard extra (streamlit/pandas) - do this to run the full test suite, same as CI
 uv run pytest -q                 # run tests (no network access required - all fixtures)
 uv run ruff check .              # lint
 uv run ruff check --fix .        # lint + autofix
@@ -28,8 +29,10 @@ uv run agevolamatch match --profile examples/startup_profile.yaml --top 10
 uv run agevolamatch export --format csv --output out.csv --profile examples/startup_profile.yaml
 uv run agevolamatch alerts run --subscriptions examples/alert_subscriptions.yaml --dry-run
 uv run agevolamatch serve                # REST API on :8000
+uv run agevolamatch-mcp                  # MCP server (stdio) - console script, not a Typer subcommand
+uv run streamlit run src/agevolamatch/dashboard/app.py   # needs --extra dashboard installed
 
-docker compose up --build                # api + ingest/alerts loop services
+docker compose up --build                # api + dashboard + ingest/alerts loop services
 ```
 
 ## Architecture decisions
@@ -227,6 +230,27 @@ docker compose up --build                # api + ingest/alerts loop services
   *raises* in both cases; only the full transport layer does the
   isError-result translation, so don't expect `result.is_error` when testing
   via `call_tool()` directly, only via a real client/transport round-trip.
+
+- **The Streamlit dashboard (`dashboard/app.py`) is a fourth thin wrapper**
+  over storage/matching, alongside the CLI, REST API, and MCP server -
+  same `load_incentives`/`match_profile` calls, no separate logic. It's
+  behind the optional `dashboard` extra (`uv sync --extra dashboard`) since
+  streamlit/pandas are sizeable and most CLI/API/MCP usage doesn't need them;
+  CI installs `--all-extras` so it's still tested on every push.
+- **`@st.cache_resource`/`@st.cache_data` are global to the process, not
+  scoped per test/session** - confirmed by a real test failure: a test using
+  a fresh empty `AGEVOLAMATCH_DB_PATH` still saw a previous test's cached
+  non-empty incentive list, because nothing had cleared the cache between
+  them. `tests/unit/test_dashboard.py` has an autouse fixture that calls
+  `st.cache_resource.clear()` / `st.cache_data.clear()` before and after
+  every test - keep it if you add more dashboard tests. This is a testing
+  concern; in a real deployment the dashboard runs against one fixed
+  `AGEVOLAMATCH_DB_PATH` per process, so the caching itself is fine there.
+- Dashboard tests use `streamlit.testing.v1.AppTest` to actually execute the
+  app's Python and assert on the resulting element tree - not a mock, not an
+  import-only smoke test. `tests/unit/test_dashboard.py` guards its streamlit
+  import with `pytest.importorskip` so a plain `uv sync` (no `--extra
+  dashboard`) still runs the rest of the suite cleanly.
 
 ## Non-goals / explicit decisions from Fase 0
 
